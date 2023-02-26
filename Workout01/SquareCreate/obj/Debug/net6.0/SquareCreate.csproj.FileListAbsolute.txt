@@ -1,0 +1,15 @@
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\bin\Debug\net6.0\SquareCreate.exe
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\bin\Debug\net6.0\SquareCreate.deps.json
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\bin\Debug\net6.0\SquareCreate.runtimeconfig.json
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\bin\Debug\net6.0\SquareCreate.dll
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\bin\Debug\net6.0\SquareCreate.pdb
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\obj\Debug\net6.0\SquareCreate.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\obj\Debug\net6.0\SquareCreate.GeneratedMSBuildEditorConfig.editorconfig
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\obj\Debug\net6.0\SquareCreate.AssemblyInfoInputs.cache
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\obj\Debug\net6.0\SquareCreate.AssemblyInfo.cs
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\obj\Debug\net6.0\SquareCreate.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\obj\Debug\net6.0\SquareCreate.dll
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\obj\Debug\net6.0\refint\SquareCreate.dll
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\obj\Debug\net6.0\SquareCreate.pdb
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\obj\Debug\net6.0\SquareCreate.genruntimeconfig.cache
+C:\UCC08\Projects\CSharp101\Workout01\SquareCreate\obj\Debug\net6.0\ref\SquareCreate.dll
