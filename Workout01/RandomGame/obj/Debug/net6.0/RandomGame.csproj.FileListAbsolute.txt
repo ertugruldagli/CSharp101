@@ -1,0 +1,15 @@
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\bin\Debug\net6.0\RandomGame.exe
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\bin\Debug\net6.0\RandomGame.deps.json
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\bin\Debug\net6.0\RandomGame.runtimeconfig.json
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\bin\Debug\net6.0\RandomGame.dll
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\bin\Debug\net6.0\RandomGame.pdb
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\obj\Debug\net6.0\RandomGame.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\obj\Debug\net6.0\RandomGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\obj\Debug\net6.0\RandomGame.AssemblyInfoInputs.cache
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\obj\Debug\net6.0\RandomGame.AssemblyInfo.cs
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\obj\Debug\net6.0\RandomGame.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\obj\Debug\net6.0\RandomGame.dll
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\obj\Debug\net6.0\refint\RandomGame.dll
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\obj\Debug\net6.0\RandomGame.pdb
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\obj\Debug\net6.0\RandomGame.genruntimeconfig.cache
+C:\UCC08\Projects\CSharp101\Workout01\RandomGame\obj\Debug\net6.0\ref\RandomGame.dll
