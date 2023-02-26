@@ -31,5 +31,7 @@
             Console.WriteLine("Uygulanan indirim : " + indirimFiyati);
             Console.WriteLine("İndirimli tutar: " + tutar);
         }
+        Console.ReadKey();
     }
+
 }
