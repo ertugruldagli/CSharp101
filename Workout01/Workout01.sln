@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesCalculation", "SalesCa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Descreasing", "Descreasing\Descreasing.csproj", "{BDEFCE4E-17F7-47A5-A4A1-11C51DF03C71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Average", "Average\Average.csproj", "{D264799B-8B48-47EA-9742-DB79D613ABD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BDEFCE4E-17F7-47A5-A4A1-11C51DF03C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDEFCE4E-17F7-47A5-A4A1-11C51DF03C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDEFCE4E-17F7-47A5-A4A1-11C51DF03C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D264799B-8B48-47EA-9742-DB79D613ABD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D264799B-8B48-47EA-9742-DB79D613ABD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D264799B-8B48-47EA-9742-DB79D613ABD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D264799B-8B48-47EA-9742-DB79D613ABD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
