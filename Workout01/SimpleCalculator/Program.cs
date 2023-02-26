@@ -35,6 +35,6 @@
         }else{
                 Console.WriteLine("Yanlis karakter girdiniz!"); // if blokları içerisinde istenen veri dışında bir veri girilirse uyarı mesajı verilecek
         }
-        
+        Console.ReadKey();
     }
 }
