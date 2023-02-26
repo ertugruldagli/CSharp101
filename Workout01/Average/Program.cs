@@ -12,7 +12,6 @@
         {
             toplam += i;
             adet++;
-         
         }
         ort = toplam / adet;
         Console.WriteLine(ort);
