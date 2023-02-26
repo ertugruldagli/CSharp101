@@ -1,0 +1,15 @@
+C:\UCC08\Projects\CSharp101\Workout01\Average\bin\Debug\net6.0\Average.exe
+C:\UCC08\Projects\CSharp101\Workout01\Average\bin\Debug\net6.0\Average.deps.json
+C:\UCC08\Projects\CSharp101\Workout01\Average\bin\Debug\net6.0\Average.runtimeconfig.json
+C:\UCC08\Projects\CSharp101\Workout01\Average\bin\Debug\net6.0\Average.dll
+C:\UCC08\Projects\CSharp101\Workout01\Average\bin\Debug\net6.0\Average.pdb
+C:\UCC08\Projects\CSharp101\Workout01\Average\obj\Debug\net6.0\Average.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\Workout01\Average\obj\Debug\net6.0\Average.GeneratedMSBuildEditorConfig.editorconfig
+C:\UCC08\Projects\CSharp101\Workout01\Average\obj\Debug\net6.0\Average.AssemblyInfoInputs.cache
+C:\UCC08\Projects\CSharp101\Workout01\Average\obj\Debug\net6.0\Average.AssemblyInfo.cs
+C:\UCC08\Projects\CSharp101\Workout01\Average\obj\Debug\net6.0\Average.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\Workout01\Average\obj\Debug\net6.0\Average.dll
+C:\UCC08\Projects\CSharp101\Workout01\Average\obj\Debug\net6.0\refint\Average.dll
+C:\UCC08\Projects\CSharp101\Workout01\Average\obj\Debug\net6.0\Average.pdb
+C:\UCC08\Projects\CSharp101\Workout01\Average\obj\Debug\net6.0\Average.genruntimeconfig.cache
+C:\UCC08\Projects\CSharp101\Workout01\Average\obj\Debug\net6.0\ref\Average.dll
