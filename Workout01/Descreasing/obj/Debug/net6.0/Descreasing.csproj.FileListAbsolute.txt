@@ -1,0 +1,15 @@
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\bin\Debug\net6.0\Descreasing.exe
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\bin\Debug\net6.0\Descreasing.deps.json
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\bin\Debug\net6.0\Descreasing.runtimeconfig.json
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\bin\Debug\net6.0\Descreasing.dll
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\bin\Debug\net6.0\Descreasing.pdb
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\obj\Debug\net6.0\Descreasing.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\obj\Debug\net6.0\Descreasing.GeneratedMSBuildEditorConfig.editorconfig
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\obj\Debug\net6.0\Descreasing.AssemblyInfoInputs.cache
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\obj\Debug\net6.0\Descreasing.AssemblyInfo.cs
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\obj\Debug\net6.0\Descreasing.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\obj\Debug\net6.0\Descreasing.dll
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\obj\Debug\net6.0\refint\Descreasing.dll
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\obj\Debug\net6.0\Descreasing.pdb
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\obj\Debug\net6.0\Descreasing.genruntimeconfig.cache
+C:\UCC08\Projects\CSharp101\Workout01\Descreasing\obj\Debug\net6.0\ref\Descreasing.dll

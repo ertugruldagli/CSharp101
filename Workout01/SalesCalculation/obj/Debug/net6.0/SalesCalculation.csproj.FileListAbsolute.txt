@@ -1,0 +1,15 @@
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\bin\Debug\net6.0\SalesCalculation.exe
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\bin\Debug\net6.0\SalesCalculation.deps.json
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\bin\Debug\net6.0\SalesCalculation.runtimeconfig.json
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\bin\Debug\net6.0\SalesCalculation.dll
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\bin\Debug\net6.0\SalesCalculation.pdb
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\obj\Debug\net6.0\SalesCalculation.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\obj\Debug\net6.0\SalesCalculation.GeneratedMSBuildEditorConfig.editorconfig
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\obj\Debug\net6.0\SalesCalculation.AssemblyInfoInputs.cache
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\obj\Debug\net6.0\SalesCalculation.AssemblyInfo.cs
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\obj\Debug\net6.0\SalesCalculation.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\obj\Debug\net6.0\SalesCalculation.dll
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\obj\Debug\net6.0\refint\SalesCalculation.dll
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\obj\Debug\net6.0\SalesCalculation.pdb
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\obj\Debug\net6.0\SalesCalculation.genruntimeconfig.cache
+C:\UCC08\Projects\CSharp101\Workout01\SalesCalculation\obj\Debug\net6.0\ref\SalesCalculation.dll
