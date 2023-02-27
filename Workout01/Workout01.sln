@@ -9,15 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Descreasing", "Descreasing\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Average", "Average\Average.csproj", "{D264799B-8B48-47EA-9742-DB79D613ABD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator", "SimpleCalculator\SimpleCalculator.csproj", "{8DDEA64E-F13A-4735-A60D-6895AA3C8C69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCalculator", "SimpleCalculator\SimpleCalculator.csproj", "{8DDEA64E-F13A-4735-A60D-6895AA3C8C69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice", "Invoice\Invoice.csproj", "{0B2415ED-CE03-4EB4-9013-94FA9335D083}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invoice", "Invoice\Invoice.csproj", "{0B2415ED-CE03-4EB4-9013-94FA9335D083}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplicationTable", "MultiplicationTable\MultiplicationTable.csproj", "{7ED39A4D-86BE-4A96-BE12-61299395B7E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplicationTable", "MultiplicationTable\MultiplicationTable.csproj", "{7ED39A4D-86BE-4A96-BE12-61299395B7E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomGame", "RandomGame\RandomGame.csproj", "{890FCF72-7B56-47D3-A454-3550B189CFE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomGame", "RandomGame\RandomGame.csproj", "{890FCF72-7B56-47D3-A454-3550B189CFE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareCreate", "SquareCreate\SquareCreate.csproj", "{745A68D5-34FE-4796-89A6-B9E81E517F4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquareCreate", "SquareCreate\SquareCreate.csproj", "{745A68D5-34FE-4796-89A6-B9E81E517F4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wrkout00", "..\..\.NetCore-Examples\Wrkout00\Wrkout00.csproj", "{41C5358A-BC09-4EED-9A9E-05DF33E80FFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{745A68D5-34FE-4796-89A6-B9E81E517F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{745A68D5-34FE-4796-89A6-B9E81E517F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{745A68D5-34FE-4796-89A6-B9E81E517F4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C5358A-BC09-4EED-9A9E-05DF33E80FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C5358A-BC09-4EED-9A9E-05DF33E80FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C5358A-BC09-4EED-9A9E-05DF33E80FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C5358A-BC09-4EED-9A9E-05DF33E80FFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
