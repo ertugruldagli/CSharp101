@@ -23,10 +23,10 @@ internal class Program
 
                 Console.WriteLine("Kalan prim gün sayınız: {0}", Gun + "\n");
                 Console.WriteLine("Emekliliğine {0} yıl {1} ay {2} gün kaldı", kalanYil, kalanAy, kalanGun);
-
-
             }
         }
+
+
         else if (gender == "E" || gender == "e")
         {
             if (prim >= 9000)
@@ -43,7 +43,6 @@ internal class Program
             
                 Console.WriteLine("Kalan prim gün sayınız: {0}", Gun + "\n");
                 Console.WriteLine("Emekliliğine {0} yıl {1} ay {2} gün kaldı", kalanYil, kalanAy, kalanGun);
-
 
             }
 
