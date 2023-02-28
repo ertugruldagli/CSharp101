@@ -81,6 +81,10 @@
 
         string userID = "", userPass = "";
 
+        Console.Clear();
+
+        Console.WriteLine("---Login--- ");
+
         Console.WriteLine("kullanıcı adını giriniz: ");
         userID = Console.ReadLine().Trim();
 
@@ -93,18 +97,20 @@
             //Eğer kullanıcı bulunduysa...
             Console.WriteLine("HEyyyooo...Kullanıcıyı bulduk...\n\n");
 
-            Console.WriteLine($"Kullanıcı yetki seviyesi{userAuthority}\n\n");
+            Console.WriteLine($"Kullanıcı yetki seviyesi {userAuthority}\n\n");
 
             Console.WriteLine($"Kullanıcı Durumu {userStatus}\n\n");
 
             Console.WriteLine("Devam etmek için bir tuşa basınız....");
+            
         }
         else
         {
             Console.WriteLine("Malesef kullanıcı yok...");
         }
+        Console.ReadKey();
 
-        
+
 
         return true;
     }
@@ -136,7 +142,7 @@
                 break;
             }
         }
-        return true;
+        return found;
     }
 }
       
