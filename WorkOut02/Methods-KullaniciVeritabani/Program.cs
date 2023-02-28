@@ -69,6 +69,9 @@
             case "2":
                 //Porgramdan çıkış bölümü
                 return false;
+            case "3":
+                //Porgramdan çıkış bölümü
+                return false;
             default:
                 return true;
 
@@ -77,20 +80,27 @@
 
     private static bool Login()
     {
+        //note: her şifre karakteri girdiğinde şifre bölümünde yıldız karakteri gözüksün 
 
         string userID = "", userPass = "";
 
         Console.Clear();
 
         Console.WriteLine("---Login--- ");
+        Console.WriteLine("bir önceki menüye için YILDIZ'ı tuşlayınız \n\n ");
         Console.WriteLine("kullanıcı adını giriniz: ");
         userID = Console.ReadLine().Trim();
+
+        if (userID=="*")
+        {
+            return false;
+        }
 
         Console.WriteLine("kullanıcı şifresini giriniz: ");
         userPass= Console.ReadLine().Trim();
 
 
-        if (userControl(datUsers, userID, userPass))
+        if (userControl(datUsers, userID, userPass) )
         {
             //Eğer kullanıcı bulunduysa...
             Console.WriteLine("HEyyyooo...Kullanıcıyı bulduk...\n\n");
