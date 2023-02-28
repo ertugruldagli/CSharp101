@@ -10,6 +10,9 @@
         {"+","+","+"}//kullanıcının durumu (ACTIVE + / PASSIVE -)
     };
 
+    public static string userAuthority; // kullanıcı türü tutacak
+    public static string userStatus; // kullanıcı aktif ve pasif olduğunu belirtir.
+
     private static void Main(string[] args)
     { //kullanıcı adı, şifresi, yetkisi, aktifliğini içeren bir dizi
         //user tablosu gibi
@@ -79,16 +82,41 @@
         string userID = "", userPass = "";
 
         Console.WriteLine("kullanıcı adını giriniz: ");
-        userID = Console.ReadLine();
+        userID = Console.ReadLine().Trim();
 
         Console.WriteLine("kullanıcı şifresini giriniz: ");
-        userPass= Console.ReadLine();
+        userPass= Console.ReadLine().Trim();
 
-    
+        return true;
+    }
 
+    private static bool userControl(string[,] prmUsers,string prmUser, string prmPass)
+    {
+        bool found= false; //kullanıcının bulunup bulunmadığını belirten bir değişken
+        // iç içe for döngüleri yardımı ile tüm dizi öğelerini dolaşalım.
 
-       
+        for (int satir = 0; satir < prmUsers.GetLength(0); satir++)
+        {
+            for (int sutun = 0; sutun< prmUsers.GetLength(1); sutun++)
+            {
+                if (prmUsers[satir,sutun]==prmUser) //eşleşen kullanıcı mı
+                {
+                    if (prmUsers[satir+1,sutun]==prmPass)//eşleşen şifre mi
+                    {
+                        userAuthority = prmUsers[satir + 2, sutun];
+                        userStatus = prmUsers[satir+3, sutun];
 
+                        found = true; //kullanıcı bulundu.
+                        break;
+                    }
+                }
+            }
+
+            if (found)// kayıt bulunmuşsa
+            {
+
+            }
+        }
         return true;
     }
 }
