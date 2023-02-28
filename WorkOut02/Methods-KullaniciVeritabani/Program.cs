@@ -1,5 +1,15 @@
 ﻿internal class Program
 {
+
+    //datUsers
+    public static string[,] datUsers = new string[,]
+    {
+        {"K1", "K2", "K3"},//kullanıcılar
+        {"P1", "P2", "P3"}, //şifreler
+        {"A","K","K" }, //kullanıcı tipi A: Admin K: kullanıcı
+        {"+","+","+"}//kullanıcının durumu (ACTIVE + / PASSIVE -)
+    };
+
     private static void Main(string[] args)
     { //kullanıcı adı, şifresi, yetkisi, aktifliğini içeren bir dizi
         //user tablosu gibi
@@ -32,6 +42,8 @@
 
     private static bool MainMenu()
     {
+        bool showLogin = true;
+
         Console.Clear();
         Console.WriteLine("----- Ana Menu -----");
         Console.WriteLine("1. Sistem Giriş");
@@ -41,7 +53,10 @@
         switch (Console.ReadLine())
         {
             case "1":
-                LoginMenu();
+                while(showLogin)
+                {
+                    showLogin = Login();
+                }
                 return true;
 
             case "2":
@@ -53,13 +68,26 @@
         }
     }
 
-    private static bool LoginMenu()
+    private static bool Login()
     {
+        //Console.WriteLine("kullanıcı adını giriniz: ");
+        //string k1=Console.ReadLine();
+
+        //Console.WriteLine("kullanıcı şifresini giriniz: ");
+        //int p1 = Convert.ToInt32(Console.ReadLine());
+
+        string userID = "", userPass = "";
+
         Console.WriteLine("kullanıcı adını giriniz: ");
-        string k1=Console.ReadLine();
+        userID = Console.ReadLine();
 
         Console.WriteLine("kullanıcı şifresini giriniz: ");
-        int p1 = Convert.ToInt32(Console.ReadLine());
+        userPass= Console.ReadLine();
+
+    
+
+
+       
 
         return true;
     }
