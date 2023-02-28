@@ -1,0 +1,15 @@
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\bin\Debug\net6.0\Methods-KullaniciVeritabani.exe
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\bin\Debug\net6.0\Methods-KullaniciVeritabani.deps.json
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\bin\Debug\net6.0\Methods-KullaniciVeritabani.runtimeconfig.json
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\bin\Debug\net6.0\Methods-KullaniciVeritabani.dll
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\bin\Debug\net6.0\Methods-KullaniciVeritabani.pdb
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\obj\Debug\net6.0\Methods-KullaniciVeritabani.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\obj\Debug\net6.0\Methods-KullaniciVeritabani.GeneratedMSBuildEditorConfig.editorconfig
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\obj\Debug\net6.0\Methods-KullaniciVeritabani.AssemblyInfoInputs.cache
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\obj\Debug\net6.0\Methods-KullaniciVeritabani.AssemblyInfo.cs
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\obj\Debug\net6.0\Methods-KullaniciVeritabani.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\obj\Debug\net6.0\Methods-KullaniciVeritabani.dll
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\obj\Debug\net6.0\refint\Methods-KullaniciVeritabani.dll
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\obj\Debug\net6.0\Methods-KullaniciVeritabani.pdb
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\obj\Debug\net6.0\Methods-KullaniciVeritabani.genruntimeconfig.cache
+C:\UCC08\Projects\CSharp101\WorkOut02\Methods-KullaniciVeritabani\obj\Debug\net6.0\ref\Methods-KullaniciVeritabani.dll

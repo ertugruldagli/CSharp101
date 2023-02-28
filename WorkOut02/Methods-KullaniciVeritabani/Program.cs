@@ -18,7 +18,14 @@
         // 6. eğer varsa kullanıcnın diğer bilgileri (yetki ve aktiflik) öğrenilecek buna göre  yetki durumuna bağlı olarak farklı ekranlar kullanıcının karşısına gelecek.Admin paneli normal kullanıcı ise yapacağı işlemler listesi gibi
         // 7. yapılan işlemler datLog isimli bir  diziye işlenecek... İstenildiğinde admin kullanıcı tarafından listelenecek. Bu seçenek adminin kendi panelinde bir seçenek olarak bulunacak.
 
+        bool showMenu = true;
 
+        while (showMenu)
+        {
+            showMenu = MainMenu();
+        }
+
+        Console.WriteLine("çıkış çiçin bir tuşa baısınız...!");
         Console.ReadKey();
 
     }
@@ -34,15 +41,30 @@
         switch (Console.ReadLine())
         {
             case "1":
-                //Login ekranı Bölümü
+                LoginMenu();
                 return true;
-                
+
             case "2":
                 //Porgramdan çıkış bölümü
-                break;
+                return false;
             default:
-                break;
+                return true;
+
         }
+    }
+
+    private static bool LoginMenu()
+    {
+        Console.WriteLine("kullanıcı adını giriniz: ");
+        string k1=Console.ReadLine();
+
+        Console.WriteLine("kullanıcı şifresini giriniz: ");
+        int p1 = Convert.ToInt32(Console.ReadLine());
+
         return true;
     }
 }
+      
+    
+
+
