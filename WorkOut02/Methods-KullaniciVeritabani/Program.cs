@@ -17,6 +17,32 @@
         // 5. kontrol  işlemiyle (datUser) kullanıcının var olup olmadığını kontrol edilecek yoksa, kullanıcı yok mesajı verilecek tekrar login ekranına dönülecek
         // 6. eğer varsa kullanıcnın diğer bilgileri (yetki ve aktiflik) öğrenilecek buna göre  yetki durumuna bağlı olarak farklı ekranlar kullanıcının karşısına gelecek.Admin paneli normal kullanıcı ise yapacağı işlemler listesi gibi
         // 7. yapılan işlemler datLog isimli bir  diziye işlenecek... İstenildiğinde admin kullanıcı tarafından listelenecek. Bu seçenek adminin kendi panelinde bir seçenek olarak bulunacak.
-        
+
+
+        Console.ReadKey();
+
+    }
+
+    private static bool MainMenu()
+    {
+        Console.Clear();
+        Console.WriteLine("----- Ana Menu -----");
+        Console.WriteLine("1. Sistem Giriş");
+        Console.WriteLine("2. Programdan Çıkış");
+        Console.Write("\nSeçeneğiniz: ");
+
+        switch (Console.ReadLine())
+        {
+            case "1":
+                //Login ekranı Bölümü
+                return true;
+                
+            case "2":
+                //Porgramdan çıkış bölümü
+                break;
+            default:
+                break;
+        }
+        return true;
     }
 }
