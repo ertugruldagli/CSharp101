@@ -52,7 +52,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.WriteLine("Cinsiyet belirtiniz; K / E....: ");
-        string gender = Console.ReadLine().ToLower(); ;
+        string gender = Console.ReadLine().ToLower(); 
 
         Console.WriteLine("calisma prim günü  sayisini giriniz: ");
         int prim = Convert.ToInt32(Console.ReadLine());
