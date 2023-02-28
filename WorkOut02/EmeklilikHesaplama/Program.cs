@@ -7,7 +7,7 @@ internal class Program
     {
         int Gun, kalanYil, kalanAy, kalanGun, yilHesapla;
        
-        if (gender == "K" || gender  == "k")
+        if (gender == "K")
         {
             if (prim >= 7200)
             {
@@ -27,7 +27,7 @@ internal class Program
         }
 
 
-        else if (gender == "E" || gender == "e")
+        else if (gender == "E")
         {
             if (prim >= 9000)
             {
@@ -52,7 +52,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.WriteLine("Cinsiyet belirtiniz; K / E....: ");
-        string gender = Console.ReadLine();
+        string gender = Console.ReadLine().ToLower(); ;
 
         Console.WriteLine("calisma prim günü  sayisini giriniz: ");
         int prim = Convert.ToInt32(Console.ReadLine());
