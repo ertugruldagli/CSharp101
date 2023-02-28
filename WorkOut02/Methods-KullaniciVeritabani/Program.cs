@@ -13,6 +13,10 @@
     public static string userAuthority; // kullanıcı türü tutacak
     public static string userStatus; // kullanıcı aktif ve pasif olduğunu belirtir.
 
+    public static string[] datlog = new string[100]; //LOG DİZİSİ
+    public static int indexLog = 0;
+    
+
     private static void Main(string[] args)
     { //kullanıcı adı, şifresi, yetkisi, aktifliğini içeren bir dizi
         //user tablosu gibi
@@ -84,7 +88,6 @@
         Console.Clear();
 
         Console.WriteLine("---Login--- ");
-
         Console.WriteLine("kullanıcı adını giriniz: ");
         userID = Console.ReadLine().Trim();
 
@@ -102,6 +105,9 @@
             Console.WriteLine($"Kullanıcı Durumu {userStatus}\n\n");
 
             Console.WriteLine("Devam etmek için bir tuşa basınız....");
+
+            datlog[indexLog] = $"{userID} isimli kullanıcı sisteme giriş yapmıştır...";
+            indexLog++;
             
         }
         else
@@ -109,7 +115,6 @@
             Console.WriteLine("Malesef kullanıcı yok...");
         }
         Console.ReadKey();
-
 
 
         return true;
@@ -144,6 +149,10 @@
         }
         return found;
     }
+
+
+
+
 }
       
     
