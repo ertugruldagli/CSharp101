@@ -87,6 +87,25 @@
         Console.WriteLine("kullanıcı şifresini giriniz: ");
         userPass= Console.ReadLine().Trim();
 
+
+        if (userControl(datUsers, userID, userPass))
+        {
+            //Eğer kullanıcı bulunduysa...
+            Console.WriteLine("HEyyyooo...Kullanıcıyı bulduk...\n\n");
+
+            Console.WriteLine($"Kullanıcı yetki seviyesi{userAuthority}\n\n");
+
+            Console.WriteLine($"Kullanıcı Durumu {userStatus}\n\n");
+
+            Console.WriteLine("Devam etmek için bir tuşa basınız....");
+        }
+        else
+        {
+            Console.WriteLine("Malesef kullanıcı yok...");
+        }
+
+        
+
         return true;
     }
 
