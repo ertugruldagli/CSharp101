@@ -42,7 +42,7 @@
             showMenu = MainMenu();
         }
 
-        Console.WriteLine("çıkış çiçin bir tuşa baısınız...!");
+        Console.WriteLine("çıkış için bir tuşa baısınız...!");
         Console.ReadKey();
 
     }
@@ -77,11 +77,6 @@
 
     private static bool Login()
     {
-        //Console.WriteLine("kullanıcı adını giriniz: ");
-        //string k1=Console.ReadLine();
-
-        //Console.WriteLine("kullanıcı şifresini giriniz: ");
-        //int p1 = Convert.ToInt32(Console.ReadLine());
 
         string userID = "", userPass = "";
 
@@ -108,14 +103,17 @@
 
             datlog[indexLog] = $"{userID} isimli kullanıcı sisteme giriş yapmıştır...";
             indexLog++;
-            
+
+            for (int i = 0; i < indexLog; i++)
+            {
+                Console.WriteLine("Log kaydı: "+ datlog[i]);
+            }
+                   
         }
         else
         {
             Console.WriteLine("Malesef kullanıcı yok...");
         }
-        Console.ReadKey();
-
 
         return true;
     }
