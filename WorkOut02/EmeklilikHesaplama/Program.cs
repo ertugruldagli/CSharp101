@@ -26,7 +26,6 @@ internal class Program
             }
         }
 
-
         else if (gender == "E")
         {
             if (prim >= 9000)
@@ -58,5 +57,7 @@ internal class Program
         int prim = Convert.ToInt32(Console.ReadLine());
 
         Emekli(gender,prim);
+
+        Console.ReadKey();
     }
 }
