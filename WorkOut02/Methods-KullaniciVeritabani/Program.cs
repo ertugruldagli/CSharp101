@@ -114,7 +114,7 @@
 
             if (found)// kayıt bulunmuşsa
             {
-
+                break;
             }
         }
         return true;
