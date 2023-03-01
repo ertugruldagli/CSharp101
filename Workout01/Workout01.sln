@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wrkout00", "..\..\.NetCore-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoDimArray", "TwoDimArray\TwoDimArray.csproj", "{27B00447-177E-4EA5-8E77-14E1BAA1AF23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordCreate", "PasswordCreate\PasswordCreate.csproj", "{C77CC387-D095-4B94-B15C-9082A8DA6821}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{27B00447-177E-4EA5-8E77-14E1BAA1AF23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27B00447-177E-4EA5-8E77-14E1BAA1AF23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27B00447-177E-4EA5-8E77-14E1BAA1AF23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C77CC387-D095-4B94-B15C-9082A8DA6821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C77CC387-D095-4B94-B15C-9082A8DA6821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C77CC387-D095-4B94-B15C-9082A8DA6821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C77CC387-D095-4B94-B15C-9082A8DA6821}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
