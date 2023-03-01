@@ -1,0 +1,15 @@
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\bin\Debug\net6.0\TwoDimArray.exe
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\bin\Debug\net6.0\TwoDimArray.deps.json
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\bin\Debug\net6.0\TwoDimArray.runtimeconfig.json
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\bin\Debug\net6.0\TwoDimArray.dll
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\bin\Debug\net6.0\TwoDimArray.pdb
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\obj\Debug\net6.0\TwoDimArray.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\obj\Debug\net6.0\TwoDimArray.GeneratedMSBuildEditorConfig.editorconfig
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\obj\Debug\net6.0\TwoDimArray.AssemblyInfoInputs.cache
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\obj\Debug\net6.0\TwoDimArray.AssemblyInfo.cs
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\obj\Debug\net6.0\TwoDimArray.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\obj\Debug\net6.0\TwoDimArray.dll
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\obj\Debug\net6.0\refint\TwoDimArray.dll
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\obj\Debug\net6.0\TwoDimArray.pdb
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\obj\Debug\net6.0\TwoDimArray.genruntimeconfig.cache
+C:\UCC08\Projects\CSharp101\Workout01\TwoDimArray\obj\Debug\net6.0\ref\TwoDimArray.dll
