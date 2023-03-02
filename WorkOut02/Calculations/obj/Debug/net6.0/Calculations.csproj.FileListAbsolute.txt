@@ -1,0 +1,15 @@
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\bin\Debug\net6.0\Calculations.exe
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\bin\Debug\net6.0\Calculations.deps.json
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\bin\Debug\net6.0\Calculations.runtimeconfig.json
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\bin\Debug\net6.0\Calculations.dll
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\bin\Debug\net6.0\Calculations.pdb
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\obj\Debug\net6.0\Calculations.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\obj\Debug\net6.0\Calculations.GeneratedMSBuildEditorConfig.editorconfig
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\obj\Debug\net6.0\Calculations.AssemblyInfoInputs.cache
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\obj\Debug\net6.0\Calculations.AssemblyInfo.cs
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\obj\Debug\net6.0\Calculations.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\obj\Debug\net6.0\Calculations.dll
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\obj\Debug\net6.0\refint\Calculations.dll
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\obj\Debug\net6.0\Calculations.pdb
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\obj\Debug\net6.0\Calculations.genruntimeconfig.cache
+C:\UCC08\Projects\CSharp101\WorkOut02\Calculations\obj\Debug\net6.0\ref\Calculations.dll
