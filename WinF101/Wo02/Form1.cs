@@ -12,7 +12,7 @@ namespace Wo02
 {
     public partial class frmTwoCBoxes : Form
     {
-        public void DegerAtama()  // comboBox içerisine elle manuel girmek yerine method oluşturularak oto girildi.
+        public void DegerAtama()  // comboBox içerisine  manuel girmek yerine method oluşturularak otomatik olarak girildi.
         {
             for (int i = 0; i <= 20; i++)
             {
