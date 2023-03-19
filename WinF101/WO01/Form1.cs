@@ -24,16 +24,16 @@ namespace WO01
 
         private void btnYazdir_Click(object sender, EventArgs e)
         {
-            TersYazma();
+            TersYazma(); //Method oluşturarak yapıldı.
         }
 
-        public void TersYazma()
+        public void TersYazma() //işlem yapılam yer
         {
-             string ters=tBoxString.Text;
+             string ters=tBoxString.Text; //string texten alındı
 
-            for (int i=ters.Length-1;i>=0;i--)
+            for (int i=ters.Length-1;i>=0;i--) //string uzunlupuna göre tersten döngüye girildi
             {
-                tBoxOutput.Text += ters[i];    
+                tBoxOutput.Text += ters[i];    //ters alınan stringin herbir karakterini  output textine yazdırıldı
             }
 
 
