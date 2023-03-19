@@ -27,7 +27,7 @@ namespace Wo02
             int t = Convert.ToInt32(cBoxConrol.Text);
             
 
-            for (int i = t; i < ; i++)
+            for (int i = t; i < 0; i++)
             {
                
                 cBoxListele.Items.Add(i);

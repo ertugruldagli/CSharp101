@@ -1,0 +1,11 @@
+C:\UCC08\Projects\CSharp101\WinF101\WO03\bin\Debug\WO03.exe.config
+C:\UCC08\Projects\CSharp101\WinF101\WO03\bin\Debug\WO03.exe
+C:\UCC08\Projects\CSharp101\WinF101\WO03\bin\Debug\WO03.pdb
+C:\UCC08\Projects\CSharp101\WinF101\WO03\obj\Debug\WO03.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\WinF101\WO03\obj\Debug\WO03.csproj.SuggestedBindingRedirects.cache
+C:\UCC08\Projects\CSharp101\WinF101\WO03\obj\Debug\WO03.frmOtotpark.resources
+C:\UCC08\Projects\CSharp101\WinF101\WO03\obj\Debug\WO03.Properties.Resources.resources
+C:\UCC08\Projects\CSharp101\WinF101\WO03\obj\Debug\WO03.csproj.GenerateResource.cache
+C:\UCC08\Projects\CSharp101\WinF101\WO03\obj\Debug\WO03.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\WinF101\WO03\obj\Debug\WO03.exe
+C:\UCC08\Projects\CSharp101\WinF101\WO03\obj\Debug\WO03.pdb
