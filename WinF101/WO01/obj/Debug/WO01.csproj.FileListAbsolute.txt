@@ -1,0 +1,11 @@
+C:\UCC08\Projects\CSharp101\WinF101\WO01\bin\Debug\WO01.exe.config
+C:\UCC08\Projects\CSharp101\WinF101\WO01\bin\Debug\WO01.exe
+C:\UCC08\Projects\CSharp101\WinF101\WO01\bin\Debug\WO01.pdb
+C:\UCC08\Projects\CSharp101\WinF101\WO01\obj\Debug\WO01.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\WinF101\WO01\obj\Debug\WO01.csproj.SuggestedBindingRedirects.cache
+C:\UCC08\Projects\CSharp101\WinF101\WO01\obj\Debug\WO01.frmTersString.resources
+C:\UCC08\Projects\CSharp101\WinF101\WO01\obj\Debug\WO01.Properties.Resources.resources
+C:\UCC08\Projects\CSharp101\WinF101\WO01\obj\Debug\WO01.csproj.GenerateResource.cache
+C:\UCC08\Projects\CSharp101\WinF101\WO01\obj\Debug\WO01.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\WinF101\WO01\obj\Debug\WO01.exe
+C:\UCC08\Projects\CSharp101\WinF101\WO01\obj\Debug\WO01.pdb
