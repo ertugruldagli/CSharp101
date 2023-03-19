@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnExit = new System.Windows.Forms.Button();
-            this.cBoxİslem = new System.Windows.Forms.ComboBox();
+            this.cBoxIslem = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tBoxBakiye = new System.Windows.Forms.TextBox();
@@ -56,18 +56,18 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // cBoxİslem
+            // cBoxIslem
             // 
-            this.cBoxİslem.FormattingEnabled = true;
-            this.cBoxİslem.Items.AddRange(new object[] {
+            this.cBoxIslem.FormattingEnabled = true;
+            this.cBoxIslem.Items.AddRange(new object[] {
             "Para Çekme",
             "Para Yatırma",
             "Bakiye Sorgulama",
             "Kart İade"});
-            this.cBoxİslem.Location = new System.Drawing.Point(178, 154);
-            this.cBoxİslem.Name = "cBoxİslem";
-            this.cBoxİslem.Size = new System.Drawing.Size(121, 21);
-            this.cBoxİslem.TabIndex = 2;
+            this.cBoxIslem.Location = new System.Drawing.Point(178, 154);
+            this.cBoxIslem.Name = "cBoxIslem";
+            this.cBoxIslem.Size = new System.Drawing.Size(121, 21);
+            this.cBoxIslem.TabIndex = 2;
             // 
             // label1
             // 
@@ -109,6 +109,7 @@
             this.btnOkay.TabIndex = 6;
             this.btnOkay.Text = "Ok";
             this.btnOkay.UseVisualStyleBackColor = false;
+            this.btnOkay.Click += new System.EventHandler(this.btnOkay_Click);
             // 
             // panel1
             // 
@@ -160,7 +161,7 @@
             this.Controls.Add(this.tBoxBakiye);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cBoxİslem);
+            this.Controls.Add(this.cBoxIslem);
             this.Controls.Add(this.btnExit);
             this.Name = "frmAtm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -176,7 +177,7 @@
 
         #endregion
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.ComboBox cBoxİslem;
+        private System.Windows.Forms.ComboBox cBoxIslem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tBoxBakiye;
