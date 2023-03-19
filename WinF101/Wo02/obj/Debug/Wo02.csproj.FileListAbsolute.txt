@@ -1,0 +1,11 @@
+C:\UCC08\Projects\CSharp101\WinF101\Wo02\bin\Debug\Wo02.exe.config
+C:\UCC08\Projects\CSharp101\WinF101\Wo02\bin\Debug\Wo02.exe
+C:\UCC08\Projects\CSharp101\WinF101\Wo02\bin\Debug\Wo02.pdb
+C:\UCC08\Projects\CSharp101\WinF101\Wo02\obj\Debug\Wo02.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\WinF101\Wo02\obj\Debug\Wo02.csproj.SuggestedBindingRedirects.cache
+C:\UCC08\Projects\CSharp101\WinF101\Wo02\obj\Debug\Wo02.frmTwoCBoxes.resources
+C:\UCC08\Projects\CSharp101\WinF101\Wo02\obj\Debug\Wo02.Properties.Resources.resources
+C:\UCC08\Projects\CSharp101\WinF101\Wo02\obj\Debug\Wo02.csproj.GenerateResource.cache
+C:\UCC08\Projects\CSharp101\WinF101\Wo02\obj\Debug\Wo02.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\WinF101\Wo02\obj\Debug\Wo02.exe
+C:\UCC08\Projects\CSharp101\WinF101\Wo02\obj\Debug\Wo02.pdb
