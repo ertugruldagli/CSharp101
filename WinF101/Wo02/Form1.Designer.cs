@@ -53,32 +53,10 @@
             // cBoxConrol
             // 
             this.cBoxConrol.FormattingEnabled = true;
-            this.cBoxConrol.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
             this.cBoxConrol.Location = new System.Drawing.Point(78, 84);
             this.cBoxConrol.Name = "cBoxConrol";
             this.cBoxConrol.Size = new System.Drawing.Size(111, 21);
             this.cBoxConrol.TabIndex = 1;
-            this.cBoxConrol.SelectedIndexChanged += new System.EventHandler(this.btnListele_Click);
             // 
             // cBoxListele
             // 

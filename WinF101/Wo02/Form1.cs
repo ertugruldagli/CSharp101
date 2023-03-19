@@ -12,9 +12,20 @@ namespace Wo02
 {
     public partial class frmTwoCBoxes : Form
     {
+        public void DegerAtama()  // comboBox içerisine elle manuel girmek yerine method oluşturularak oto girildi.
+        {
+            for (int i = 0; i <= 20; i++)
+            {
+                cBoxConrol.Items.Add(i);
+            }
+        }
+
         public frmTwoCBoxes()
         {
+            
             InitializeComponent();
+
+            DegerAtama();// method form içerisinden çağırıldı.
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -24,21 +35,21 @@ namespace Wo02
 
         private void btnListele_Click(object sender, EventArgs e)
         {
+            cBoxListele.Items.Clear(); //butona bastıktan sonra temizlendi.
+
             int t = Convert.ToInt32(cBoxConrol.Text);
             
 
-            for (int i = t; i < 0; i++)
+            for (int i = t+1; i <= t+10; i++)  //seçilen sayının bir fazlasından alarak seçilen değerin 10 fazlasına kadar getirdi.
             {
                
-                cBoxListele.Items.Add(i);
+                cBoxListele.Items.Add(i); // seçilen değerleri yeni cboxa yazdırdı.
             }
-            
-
-
-
-
 
 
         }
+            
+
+     
     }
 }
