@@ -39,7 +39,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(236, 279);
+            this.button1.Location = new System.Drawing.Point(235, 262);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(45, 25);
             this.button1.TabIndex = 0;
@@ -96,7 +96,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(293, 316);
+            this.ClientSize = new System.Drawing.Size(292, 299);
             this.Controls.Add(this.btnYazdir);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
