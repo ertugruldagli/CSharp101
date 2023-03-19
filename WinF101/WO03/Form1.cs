@@ -12,50 +12,95 @@ namespace WO03
 {
     public partial class frmOtotpark : Form
     {
+        double fiyat;
+        double yFiyat;
+        int saat;
+
+
         public frmOtotpark()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+        #region Methodlar
+        public void OtoHesapla()
         {
+            
+                fiyat = 10;
+                saat = Convert.ToInt32(tBoxSaat.Text);
+                yFiyat = (fiyat + (fiyat * 0.20)) * (saat);
+
+                if (saat == 0)
+                {
+                    yFiyat = fiyat;
+                }
 
         }
-
-        private void label4_Click(object sender, EventArgs e)
+        public void BusHesapla()
         {
 
-        }
+                fiyat = 15;
+                saat = Convert.ToInt32(tBoxSaat.Text);
+                yFiyat = (fiyat + (fiyat * 0.25)) * (saat);
 
+                if (saat == 0)
+                {
+                    yFiyat = fiyat;
+                }
+        }
+        public void VanHesapla()
+        {
+
+           
+                fiyat = 20;
+                saat = Convert.ToInt32(tBoxSaat.Text);
+                yFiyat = (fiyat + (fiyat * 0.30)) * (saat);
+
+                if (saat == 0)
+                {
+                    yFiyat = fiyat;
+                }
+
+        }
+        #endregion
+
+
+        #region İslemler
         private void btnHesapla_Click(object sender, EventArgs e)
         {
-            int fiyat=0;
-            string select=cBoxType.Text;
-            string saat=tBoxSaat.Text;
+
+            string select = cBoxType.Text;
+          
 
             switch (select)
             {
                 case "Otomobil":
-                    fiyat+= fiyat+10;
-                    lblMessage.Text= $"Odenecek tutar: {fiyat.ToString()}";
+                    OtoHesapla();
+                    lblMessage.Text = $"Odenecek tutar: {yFiyat.ToString()} ₺";
                     break;
 
                 case "Minibus":
-                    fiyat += 15;
-                    lblMessage.Text = $"Odenecek tutar: {fiyat.ToString()}";
+                    BusHesapla();
+                    lblMessage.Text = $"Odenecek tutar: {yFiyat.ToString()} ₺";
                     break;
 
                 case "Ticari":
-                    fiyat += 20;
-                    lblMessage.Text = $"Odenecek tutar: {fiyat.ToString()}";
+                    VanHesapla();
+                    lblMessage.Text = $"Odenecek tutar: {yFiyat.ToString()} ₺";
                     break;
             }
 
         }
+        #endregion
 
+
+        #region Exit Butonu
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        #endregion
+
     }
 }

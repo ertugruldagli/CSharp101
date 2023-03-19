@@ -72,7 +72,7 @@
             this.label1.Size = new System.Drawing.Size(94, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Saat Giriniz: ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // cBoxType
             // 
@@ -141,7 +141,7 @@
             this.label4.Size = new System.Drawing.Size(181, 25);
             this.label4.TabIndex = 9;
             this.label4.Text = "ÖDEME SAYFASI";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+    
             // 
             // lblMessage
             // 
