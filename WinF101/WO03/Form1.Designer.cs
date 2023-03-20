@@ -35,9 +35,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.btnHesapla = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblMessage = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,10 +72,10 @@
             this.label1.Size = new System.Drawing.Size(94, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Saat Giriniz: ";
-            
             // 
             // cBoxType
             // 
+            this.cBoxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBoxType.FormattingEnabled = true;
             this.cBoxType.Items.AddRange(new object[] {
             "Otomobil",
@@ -113,10 +113,18 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.lblMessage);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(15, 227);
+            this.panel1.Location = new System.Drawing.Point(25, 228);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 185);
             this.panel1.TabIndex = 7;
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(98, 83);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(0, 13);
+            this.lblMessage.TabIndex = 10;
             // 
             // btnHesapla
             // 
@@ -141,15 +149,6 @@
             this.label4.Size = new System.Drawing.Size(181, 25);
             this.label4.TabIndex = 9;
             this.label4.Text = "ÖDEME SAYFASI";
-    
-            // 
-            // lblMessage
-            // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(98, 83);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(0, 13);
-            this.lblMessage.TabIndex = 10;
             // 
             // frmOtotpark
             // 
@@ -168,6 +167,7 @@
             this.Name = "frmOtotpark";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Otopark";
+            this.Load += new System.EventHandler(this.frmOtotpark_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

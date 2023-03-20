@@ -15,11 +15,14 @@ namespace WO03
         double fiyat;
         double yFiyat;
         int saat;
+        
 
 
         public frmOtotpark()
         {
             InitializeComponent();
+
+            //cBoxType.SelectedIndex = 0;
         }
 
 
@@ -102,5 +105,9 @@ namespace WO03
         }
         #endregion
 
+        private void frmOtotpark_Load(object sender, EventArgs e)
+        {
+            cBoxType.SelectedIndex= 0;
+        }
     }
 }
