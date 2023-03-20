@@ -15,6 +15,10 @@ namespace WO03
         double fiyat;
         double yFiyat;
         int saat;
+
+        const double oOdeme = 0.20;
+        const double mOdeme = 0.25;
+        const double tOdeme = 0.30;
         
 
 
@@ -32,7 +36,7 @@ namespace WO03
             
                 fiyat = 10;
                 saat = Convert.ToInt32(tBoxSaat.Text);
-                yFiyat = (fiyat + (fiyat * 0.20)) * (saat);
+                yFiyat = (fiyat + (fiyat * oOdeme)) * (saat);
 
                 if (saat == 0)
                 {
@@ -45,7 +49,7 @@ namespace WO03
 
                 fiyat = 15;
                 saat = Convert.ToInt32(tBoxSaat.Text);
-                yFiyat = (fiyat + (fiyat * 0.25)) * (saat);
+                yFiyat = (fiyat + (fiyat * oOdeme)) * (saat);
 
                 if (saat == 0)
                 {
@@ -58,7 +62,7 @@ namespace WO03
            
                 fiyat = 20;
                 saat = Convert.ToInt32(tBoxSaat.Text);
-                yFiyat = (fiyat + (fiyat * 0.30)) * (saat);
+                yFiyat = (fiyat + (fiyat * tOdeme)) * (saat);
 
                 if (saat == 0)
                 {
@@ -74,7 +78,7 @@ namespace WO03
         {
 
             string select = cBoxType.Text;
-          
+      
 
             switch (select)
             {
