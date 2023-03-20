@@ -1,0 +1,2 @@
+﻿Önceki "Console" çalışmalarından 
+olan "ATM" den para çekme/yatırma uygulamasını Windows Form olacak şekilde düzenleyiniz.

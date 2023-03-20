@@ -25,7 +25,6 @@ namespace Wo02
 
         public frmTwoCBoxes()
         {
-            
             InitializeComponent();
 
             DegerAtama();// method form içerisinden çağırıldı.

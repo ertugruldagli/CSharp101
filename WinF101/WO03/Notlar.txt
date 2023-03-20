@@ -1,0 +1,5 @@
+﻿ Bir otoparka park eden araçların "Otopark Saat Ücretleri" şöyledir : Arabalar için 10 lira,
+ minibüsler için 15 lira, ticari araçlar için 20 TL'dir. Her 1 saatten sonra, arabalar için  %20,
+ minibüsler için %25 ve ticari araçlar için %30 daha fazla ödeme yapılmaktadır Buna göre bir ComboBox'a
+ araç tipi ve bir TextBox'a da saat bilgisi girildiktensonra ödenecek otopark ücretini hesaplayan ve bir 
+ mesaj olarak gösteren programın kodlarını yazınız

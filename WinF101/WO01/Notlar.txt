@@ -1,0 +1,2 @@
+﻿Kullanıcı tarafından bir textbox kontrolune girilen bir metnin 
+tersden yazdırılmasını gerçekleştiren uygulamayı yazınız?
