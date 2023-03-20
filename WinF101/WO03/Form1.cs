@@ -12,17 +12,14 @@ namespace WO03
 {
     public partial class frmOtotpark : Form
     {
-        double fiyat;
-        double yFiyat;
-        int saat;
+      
+        double yFiyat=0;
+        int saat=0;
 
-        const double oOdeme = 0.20;
-        const double mOdeme = 0.25;
-        const double tOdeme = 0.30;
 
-        //const double oFiyat = 10;
-        //const double mFiyat = 15;
-        //const double tFiyat = 20;
+        const double oFiyat = 10;
+        const double mFiyat = 15;
+        const double tFiyat = 20;
 
 
 
@@ -33,79 +30,52 @@ namespace WO03
             //cBoxType.SelectedIndex = 0;
         }
 
-        public void Vehicle(string oto, string bus, string van)
-        {
-            //oto = oFiyat.ToString();
-
-            fiyat = 10;
-            saat = Convert.ToInt32(tBoxSaat.Text);
-            yFiyat = (fiyat + (fiyat * oOdeme)) * (saat);
-
-            if (saat == 0)
-            {
-                yFiyat = fiyat;
-            }
-        }
-
-
-
-        #region Methodlar
-        public void OtoHesapla()
-        {
-            
-             
-
-        }
-        public void BusHesapla()
-        {
-
-                fiyat = 15;
-                saat = Convert.ToInt32(tBoxSaat.Text);
-                yFiyat = (fiyat + (fiyat * oOdeme)) * (saat);
-
-                if (saat == 0)
-                {
-                    yFiyat = fiyat;
-                }
-        }
-        public void VanHesapla()
-        {
-
-           
-                fiyat = 20;
-                saat = Convert.ToInt32(tBoxSaat.Text);
-                yFiyat = (fiyat + (fiyat * tOdeme)) * (saat);
-
-                if (saat == 0)
-                {
-                    yFiyat = fiyat;
-                }
-
-        }
-        #endregion
-
 
         #region İslemler
         private void btnHesapla_Click(object sender, EventArgs e)
         {
 
             string select = cBoxType.Text;
-      
+            saat=Convert.ToInt32(tBoxSaat.Text);
 
             switch (select)
             {
                 case "Otomobil":
-                    OtoHesapla();
+                    if (saat == 1)
+                    {
+                        yFiyat = oFiyat;
+                    }
+                    else
+                    {
+                        yFiyat = saat * (oFiyat * 1.2);
+                    }
+                   
                     lblMessage.Text = $"Odenecek tutar: {yFiyat.ToString()} ₺";
                     break;
 
                 case "Minibus":
-                    BusHesapla();
+                    if (saat == 1)
+                    {
+                        yFiyat = mFiyat;
+                    }
+                    else
+                    {
+                        yFiyat = saat * (mFiyat * 1.25);
+                    }
+                    
                     lblMessage.Text = $"Odenecek tutar: {yFiyat.ToString()} ₺";
                     break;
 
                 case "Ticari":
-                    VanHesapla();
+                    if (saat==1)
+                    {
+                        yFiyat = tFiyat;
+                    }
+                    else
+                    {
+                        yFiyat = saat * (tFiyat * 1.3);
+                    }
+                    
                     lblMessage.Text = $"Odenecek tutar: {yFiyat.ToString()} ₺";
                     break;
             }
