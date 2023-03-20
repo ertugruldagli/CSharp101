@@ -19,7 +19,11 @@ namespace WO03
         const double oOdeme = 0.20;
         const double mOdeme = 0.25;
         const double tOdeme = 0.30;
-        
+
+        //const double oFiyat = 10;
+        //const double mFiyat = 15;
+        //const double tFiyat = 20;
+
 
 
         public frmOtotpark()
@@ -29,19 +33,27 @@ namespace WO03
             //cBoxType.SelectedIndex = 0;
         }
 
+        public void Vehicle(string oto, string bus, string van)
+        {
+            //oto = oFiyat.ToString();
+
+            fiyat = 10;
+            saat = Convert.ToInt32(tBoxSaat.Text);
+            yFiyat = (fiyat + (fiyat * oOdeme)) * (saat);
+
+            if (saat == 0)
+            {
+                yFiyat = fiyat;
+            }
+        }
+
+
 
         #region Methodlar
         public void OtoHesapla()
         {
             
-                fiyat = 10;
-                saat = Convert.ToInt32(tBoxSaat.Text);
-                yFiyat = (fiyat + (fiyat * oOdeme)) * (saat);
-
-                if (saat == 0)
-                {
-                    yFiyat = fiyat;
-                }
+             
 
         }
         public void BusHesapla()
