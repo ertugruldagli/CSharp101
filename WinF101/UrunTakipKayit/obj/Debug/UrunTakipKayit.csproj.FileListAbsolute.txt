@@ -1,0 +1,11 @@
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\bin\Debug\UrunTakipKayit.exe.config
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\bin\Debug\UrunTakipKayit.exe
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\bin\Debug\UrunTakipKayit.pdb
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.csproj.SuggestedBindingRedirects.cache
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.Properties.Resources.resources
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.csproj.GenerateResource.cache
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.exe
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.pdb
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmMain.resources
