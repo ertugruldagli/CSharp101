@@ -27,8 +27,10 @@ namespace UrunTakipKayit
         {
             conn.Open();
 
+            dgrwProduct.RowHeadersVisible = false; // baştaki boş kolonun gözükmesini kapatır.
+
             //Lsteleme
-            sqlQuery = "select ProductID, ProductName, UnitPrice, UnitsInStock, CategoryID from Products";
+            sqlQuery = "SELECT Products.ProductID, Products.ProductName,  Products.UnitPrice,Products.UnitsInStock, CategoryName, Categories.CategoryID FROM Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID";
 
             SqlCommand cmd = new SqlCommand(sqlQuery, conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -36,6 +38,7 @@ namespace UrunTakipKayit
             da.Fill(dt);
             dgrwProduct.DataSource = dt;
 
+            dgrwProduct.Columns["CategoryID"].Visible=false;// kullanıcılara gözükmez..
 
             //ComboBox verileri
             sqlQuery = "Select* From Categories";
@@ -70,7 +73,7 @@ namespace UrunTakipKayit
             tBoxProduct.Text = dgrwProduct.Rows[e.RowIndex].Cells[1].Value.ToString();
             tBoxPrice.Text = dgrwProduct.Rows[e.RowIndex].Cells[2].Value.ToString();
             nudStok.Value = int.Parse( dgrwProduct.Rows[e.RowIndex].Cells[3].Value.ToString());
-             cboxCategory.SelectedValue = dgrwProduct.Rows[e.RowIndex].Cells[4].Value.ToString();
+            cboxCategory.SelectedValue = dgrwProduct.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
