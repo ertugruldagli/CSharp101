@@ -1,0 +1,12 @@
+C:\UCC08\Projects\CSharp101\WinF101\AdoNetEx\bin\Debug\AdoNetEx.exe.config
+C:\UCC08\Projects\CSharp101\WinF101\AdoNetEx\bin\Debug\AdoNetEx.exe
+C:\UCC08\Projects\CSharp101\WinF101\AdoNetEx\bin\Debug\AdoNetEx.pdb
+C:\UCC08\Projects\CSharp101\WinF101\AdoNetEx\obj\Debug\AdoNetEx.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\WinF101\AdoNetEx\obj\Debug\AdoNetEx.csproj.SuggestedBindingRedirects.cache
+C:\UCC08\Projects\CSharp101\WinF101\AdoNetEx\obj\Debug\AdoNetEx.frmDataGrid.resources
+C:\UCC08\Projects\CSharp101\WinF101\AdoNetEx\obj\Debug\AdoNetEx.Properties.Resources.resources
+C:\UCC08\Projects\CSharp101\WinF101\AdoNetEx\obj\Debug\AdoNetEx.csproj.GenerateResource.cache
+C:\UCC08\Projects\CSharp101\WinF101\AdoNetEx\obj\Debug\AdoNetEx.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\WinF101\AdoNetEx\obj\Debug\AdoNetEx.exe
+C:\UCC08\Projects\CSharp101\WinF101\AdoNetEx\obj\Debug\AdoNetEx.pdb
+C:\UCC08\Projects\CSharp101\WinF101\AdoNetEx\obj\Debug\AdoNetEx.frmDataGridDetail.resources

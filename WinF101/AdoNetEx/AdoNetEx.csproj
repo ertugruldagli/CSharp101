@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{141414BF-AC52-4A9B-B759-F404251D9334}</ProjectGuid>
+    <ProjectGuid>{C79994F0-E27B-433D-B52E-4CB8EE8AE71A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>UrunTakipKayit</RootNamespace>
-    <AssemblyName>UrunTakipKayit</AssemblyName>
+    <RootNamespace>AdoNetEx</RootNamespace>
+    <AssemblyName>AdoNetEx</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,34 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmMain.cs">
+    <Compile Include="frmDataGridDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <Compile Include="frmDataGridDetail.Designer.cs">
+      <DependentUpon>frmDataGridDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProfuct.cs">
+    <Compile Include="frmDataGrid.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProfuct.Designer.cs">
-      <DependentUpon>frmProfuct.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmUrun.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUrun.Designer.cs">
-      <DependentUpon>frmUrun.cs</DependentUpon>
+    <Compile Include="frmDataGrid.Designer.cs">
+      <DependentUpon>frmDataGrid.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <EmbeddedResource Include="frmDataGridDetail.resx">
+      <DependentUpon>frmDataGridDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProfuct.resx">
-      <DependentUpon>frmProfuct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUrun.resx">
-      <DependentUpon>frmUrun.cs</DependentUpon>
+    <EmbeddedResource Include="frmDataGrid.resx">
+      <DependentUpon>frmDataGrid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

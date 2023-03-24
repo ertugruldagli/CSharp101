@@ -9,3 +9,5 @@ C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.cspr
 C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.exe
 C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.pdb
 C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmMain.resources
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmUrun.resources
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmProfuct.resources

@@ -34,6 +34,7 @@ namespace UrunTakipKayit
             adapter.Fill(dataTable); //fill: doldurma anlamına gelir
 
             dtw01.DataSource = dataTable;
+
         }
 
         private void btnOk_Click(object sender, EventArgs e)
@@ -89,6 +90,11 @@ namespace UrunTakipKayit
             adapter.Fill(dataTable); //fill: doldurma anlamına gelir
 
             dtw01.DataSource = dataTable;
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

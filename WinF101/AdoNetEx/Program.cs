@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UrunTakipKayit
+namespace AdoNetEx
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace UrunTakipKayit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmProfuct());
+            Application.Run(new frmDataGrid());
         }
     }
 }

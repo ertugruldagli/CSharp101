@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WO04", "WO04\WO04.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrunTakipKayit", "UrunTakipKayit\UrunTakipKayit.csproj", "{141414BF-AC52-4A9B-B759-F404251D9334}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetEx", "AdoNetEx\AdoNetEx.csproj", "{C79994F0-E27B-433D-B52E-4CB8EE8AE71A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{141414BF-AC52-4A9B-B759-F404251D9334}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{141414BF-AC52-4A9B-B759-F404251D9334}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{141414BF-AC52-4A9B-B759-F404251D9334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C79994F0-E27B-433D-B52E-4CB8EE8AE71A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C79994F0-E27B-433D-B52E-4CB8EE8AE71A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C79994F0-E27B-433D-B52E-4CB8EE8AE71A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C79994F0-E27B-433D-B52E-4CB8EE8AE71A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
