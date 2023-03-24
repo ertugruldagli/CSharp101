@@ -25,7 +25,7 @@ namespace UrunTakipKayit
             conn.Open();
 
             //Lsteleme
-            string sqlQuery = "select * from Products";
+            string sqlQuery = "select ProductName, UnitPrice, UnitsInStock, CategoryID from Products";
 
             SqlCommand cmd = new SqlCommand(sqlQuery, conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -58,6 +58,14 @@ namespace UrunTakipKayit
         private void btnOk_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgrwProduct_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tBoxProduct.Text = dgrwProduct.Rows[e.RowIndex].Cells[0].Value.ToString();
+            tBoxPrice.Text = dgrwProduct.Rows[e.RowIndex].Cells[1].Value.ToString();
+            nudStok.Value = int.Parse( dgrwProduct.Rows[e.RowIndex].Cells[2].Value.ToString());
+           // cboxCategory.ValueMember = dgrwProduct.Rows[e.RowIndex].Cells[3].Value.ToString();
         }
     }
 }

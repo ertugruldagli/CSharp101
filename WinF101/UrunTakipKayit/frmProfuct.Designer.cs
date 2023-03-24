@@ -186,6 +186,7 @@
             this.dgrwProduct.Name = "dgrwProduct";
             this.dgrwProduct.Size = new System.Drawing.Size(599, 426);
             this.dgrwProduct.TabIndex = 3;
+            this.dgrwProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrwProduct_CellClick);
             // 
             // frmProfuct
             // 
