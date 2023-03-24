@@ -71,6 +71,11 @@
             // nudStok
             // 
             this.nudStok.Location = new System.Drawing.Point(108, 157);
+            this.nudStok.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.nudStok.Name = "nudStok";
             this.nudStok.Size = new System.Drawing.Size(113, 20);
             this.nudStok.TabIndex = 17;
@@ -167,6 +172,7 @@
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnOk
             // 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,8 @@ namespace UrunTakipKayit
     public partial class frmProfuct : Form
     {
         SqlConnection conn=new SqlConnection(@"Data Source=ED-INTERN;Initial Catalog=Northwind;Integrated Security=True");
+
+        string sqlQuery = "";
         public frmProfuct()
         {
             InitializeComponent();
@@ -25,7 +28,7 @@ namespace UrunTakipKayit
             conn.Open();
 
             //Lsteleme
-            string sqlQuery = "select ProductName, UnitPrice, UnitsInStock, CategoryID from Products";
+            sqlQuery = "select ProductID, ProductName, UnitPrice, UnitsInStock, CategoryID from Products";
 
             SqlCommand cmd = new SqlCommand(sqlQuery, conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -46,6 +49,8 @@ namespace UrunTakipKayit
             cboxCategory.ValueMember = "CategoryID";
             cboxCategory.DataSource = dt1;
 
+            conn.Close();
+
         }
 
         private void frmProfuct_Load(object sender, EventArgs e)
@@ -62,10 +67,46 @@ namespace UrunTakipKayit
 
         private void dgrwProduct_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            tBoxProduct.Text = dgrwProduct.Rows[e.RowIndex].Cells[0].Value.ToString();
-            tBoxPrice.Text = dgrwProduct.Rows[e.RowIndex].Cells[1].Value.ToString();
-            nudStok.Value = int.Parse( dgrwProduct.Rows[e.RowIndex].Cells[2].Value.ToString());
-           // cboxCategory.ValueMember = dgrwProduct.Rows[e.RowIndex].Cells[3].Value.ToString();
+            tBoxProduct.Text = dgrwProduct.Rows[e.RowIndex].Cells[1].Value.ToString();
+            tBoxPrice.Text = dgrwProduct.Rows[e.RowIndex].Cells[2].Value.ToString();
+            nudStok.Value = int.Parse( dgrwProduct.Rows[e.RowIndex].Cells[3].Value.ToString());
+             cboxCategory.SelectedValue = dgrwProduct.Rows[e.RowIndex].Cells[4].Value.ToString();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            
+            sqlQuery = "UPDATE Products SET ProductName=@ProductName, UnitPrice=@UnitPrice, UnitsInStock=@UnitsInStock, CategoryID=@CategoryID WHERE ProductID=@ProductID";
+
+            SqlCommand cmd= new SqlCommand(sqlQuery, conn);
+            cmd.Parameters.AddWithValue("@ProductID", dgrwProduct.CurrentRow.Cells[0].Value);
+            cmd.Parameters.AddWithValue("@ProductName", tBoxProduct.Text);
+            cmd.Parameters.AddWithValue("@UnitPrice", decimal.Parse(tBoxPrice.Text));
+            cmd.Parameters.AddWithValue("@UnitsInStock", nudStok.Value);
+            cmd.Parameters.AddWithValue("@CategoryID", cboxCategory.SelectedValue);
+            
+
+            cmd.CommandType = CommandType.Text;
+            try
+            {
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                
+
+                MessageBox.Show("İşleminiz başarılı");
+                
+                conn.Close();
+                ShowData();
+            }
+            catch (Exception hata)
+            {
+                
+
+                MessageBox.Show(hata.ToString());
+            }
+          
+
+          
         }
     }
 }
