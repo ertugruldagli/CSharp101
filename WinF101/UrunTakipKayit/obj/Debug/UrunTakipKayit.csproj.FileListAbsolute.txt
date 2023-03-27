@@ -12,3 +12,6 @@ C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmM
 C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmUrun.resources
 C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmProfuct.resources
 C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmIstatistik.resources
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmAdmin.resources
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmDireciton.resources
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmGraphics.resources

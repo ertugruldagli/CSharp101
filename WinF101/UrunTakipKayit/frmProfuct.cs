@@ -46,7 +46,7 @@ namespace UrunTakipKayit
             SqlCommand cmd1 = new SqlCommand(sqlQuery, conn);
             SqlDataAdapter da1 = new SqlDataAdapter(cmd1);
             DataTable dt1 = new DataTable();
-            da1.Fill(dt1);
+            da1.Fill(dt1);  
 
             cboxCategory.DisplayMember = "CategoryName";
             cboxCategory.ValueMember = "CategoryID";

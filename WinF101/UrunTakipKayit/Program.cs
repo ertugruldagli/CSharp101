@@ -16,7 +16,7 @@ namespace UrunTakipKayit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmIstatistik());
+            Application.Run(new frmDireciton());
         }
     }
 }
