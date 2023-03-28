@@ -20,9 +20,6 @@ namespace UrunTakipKayit
 
         SqlConnection connect = new SqlConnection(@"Data Source=ED-INTERN;Initial Catalog=Northwind;Integrated Security=True");
 
-
-      
-
         private void panel1_Click(object sender, EventArgs e)
         {
             frmProfuct frmProfuct = new frmProfuct();   
