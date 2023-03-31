@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsConneciton.cs" />
     <Compile Include="frmDataGridDetail.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -22,6 +22,8 @@ namespace AdoNetEx
         public frmDataGrid()
         {
             InitializeComponent();
+         
+           
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -44,8 +46,11 @@ namespace AdoNetEx
         #region Listeleme işlemi
         private void MainForm()
         {
-            using (connection)
-            {
+
+
+        //   clsConneciton.openConnection();
+            
+            connection.Open();
                 using (SqlCommand cmd = new SqlCommand("SELECT CustomerID, CompanyName, ContactName, Country FROM Customers", connection))
                 {
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
@@ -59,7 +64,7 @@ namespace AdoNetEx
 
                     }
                 }
-            }
+            connection.Close();
         }
         #endregion
 
