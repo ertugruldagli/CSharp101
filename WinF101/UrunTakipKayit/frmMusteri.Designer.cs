@@ -35,11 +35,11 @@
             this.btnListele = new System.Windows.Forms.Button();
             this.dgridMusteri = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tboxSearch = new System.Windows.Forms.TextBox();
-            this.rbtnAd = new System.Windows.Forms.RadioButton();
-            this.rbtnSoyad = new System.Windows.Forms.RadioButton();
             this.rbtnSehir = new System.Windows.Forms.RadioButton();
+            this.rbtnSoyad = new System.Windows.Forms.RadioButton();
+            this.rbtnAd = new System.Windows.Forms.RadioButton();
+            this.tboxSearch = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tboxMusteriID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tboxAd = new System.Windows.Forms.TextBox();
@@ -64,6 +64,7 @@
             this.btnAra.TabIndex = 12;
             this.btnAra.Text = "Ara";
             this.btnAra.UseVisualStyleBackColor = true;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // btnSil
             // 
@@ -73,6 +74,7 @@
             this.btnSil.TabIndex = 11;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnUpdate
             // 
@@ -82,6 +84,7 @@
             this.btnUpdate.TabIndex = 10;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnOk
             // 
@@ -110,6 +113,7 @@
             this.dgridMusteri.Name = "dgridMusteri";
             this.dgridMusteri.Size = new System.Drawing.Size(576, 332);
             this.dgridMusteri.TabIndex = 7;
+            this.dgridMusteri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgridMusteri_CellClick);
             // 
             // groupBox1
             // 
@@ -126,32 +130,16 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // rbtnSehir
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Aranacak Kelime:";
-            // 
-            // tboxSearch
-            // 
-            this.tboxSearch.Location = new System.Drawing.Point(102, 25);
-            this.tboxSearch.Name = "tboxSearch";
-            this.tboxSearch.Size = new System.Drawing.Size(122, 20);
-            this.tboxSearch.TabIndex = 14;
-            // 
-            // rbtnAd
-            // 
-            this.rbtnAd.AutoSize = true;
-            this.rbtnAd.Location = new System.Drawing.Point(253, 28);
-            this.rbtnAd.Name = "rbtnAd";
-            this.rbtnAd.Size = new System.Drawing.Size(37, 17);
-            this.rbtnAd.TabIndex = 15;
-            this.rbtnAd.TabStop = true;
-            this.rbtnAd.Text = "ad";
-            this.rbtnAd.UseVisualStyleBackColor = true;
+            this.rbtnSehir.AutoSize = true;
+            this.rbtnSehir.Location = new System.Drawing.Point(357, 29);
+            this.rbtnSehir.Name = "rbtnSehir";
+            this.rbtnSehir.Size = new System.Drawing.Size(49, 17);
+            this.rbtnSehir.TabIndex = 17;
+            this.rbtnSehir.TabStop = true;
+            this.rbtnSehir.Text = "Sehir";
+            this.rbtnSehir.UseVisualStyleBackColor = true;
             // 
             // rbtnSoyad
             // 
@@ -164,16 +152,32 @@
             this.rbtnSoyad.Text = "Soyad";
             this.rbtnSoyad.UseVisualStyleBackColor = true;
             // 
-            // rbtnSehir
+            // rbtnAd
             // 
-            this.rbtnSehir.AutoSize = true;
-            this.rbtnSehir.Location = new System.Drawing.Point(357, 29);
-            this.rbtnSehir.Name = "rbtnSehir";
-            this.rbtnSehir.Size = new System.Drawing.Size(49, 17);
-            this.rbtnSehir.TabIndex = 17;
-            this.rbtnSehir.TabStop = true;
-            this.rbtnSehir.Text = "Sehir";
-            this.rbtnSehir.UseVisualStyleBackColor = true;
+            this.rbtnAd.AutoSize = true;
+            this.rbtnAd.Location = new System.Drawing.Point(253, 28);
+            this.rbtnAd.Name = "rbtnAd";
+            this.rbtnAd.Size = new System.Drawing.Size(37, 17);
+            this.rbtnAd.TabIndex = 15;
+            this.rbtnAd.TabStop = true;
+            this.rbtnAd.Text = "ad";
+            this.rbtnAd.UseVisualStyleBackColor = true;
+            // 
+            // tboxSearch
+            // 
+            this.tboxSearch.Location = new System.Drawing.Point(102, 25);
+            this.tboxSearch.Name = "tboxSearch";
+            this.tboxSearch.Size = new System.Drawing.Size(122, 20);
+            this.tboxSearch.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Aranacak Kelime:";
             // 
             // tboxMusteriID
             // 
