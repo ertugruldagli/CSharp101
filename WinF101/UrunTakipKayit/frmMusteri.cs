@@ -43,11 +43,17 @@ namespace UrunTakipKayit
             tboxBakiye.Text =dgridMusteri.Rows[e.RowIndex].Cells[4].Value.ToString();
         }
 
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            dgridMusteri.DataSource= tbM.MusteriEkle(tboxAd.Text,tboxSoyad.Text,tboxSehir.Text, decimal.Parse(tboxBakiye.Text));
+
+            dgridMusteri.DataSource = tbM.MusteriListesi();
+        }
+
         private void btnAra_Click(object sender, EventArgs e)
         {
             if (rbtnAd.Checked==true)
             {
-                
                 dgridMusteri.DataSource= tbM.AdaGoreGetir(tboxSearch.Text);
             }
              if (rbtnSoyad.Checked==true)
@@ -59,5 +65,7 @@ namespace UrunTakipKayit
                 dgridMusteri.DataSource = tbM.SehireGoreGetir(tboxSearch.Text);
             }
         }
+
+    
     }
 }

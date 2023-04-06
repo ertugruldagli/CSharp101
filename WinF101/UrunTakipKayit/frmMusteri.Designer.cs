@@ -94,6 +94,7 @@
             this.btnOk.TabIndex = 9;
             this.btnOk.Text = "Kaydet";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnListele
             // 
