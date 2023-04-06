@@ -114,11 +114,11 @@
             this.btnKaydol.Text = "Kaydol";
             this.btnKaydol.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // frmSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(293, 450);
+            this.ClientSize = new System.Drawing.Size(311, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnKaydol);
             this.Controls.Add(this.label3);
@@ -129,7 +129,7 @@
             this.Controls.Add(this.tBoxEmail);
             this.Controls.Add(this.btnGirisYap);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form1";
+            this.Name = "frmSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign Up";
             this.ResumeLayout(false);
