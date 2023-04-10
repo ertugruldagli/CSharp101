@@ -66,6 +66,11 @@ namespace UrunTakipKayit
             }
         }
 
-    
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmSatislar frmSatislar = new frmSatislar();
+            frmSatislar.tBoxMusteriAd.Text=tboxAd.Text;
+            frmSatislar.ShowDialog();
+        }
     }
 }

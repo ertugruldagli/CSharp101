@@ -15,3 +15,5 @@ C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmA
 C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmDireciton.resources
 C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmGraphics.resources
 C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmMusteri.resources
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmSatislar.resources
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipKayit\obj\Debug\UrunTakipKayit.frmUrunGetir.resources

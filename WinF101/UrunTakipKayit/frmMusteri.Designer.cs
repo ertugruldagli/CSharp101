@@ -51,6 +51,7 @@
             this.tboxBakiye = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgridMusteri)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -283,12 +284,23 @@
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(625, 448);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 23);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Musteri İsmini Götür";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmMusteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(880, 475);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgridMusteri);
@@ -320,7 +332,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tboxMusteriID;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tboxAd;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tboxSoyad;
         private System.Windows.Forms.Label label4;
@@ -329,5 +340,7 @@
         private System.Windows.Forms.TextBox tboxBakiye;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
+        public System.Windows.Forms.TextBox tboxAd;
+        private System.Windows.Forms.Button button1;
     }
 }

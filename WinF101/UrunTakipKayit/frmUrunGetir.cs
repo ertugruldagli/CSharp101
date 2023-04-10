@@ -11,44 +11,46 @@ using System.Windows.Forms;
 
 namespace UrunTakipKayit
 {
-    public partial class frmSatislar : Form
+   
+    public partial class frmUrunGetir : Form
     {
+
         SqlConnection conn = new SqlConnection(@"Data Source=ED-INTERN;Initial Catalog=Northwind;Integrated Security=True");
 
         string sqlQuery = "";
 
-        public frmSatislar()
+        public frmUrunGetir()
         {
             InitializeComponent();
         }
 
+
         private void ShowData()
         {
             conn.Open();
-            sqlQuery = "exec dbo.SatisListesi ";
-            using (SqlCommand cmd =new SqlCommand(sqlQuery,conn))
+            sqlQuery = "exec UrunGetir2 "+ tBoxGetir.Text;
+
+            using (SqlCommand cmd=new SqlCommand(sqlQuery,conn))
             {
                 using (SqlDataAdapter dAdapter=new SqlDataAdapter(cmd))
                 {
-                    DataTable dTable=new DataTable();
-                    dAdapter.Fill(dTable);
-                    dgridSatis.DataSource = dTable;
+                    DataTable dataTabla= new DataTable();   
+                    dAdapter.Fill(dataTabla);
 
+                    dgrwUrunGetir.DataSource= dataTabla;
                 }
             }
 
+            
+
 
                 conn.Close();
+
         }
 
-        private void btnListele_Click(object sender, EventArgs e)
+        private void btnUrunGetir_Click(object sender, EventArgs e)
         {
             ShowData();
         }
-
-       
     }
-
-
-    
 }

@@ -103,6 +103,12 @@
     <Compile Include="frmSatislar.Designer.cs">
       <DependentUpon>frmSatislar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUrunGetir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunGetir.Designer.cs">
+      <DependentUpon>frmUrunGetir.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAdmin.resx">
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSatislar.resx">
       <DependentUpon>frmSatislar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunGetir.resx">
+      <DependentUpon>frmUrunGetir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

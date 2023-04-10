@@ -28,18 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbtnSehir = new System.Windows.Forms.RadioButton();
-            this.rbtnSoyad = new System.Windows.Forms.RadioButton();
-            this.rbtnAd = new System.Windows.Forms.RadioButton();
-            this.tboxSearch = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnAra = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.mtBoxDate = new System.Windows.Forms.MaskedTextBox();
+            this.tBoxAdet = new System.Windows.Forms.TextBox();
+            this.tBoxMusteriAd = new System.Windows.Forms.TextBox();
+            this.cBoxUrunId = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tBoxToplam = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tboxFiyat = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tboxAdet = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,104 +47,24 @@
             this.btnSil = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.dgridMusteri = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tBoxToplam = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tBoxDate = new System.Windows.Forms.TextBox();
-            this.cBoxUrunId = new System.Windows.Forms.ComboBox();
-            this.cBoxMusteriID = new System.Windows.Forms.ComboBox();
-            this.groupBox1.SuspendLayout();
+            this.dgridSatis = new System.Windows.Forms.DataGridView();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgridMusteri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgridSatis)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox1.Controls.Add(this.rbtnSehir);
-            this.groupBox1.Controls.Add(this.rbtnSoyad);
-            this.groupBox1.Controls.Add(this.rbtnAd);
-            this.groupBox1.Controls.Add(this.tboxSearch);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnAra);
-            this.groupBox1.Location = new System.Drawing.Point(3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(626, 70);
-            this.groupBox1.TabIndex = 14;
-            this.groupBox1.TabStop = false;
-            // 
-            // rbtnSehir
-            // 
-            this.rbtnSehir.AutoSize = true;
-            this.rbtnSehir.Location = new System.Drawing.Point(357, 29);
-            this.rbtnSehir.Name = "rbtnSehir";
-            this.rbtnSehir.Size = new System.Drawing.Size(49, 17);
-            this.rbtnSehir.TabIndex = 17;
-            this.rbtnSehir.TabStop = true;
-            this.rbtnSehir.Text = "Sehir";
-            this.rbtnSehir.UseVisualStyleBackColor = true;
-            // 
-            // rbtnSoyad
-            // 
-            this.rbtnSoyad.AutoSize = true;
-            this.rbtnSoyad.Location = new System.Drawing.Point(296, 28);
-            this.rbtnSoyad.Name = "rbtnSoyad";
-            this.rbtnSoyad.Size = new System.Drawing.Size(55, 17);
-            this.rbtnSoyad.TabIndex = 16;
-            this.rbtnSoyad.TabStop = true;
-            this.rbtnSoyad.Text = "Soyad";
-            this.rbtnSoyad.UseVisualStyleBackColor = true;
-            // 
-            // rbtnAd
-            // 
-            this.rbtnAd.AutoSize = true;
-            this.rbtnAd.Location = new System.Drawing.Point(253, 28);
-            this.rbtnAd.Name = "rbtnAd";
-            this.rbtnAd.Size = new System.Drawing.Size(37, 17);
-            this.rbtnAd.TabIndex = 15;
-            this.rbtnAd.TabStop = true;
-            this.rbtnAd.Text = "ad";
-            this.rbtnAd.UseVisualStyleBackColor = true;
-            // 
-            // tboxSearch
-            // 
-            this.tboxSearch.Location = new System.Drawing.Point(102, 25);
-            this.tboxSearch.Name = "tboxSearch";
-            this.tboxSearch.Size = new System.Drawing.Size(122, 20);
-            this.tboxSearch.TabIndex = 14;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Aranacak Kelime:";
-            // 
-            // btnAra
-            // 
-            this.btnAra.Location = new System.Drawing.Point(439, 19);
-            this.btnAra.Name = "btnAra";
-            this.btnAra.Size = new System.Drawing.Size(130, 36);
-            this.btnAra.TabIndex = 12;
-            this.btnAra.Text = "Ara";
-            this.btnAra.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox2.Controls.Add(this.cBoxMusteriID);
+            this.groupBox2.Controls.Add(this.mtBoxDate);
+            this.groupBox2.Controls.Add(this.tBoxAdet);
+            this.groupBox2.Controls.Add(this.tBoxMusteriAd);
             this.groupBox2.Controls.Add(this.cBoxUrunId);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.tBoxDate);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.tBoxToplam);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.tboxFiyat);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.tboxAdet);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
@@ -154,12 +73,68 @@
             this.groupBox2.Controls.Add(this.btnSil);
             this.groupBox2.Controls.Add(this.btnOk);
             this.groupBox2.Controls.Add(this.btnUpdate);
-            this.groupBox2.Location = new System.Drawing.Point(644, 2);
+            this.groupBox2.Location = new System.Drawing.Point(594, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(251, 430);
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // mtBoxDate
+            // 
+            this.mtBoxDate.Location = new System.Drawing.Point(107, 279);
+            this.mtBoxDate.Mask = "00/00/0000";
+            this.mtBoxDate.Name = "mtBoxDate";
+            this.mtBoxDate.Size = new System.Drawing.Size(124, 20);
+            this.mtBoxDate.TabIndex = 35;
+            this.mtBoxDate.ValidatingType = typeof(System.DateTime);
+            // 
+            // tBoxAdet
+            // 
+            this.tBoxAdet.Location = new System.Drawing.Point(109, 155);
+            this.tBoxAdet.Name = "tBoxAdet";
+            this.tBoxAdet.Size = new System.Drawing.Size(122, 20);
+            this.tBoxAdet.TabIndex = 34;
+            // 
+            // tBoxMusteriAd
+            // 
+            this.tBoxMusteriAd.Location = new System.Drawing.Point(109, 108);
+            this.tBoxMusteriAd.Name = "tBoxMusteriAd";
+            this.tBoxMusteriAd.Size = new System.Drawing.Size(122, 20);
+            this.tBoxMusteriAd.TabIndex = 33;
+            // 
+            // cBoxUrunId
+            // 
+            this.cBoxUrunId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cBoxUrunId.FormattingEnabled = true;
+            this.cBoxUrunId.Location = new System.Drawing.Point(108, 70);
+            this.cBoxUrunId.Name = "cBoxUrunId";
+            this.cBoxUrunId.Size = new System.Drawing.Size(121, 21);
+            this.cBoxUrunId.TabIndex = 32;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(56, 282);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(36, 13);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "Date: ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(56, 247);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(48, 13);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "Toplam: ";
+            // 
+            // tBoxToplam
+            // 
+            this.tBoxToplam.Location = new System.Drawing.Point(107, 240);
+            this.tBoxToplam.Name = "tBoxToplam";
+            this.tBoxToplam.Size = new System.Drawing.Size(122, 20);
+            this.tBoxToplam.TabIndex = 29;
             // 
             // label6
             // 
@@ -185,13 +160,6 @@
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 24;
             this.label5.Text = "Adet: ";
-            // 
-            // tboxAdet
-            // 
-            this.tboxAdet.Location = new System.Drawing.Point(107, 155);
-            this.tboxAdet.Name = "tboxAdet";
-            this.tboxAdet.Size = new System.Drawing.Size(122, 20);
-            this.tboxAdet.TabIndex = 25;
             // 
             // label4
             // 
@@ -235,6 +203,7 @@
             this.btnListele.TabIndex = 8;
             this.btnListele.Text = "Listele";
             this.btnListele.UseVisualStyleBackColor = true;
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // btnSil
             // 
@@ -263,98 +232,38 @@
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // dgridMusteri
+            // dgridSatis
             // 
-            this.dgridMusteri.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgridMusteri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgridMusteri.Location = new System.Drawing.Point(30, 91);
-            this.dgridMusteri.Name = "dgridMusteri";
-            this.dgridMusteri.Size = new System.Drawing.Size(576, 341);
-            this.dgridMusteri.TabIndex = 30;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(56, 247);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 13);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Toplam: ";
-            // 
-            // tBoxToplam
-            // 
-            this.tBoxToplam.Location = new System.Drawing.Point(107, 240);
-            this.tBoxToplam.Name = "tBoxToplam";
-            this.tBoxToplam.Size = new System.Drawing.Size(122, 20);
-            this.tBoxToplam.TabIndex = 29;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(56, 282);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(36, 13);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "Date: ";
-            // 
-            // tBoxDate
-            // 
-            this.tBoxDate.Location = new System.Drawing.Point(107, 275);
-            this.tBoxDate.Name = "tBoxDate";
-            this.tBoxDate.Size = new System.Drawing.Size(122, 20);
-            this.tBoxDate.TabIndex = 31;
-            // 
-            // cBoxUrunId
-            // 
-            this.cBoxUrunId.FormattingEnabled = true;
-            this.cBoxUrunId.Location = new System.Drawing.Point(108, 70);
-            this.cBoxUrunId.Name = "cBoxUrunId";
-            this.cBoxUrunId.Size = new System.Drawing.Size(121, 21);
-            this.cBoxUrunId.TabIndex = 32;
-            // 
-            // cBoxMusteriID
-            // 
-            this.cBoxMusteriID.FormattingEnabled = true;
-            this.cBoxMusteriID.Location = new System.Drawing.Point(109, 112);
-            this.cBoxMusteriID.Name = "cBoxMusteriID";
-            this.cBoxMusteriID.Size = new System.Drawing.Size(121, 21);
-            this.cBoxMusteriID.TabIndex = 33;
+            this.dgridSatis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgridSatis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgridSatis.Location = new System.Drawing.Point(12, 2);
+            this.dgridSatis.Name = "dgridSatis";
+            this.dgridSatis.Size = new System.Drawing.Size(576, 430);
+            this.dgridSatis.TabIndex = 30;
             // 
             // frmSatislar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(920, 437);
-            this.Controls.Add(this.dgridMusteri);
+            this.ClientSize = new System.Drawing.Size(857, 437);
+            this.Controls.Add(this.dgridSatis);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Name = "frmSatislar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSatislar";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgridMusteri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgridSatis)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton rbtnSehir;
-        private System.Windows.Forms.RadioButton rbtnSoyad;
-        private System.Windows.Forms.RadioButton rbtnAd;
-        private System.Windows.Forms.TextBox tboxSearch;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAra;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tboxFiyat;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tboxAdet;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -364,11 +273,12 @@
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox tBoxDate;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tBoxToplam;
-        private System.Windows.Forms.DataGridView dgridMusteri;
-        private System.Windows.Forms.ComboBox cBoxMusteriID;
+        private System.Windows.Forms.DataGridView dgridSatis;
         private System.Windows.Forms.ComboBox cBoxUrunId;
+        private System.Windows.Forms.MaskedTextBox mtBoxDate;
+        private System.Windows.Forms.TextBox tBoxAdet;
+        public System.Windows.Forms.TextBox tBoxMusteriAd;
     }
 }
