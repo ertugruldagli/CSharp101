@@ -44,5 +44,10 @@ namespace UrunTakipKayit
                
             connect.Close();
         }
+
+        private void frmAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
