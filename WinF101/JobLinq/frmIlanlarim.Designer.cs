@@ -1,6 +1,6 @@
 ﻿namespace JobLinq
 {
-    partial class frmIsverenProfil
+    partial class frmIlanlarim
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.dgridIlanlarim = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -40,21 +41,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
-            this.tBoxSirketEmail = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tBoxSirketSehir = new System.Windows.Forms.TextBox();
-            this.tBoxSirketSektor = new System.Windows.Forms.TextBox();
-            this.tBoxSirketAdres = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tBoxSirketAD = new System.Windows.Forms.TextBox();
-            this.liBoxProfilOnyazi = new System.Windows.Forms.ListBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.tBoxCalisanSayisi = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.btnIsVerenProfilGuncelle = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgridIlanlarim)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -62,6 +49,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dgridIlanlarim
+            // 
+            this.dgridIlanlarim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgridIlanlarim.Location = new System.Drawing.Point(306, 12);
+            this.dgridIlanlarim.Name = "dgridIlanlarim";
+            this.dgridIlanlarim.Size = new System.Drawing.Size(482, 426);
+            this.dgridIlanlarim.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -77,10 +72,10 @@
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.btnExit);
-            this.groupBox1.Location = new System.Drawing.Point(-2, -6);
+            this.groupBox1.Location = new System.Drawing.Point(0, -6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(173, 535);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
             // label5
@@ -187,151 +182,16 @@
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
-            // tBoxSirketEmail
-            // 
-            this.tBoxSirketEmail.Location = new System.Drawing.Point(343, 137);
-            this.tBoxSirketEmail.Name = "tBoxSirketEmail";
-            this.tBoxSirketEmail.Size = new System.Drawing.Size(91, 20);
-            this.tBoxSirketEmail.TabIndex = 58;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(238, 144);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 13);
-            this.label6.TabIndex = 57;
-            this.label6.Text = "E-mail: ";
-            // 
-            // tBoxSirketSehir
-            // 
-            this.tBoxSirketSehir.Location = new System.Drawing.Point(343, 111);
-            this.tBoxSirketSehir.Name = "tBoxSirketSehir";
-            this.tBoxSirketSehir.Size = new System.Drawing.Size(91, 20);
-            this.tBoxSirketSehir.TabIndex = 56;
-            // 
-            // tBoxSirketSektor
-            // 
-            this.tBoxSirketSektor.Location = new System.Drawing.Point(343, 85);
-            this.tBoxSirketSektor.Name = "tBoxSirketSektor";
-            this.tBoxSirketSektor.Size = new System.Drawing.Size(91, 20);
-            this.tBoxSirketSektor.TabIndex = 55;
-            // 
-            // tBoxSirketAdres
-            // 
-            this.tBoxSirketAdres.Location = new System.Drawing.Point(343, 59);
-            this.tBoxSirketAdres.Name = "tBoxSirketAdres";
-            this.tBoxSirketAdres.Size = new System.Drawing.Size(91, 20);
-            this.tBoxSirketAdres.TabIndex = 54;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(238, 118);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 13);
-            this.label9.TabIndex = 53;
-            this.label9.Text = "Sehir: ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(238, 92);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 13);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "Sektör: ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(238, 66);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 13);
-            this.label7.TabIndex = 51;
-            this.label7.Text = "Şirket Adresi: ";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(238, 40);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(53, 13);
-            this.label10.TabIndex = 50;
-            this.label10.Text = "Şirket Ad:";
-            // 
-            // tBoxSirketAD
-            // 
-            this.tBoxSirketAD.Location = new System.Drawing.Point(343, 33);
-            this.tBoxSirketAD.Name = "tBoxSirketAD";
-            this.tBoxSirketAD.Size = new System.Drawing.Size(91, 20);
-            this.tBoxSirketAD.TabIndex = 49;
-            // 
-            // liBoxProfilOnyazi
-            // 
-            this.liBoxProfilOnyazi.FormattingEnabled = true;
-            this.liBoxProfilOnyazi.Location = new System.Drawing.Point(241, 294);
-            this.liBoxProfilOnyazi.Name = "liBoxProfilOnyazi";
-            this.liBoxProfilOnyazi.Size = new System.Drawing.Size(423, 95);
-            this.liBoxProfilOnyazi.TabIndex = 60;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(238, 278);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(39, 13);
-            this.label17.TabIndex = 59;
-            this.label17.Text = "Onyazi";
-            // 
-            // tBoxCalisanSayisi
-            // 
-            this.tBoxCalisanSayisi.Location = new System.Drawing.Point(343, 169);
-            this.tBoxCalisanSayisi.Name = "tBoxCalisanSayisi";
-            this.tBoxCalisanSayisi.Size = new System.Drawing.Size(91, 20);
-            this.tBoxCalisanSayisi.TabIndex = 62;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(238, 176);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(78, 13);
-            this.label12.TabIndex = 61;
-            this.label12.Text = "Calisan SAyisi: ";
-            // 
-            // btnIsVerenProfilGuncelle
-            // 
-            this.btnIsVerenProfilGuncelle.Location = new System.Drawing.Point(628, 417);
-            this.btnIsVerenProfilGuncelle.Name = "btnIsVerenProfilGuncelle";
-            this.btnIsVerenProfilGuncelle.Size = new System.Drawing.Size(100, 29);
-            this.btnIsVerenProfilGuncelle.TabIndex = 63;
-            this.btnIsVerenProfilGuncelle.Text = "Guncelle";
-            this.btnIsVerenProfilGuncelle.UseVisualStyleBackColor = true;
-            // 
-            // frmIsverenProfil
+            // frmIlanlarim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 526);
-            this.Controls.Add(this.btnIsVerenProfilGuncelle);
-            this.Controls.Add(this.tBoxCalisanSayisi);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.liBoxProfilOnyazi);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.tBoxSirketEmail);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.tBoxSirketSehir);
-            this.Controls.Add(this.tBoxSirketSektor);
-            this.Controls.Add(this.tBoxSirketAdres);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.tBoxSirketAD);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frmIsverenProfil";
-            this.Text = "frmIsverenProfil";
+            this.Controls.Add(this.dgridIlanlarim);
+            this.Name = "frmIlanlarim";
+            this.Text = "frmIlanlarim";
+            ((System.ComponentModel.ISupportInitialize)(this.dgridIlanlarim)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -340,12 +200,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.DataGridView dgridIlanlarim;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -358,20 +218,5 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.TextBox tBoxSirketEmail;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox tBoxSirketSehir;
-        private System.Windows.Forms.TextBox tBoxSirketSektor;
-        private System.Windows.Forms.TextBox tBoxSirketAdres;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox tBoxSirketAD;
-        private System.Windows.Forms.ListBox liBoxProfilOnyazi;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox tBoxCalisanSayisi;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button btnIsVerenProfilGuncelle;
     }
 }

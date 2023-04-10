@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBasvuranlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBasvuranlar.Designer.cs">
+      <DependentUpon>frmBasvuranlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBasvurulan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBasvurulan.Designer.cs">
+      <DependentUpon>frmBasvurulan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIlanlarim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIlanlarim.Designer.cs">
+      <DependentUpon>frmIlanlarim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIsArama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIsArama.Designer.cs">
+      <DependentUpon>frmIsArama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIsArayanProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIsArayanProfil.Designer.cs">
+      <DependentUpon>frmIsArayanProfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmIsverenProfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,8 +100,29 @@
     <Compile Include="frmSignUp.Designer.cs">
       <DependentUpon>frmSignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmYeniIlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYeniIlan.Designer.cs">
+      <DependentUpon>frmYeniIlan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBasvuranlar.resx">
+      <DependentUpon>frmBasvuranlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBasvurulan.resx">
+      <DependentUpon>frmBasvurulan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIlanlarim.resx">
+      <DependentUpon>frmIlanlarim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIsArama.resx">
+      <DependentUpon>frmIsArama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIsArayanProfil.resx">
+      <DependentUpon>frmIsArayanProfil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIsverenProfil.resx">
       <DependentUpon>frmIsverenProfil.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSignUp.resx">
       <DependentUpon>frmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYeniIlan.resx">
+      <DependentUpon>frmYeniIlan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

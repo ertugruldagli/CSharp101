@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace JobLinq
 {
-    public partial class frmOzlukBilgisi : Form
+    public partial class frmIsArama : Form
     {
-        public frmOzlukBilgisi()
+        public frmIsArama()
         {
             InitializeComponent();
-        }
-
-        private void frmOzlukBilgisi_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

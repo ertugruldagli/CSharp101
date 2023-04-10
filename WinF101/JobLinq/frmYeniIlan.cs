@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace JobLinq
 {
-    public partial class frmOzlukBilgisi : Form
+    public partial class frmYeniIlan : Form
     {
-        public frmOzlukBilgisi()
+        public frmYeniIlan()
         {
             InitializeComponent();
-        }
-
-        private void frmOzlukBilgisi_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
