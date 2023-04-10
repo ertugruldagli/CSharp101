@@ -63,6 +63,8 @@
             this.tBoxOzlukOkul = new System.Windows.Forms.TextBox();
             this.tBoxOzlukBolum = new System.Windows.Forms.TextBox();
             this.btnOzlukGuncelle = new System.Windows.Forms.Button();
+            this.tboxOzlukEmail = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -380,11 +382,29 @@
             this.btnOzlukGuncelle.Text = "Guncelle";
             this.btnOzlukGuncelle.UseVisualStyleBackColor = true;
             // 
+            // tboxOzlukEmail
+            // 
+            this.tboxOzlukEmail.Location = new System.Drawing.Point(288, 333);
+            this.tboxOzlukEmail.Name = "tboxOzlukEmail";
+            this.tboxOzlukEmail.Size = new System.Drawing.Size(91, 20);
+            this.tboxOzlukEmail.TabIndex = 38;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(183, 340);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(35, 13);
+            this.label17.TabIndex = 37;
+            this.label17.Text = "Email:";
+            // 
             // frmOzlukBilgisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 537);
+            this.Controls.Add(this.tboxOzlukEmail);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.btnOzlukGuncelle);
             this.Controls.Add(this.tBoxOzlukBolum);
             this.Controls.Add(this.tBoxOzlukOkul);
@@ -461,5 +481,7 @@
         private System.Windows.Forms.TextBox tBoxOzlukOkul;
         private System.Windows.Forms.TextBox tBoxOzlukBolum;
         private System.Windows.Forms.Button btnOzlukGuncelle;
+        private System.Windows.Forms.Label label17;
+        public System.Windows.Forms.TextBox tboxOzlukEmail;
     }
 }

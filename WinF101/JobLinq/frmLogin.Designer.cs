@@ -95,6 +95,7 @@
             this.btnGirisYap.TabIndex = 9;
             this.btnGirisYap.Text = "Giris Yap";
             this.btnGirisYap.UseVisualStyleBackColor = true;
+            this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
             // frmLogin
             // 
