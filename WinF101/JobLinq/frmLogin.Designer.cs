@@ -123,7 +123,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tBoxPassword;
-        private System.Windows.Forms.TextBox tBoxEmail;
         private System.Windows.Forms.Button btnGirisYap;
+        public System.Windows.Forms.TextBox tBoxEmail;
     }
 }

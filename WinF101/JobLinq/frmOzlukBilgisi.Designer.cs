@@ -54,7 +54,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.tBoxOzlukSoyad = new System.Windows.Forms.TextBox();
             this.tBoxOzlukDate = new System.Windows.Forms.TextBox();
-            this.tBoxOzlukSehir = new System.Windows.Forms.TextBox();
             this.tBoxOzlukCepNo = new System.Windows.Forms.TextBox();
             this.tBoxOzlukSirketAdi = new System.Windows.Forms.TextBox();
             this.tBoxOzlukTecrube = new System.Windows.Forms.TextBox();
@@ -65,12 +64,19 @@
             this.btnOzlukGuncelle = new System.Windows.Forms.Button();
             this.tboxOzlukEmail = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.cBoxOzlukSehir = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -102,6 +108,7 @@
             this.label5.Size = new System.Drawing.Size(56, 14);
             this.label5.TabIndex = 10;
             this.label5.Text = "Profile";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox5
             // 
@@ -199,7 +206,7 @@
             // 
             // tBoxOzlukAD
             // 
-            this.tBoxOzlukAD.Location = new System.Drawing.Point(288, 23);
+            this.tBoxOzlukAD.Location = new System.Drawing.Point(118, 23);
             this.tBoxOzlukAD.Name = "tBoxOzlukAD";
             this.tBoxOzlukAD.Size = new System.Drawing.Size(91, 20);
             this.tBoxOzlukAD.TabIndex = 2;
@@ -207,7 +214,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(183, 30);
+            this.label6.Location = new System.Drawing.Point(13, 30);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(26, 13);
             this.label6.TabIndex = 3;
@@ -216,7 +223,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(183, 56);
+            this.label7.Location = new System.Drawing.Point(13, 56);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 13);
             this.label7.TabIndex = 5;
@@ -225,7 +232,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(183, 82);
+            this.label8.Location = new System.Drawing.Point(13, 82);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 13);
             this.label8.TabIndex = 7;
@@ -234,7 +241,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(183, 108);
+            this.label9.Location = new System.Drawing.Point(304, 81);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(37, 13);
             this.label9.TabIndex = 9;
@@ -243,7 +250,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(183, 144);
+            this.label10.Location = new System.Drawing.Point(304, 30);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(43, 13);
             this.label10.TabIndex = 11;
@@ -252,7 +259,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(183, 174);
+            this.label11.Location = new System.Drawing.Point(18, 27);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 13);
             this.label11.TabIndex = 13;
@@ -261,7 +268,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(183, 314);
+            this.label12.Location = new System.Drawing.Point(28, 84);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(42, 13);
             this.label12.TabIndex = 23;
@@ -270,7 +277,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(183, 284);
+            this.label13.Location = new System.Drawing.Point(28, 56);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(35, 13);
             this.label13.TabIndex = 21;
@@ -279,7 +286,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(183, 248);
+            this.label14.Location = new System.Drawing.Point(18, 85);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(55, 13);
             this.label14.TabIndex = 19;
@@ -288,7 +295,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(183, 222);
+            this.label15.Location = new System.Drawing.Point(28, 27);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(80, 13);
             this.label15.TabIndex = 17;
@@ -297,7 +304,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(183, 196);
+            this.label16.Location = new System.Drawing.Point(18, 56);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(53, 13);
             this.label16.TabIndex = 15;
@@ -305,70 +312,63 @@
             // 
             // tBoxOzlukSoyad
             // 
-            this.tBoxOzlukSoyad.Location = new System.Drawing.Point(288, 49);
+            this.tBoxOzlukSoyad.Location = new System.Drawing.Point(118, 49);
             this.tBoxOzlukSoyad.Name = "tBoxOzlukSoyad";
             this.tBoxOzlukSoyad.Size = new System.Drawing.Size(91, 20);
             this.tBoxOzlukSoyad.TabIndex = 24;
             // 
             // tBoxOzlukDate
             // 
-            this.tBoxOzlukDate.Location = new System.Drawing.Point(288, 75);
+            this.tBoxOzlukDate.Location = new System.Drawing.Point(118, 75);
             this.tBoxOzlukDate.Name = "tBoxOzlukDate";
             this.tBoxOzlukDate.Size = new System.Drawing.Size(91, 20);
             this.tBoxOzlukDate.TabIndex = 25;
             // 
-            // tBoxOzlukSehir
-            // 
-            this.tBoxOzlukSehir.Location = new System.Drawing.Point(288, 101);
-            this.tBoxOzlukSehir.Name = "tBoxOzlukSehir";
-            this.tBoxOzlukSehir.Size = new System.Drawing.Size(91, 20);
-            this.tBoxOzlukSehir.TabIndex = 26;
-            // 
             // tBoxOzlukCepNo
             // 
-            this.tBoxOzlukCepNo.Location = new System.Drawing.Point(288, 137);
+            this.tBoxOzlukCepNo.Location = new System.Drawing.Point(409, 23);
             this.tBoxOzlukCepNo.Name = "tBoxOzlukCepNo";
             this.tBoxOzlukCepNo.Size = new System.Drawing.Size(91, 20);
             this.tBoxOzlukCepNo.TabIndex = 27;
             // 
             // tBoxOzlukSirketAdi
             // 
-            this.tBoxOzlukSirketAdi.Location = new System.Drawing.Point(288, 167);
+            this.tBoxOzlukSirketAdi.Location = new System.Drawing.Point(123, 20);
             this.tBoxOzlukSirketAdi.Name = "tBoxOzlukSirketAdi";
             this.tBoxOzlukSirketAdi.Size = new System.Drawing.Size(91, 20);
             this.tBoxOzlukSirketAdi.TabIndex = 28;
             // 
             // tBoxOzlukTecrube
             // 
-            this.tBoxOzlukTecrube.Location = new System.Drawing.Point(288, 196);
+            this.tBoxOzlukTecrube.Location = new System.Drawing.Point(123, 49);
             this.tBoxOzlukTecrube.Name = "tBoxOzlukTecrube";
             this.tBoxOzlukTecrube.Size = new System.Drawing.Size(91, 20);
             this.tBoxOzlukTecrube.TabIndex = 29;
             // 
             // tBoxOzlukEgitim
             // 
-            this.tBoxOzlukEgitim.Location = new System.Drawing.Point(288, 219);
+            this.tBoxOzlukEgitim.Location = new System.Drawing.Point(133, 24);
             this.tBoxOzlukEgitim.Name = "tBoxOzlukEgitim";
             this.tBoxOzlukEgitim.Size = new System.Drawing.Size(91, 20);
             this.tBoxOzlukEgitim.TabIndex = 30;
             // 
             // tBoxOzlukPozsyon
             // 
-            this.tBoxOzlukPozsyon.Location = new System.Drawing.Point(288, 245);
+            this.tBoxOzlukPozsyon.Location = new System.Drawing.Point(123, 82);
             this.tBoxOzlukPozsyon.Name = "tBoxOzlukPozsyon";
             this.tBoxOzlukPozsyon.Size = new System.Drawing.Size(91, 20);
             this.tBoxOzlukPozsyon.TabIndex = 31;
             // 
             // tBoxOzlukOkul
             // 
-            this.tBoxOzlukOkul.Location = new System.Drawing.Point(288, 281);
+            this.tBoxOzlukOkul.Location = new System.Drawing.Point(133, 51);
             this.tBoxOzlukOkul.Name = "tBoxOzlukOkul";
             this.tBoxOzlukOkul.Size = new System.Drawing.Size(91, 20);
             this.tBoxOzlukOkul.TabIndex = 32;
             // 
             // tBoxOzlukBolum
             // 
-            this.tBoxOzlukBolum.Location = new System.Drawing.Point(288, 307);
+            this.tBoxOzlukBolum.Location = new System.Drawing.Point(133, 77);
             this.tBoxOzlukBolum.Name = "tBoxOzlukBolum";
             this.tBoxOzlukBolum.Size = new System.Drawing.Size(91, 20);
             this.tBoxOzlukBolum.TabIndex = 33;
@@ -384,7 +384,7 @@
             // 
             // tboxOzlukEmail
             // 
-            this.tboxOzlukEmail.Location = new System.Drawing.Point(288, 333);
+            this.tboxOzlukEmail.Location = new System.Drawing.Point(409, 49);
             this.tboxOzlukEmail.Name = "tboxOzlukEmail";
             this.tboxOzlukEmail.Size = new System.Drawing.Size(91, 20);
             this.tboxOzlukEmail.TabIndex = 38;
@@ -392,46 +392,83 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(183, 340);
+            this.label17.Location = new System.Drawing.Point(304, 56);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(35, 13);
             this.label17.TabIndex = 37;
             this.label17.Text = "Email:";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox2.Controls.Add(this.cBoxOzlukSehir);
+            this.groupBox2.Controls.Add(this.tBoxOzlukSoyad);
+            this.groupBox2.Controls.Add(this.tboxOzlukEmail);
+            this.groupBox2.Controls.Add(this.tBoxOzlukAD);
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.tBoxOzlukDate);
+            this.groupBox2.Controls.Add(this.tBoxOzlukCepNo);
+            this.groupBox2.Location = new System.Drawing.Point(215, 36);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(534, 110);
+            this.groupBox2.TabIndex = 39;
+            this.groupBox2.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.tBoxOzlukEgitim);
+            this.groupBox3.Controls.Add(this.tBoxOzlukBolum);
+            this.groupBox3.Controls.Add(this.tBoxOzlukOkul);
+            this.groupBox3.Location = new System.Drawing.Point(184, 196);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(253, 112);
+            this.groupBox3.TabIndex = 40;
+            this.groupBox3.TabStop = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox4.Controls.Add(this.tBoxOzlukTecrube);
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this.tBoxOzlukSirketAdi);
+            this.groupBox4.Controls.Add(this.tBoxOzlukPozsyon);
+            this.groupBox4.Location = new System.Drawing.Point(535, 196);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(253, 112);
+            this.groupBox4.TabIndex = 41;
+            this.groupBox4.TabStop = false;
+            // 
+            // cBoxOzlukSehir
+            // 
+            this.cBoxOzlukSehir.FormattingEnabled = true;
+            this.cBoxOzlukSehir.Location = new System.Drawing.Point(409, 78);
+            this.cBoxOzlukSehir.Name = "cBoxOzlukSehir";
+            this.cBoxOzlukSehir.Size = new System.Drawing.Size(91, 21);
+            this.cBoxOzlukSehir.TabIndex = 42;
+            // 
             // frmOzlukBilgisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 537);
-            this.Controls.Add(this.tboxOzlukEmail);
-            this.Controls.Add(this.label17);
+            this.ClientSize = new System.Drawing.Size(810, 537);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnOzlukGuncelle);
-            this.Controls.Add(this.tBoxOzlukBolum);
-            this.Controls.Add(this.tBoxOzlukOkul);
-            this.Controls.Add(this.tBoxOzlukPozsyon);
-            this.Controls.Add(this.tBoxOzlukEgitim);
-            this.Controls.Add(this.tBoxOzlukTecrube);
-            this.Controls.Add(this.tBoxOzlukSirketAdi);
-            this.Controls.Add(this.tBoxOzlukCepNo);
-            this.Controls.Add(this.tBoxOzlukSehir);
-            this.Controls.Add(this.tBoxOzlukDate);
-            this.Controls.Add(this.tBoxOzlukSoyad);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.tBoxOzlukAD);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmOzlukBilgisi";
             this.Text = "frmOzlukBilgisi";
-            this.Load += new System.EventHandler(this.frmOzlukBilgisi_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -439,8 +476,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -472,7 +514,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox tBoxOzlukSoyad;
         private System.Windows.Forms.TextBox tBoxOzlukDate;
-        private System.Windows.Forms.TextBox tBoxOzlukSehir;
         private System.Windows.Forms.TextBox tBoxOzlukCepNo;
         private System.Windows.Forms.TextBox tBoxOzlukSirketAdi;
         private System.Windows.Forms.TextBox tBoxOzlukTecrube;
@@ -483,5 +524,9 @@
         private System.Windows.Forms.Button btnOzlukGuncelle;
         private System.Windows.Forms.Label label17;
         public System.Windows.Forms.TextBox tboxOzlukEmail;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox cBoxOzlukSehir;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }

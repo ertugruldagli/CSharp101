@@ -338,7 +338,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tBoxProfilAD;
-        private System.Windows.Forms.TextBox tBoxProfilEmail;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
@@ -352,5 +351,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExit;
+        public System.Windows.Forms.TextBox tBoxProfilEmail;
     }
 }

@@ -46,8 +46,10 @@ namespace JobLinq
                         //    pp.ShowDialog();
                         //}
                         frmOzlukBilgisi ob = new frmOzlukBilgisi();
+                        ob.tboxOzlukEmail.Text = tBoxEmail.Text;
                         ob.ShowDialog();
 
+                        
                     }
                     else
                     {
