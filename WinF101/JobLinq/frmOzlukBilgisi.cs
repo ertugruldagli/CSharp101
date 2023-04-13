@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace JobLinq
 {
     public partial class frmOzlukBilgisi : Form
     {
+        SqlConnection conn = new SqlConnection(@"Data Source=ED-INTERN;Initial Catalog=DBJobLinq;Integrated Security=True");
+        string SQLQuery = "";
         public frmOzlukBilgisi()
         {
             InitializeComponent();
@@ -23,6 +26,12 @@ namespace JobLinq
             pp.tBoxProfilEmail.Text=tboxOzlukEmail.Text;
             pp.ShowDialog();
             
+        }
+
+
+        private void ListData()
+        {
+
         }
     }
 }
