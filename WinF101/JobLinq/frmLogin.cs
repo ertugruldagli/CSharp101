@@ -14,6 +14,8 @@ namespace JobLinq
     {
         SqlConnection conn = new SqlConnection(@"Data Source=ED-INTERN;Initial Catalog=DBJobLinq;Integrated Security=True");
         string SQLQuery = "";
+
+        public string id;
         public frmLogin()
         {
             InitializeComponent();
@@ -35,18 +37,20 @@ namespace JobLinq
                      
                     DataTable dt = new DataTable();
                     da.Fill(dt);
-                    string id = dt.Rows[0][0].ToString();
+
+                     id = dt.Rows[0][0].ToString();
                   
-
-
                     if (dt.Rows[0][1].Equals(1))
                     {
                         frmOzlukBilgisi ob = new frmOzlukBilgisi();
+                      // ob.tBoxSirketUserId.Text = id;
                         ob.ShowDialog();
                     }
                     else
                     {
-                        frmIsverenProfil Ib= new frmIsverenProfil();    
+                        frmIsverenProfil Ib= new frmIsverenProfil();
+                        Ib.tBoxSirketUserId.Text = id;
+                        Ib.tBoxSirketEmail.Text = tBoxEmail.Text;
                         Ib.ShowDialog();
                     }
 

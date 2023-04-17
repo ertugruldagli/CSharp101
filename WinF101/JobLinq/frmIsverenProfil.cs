@@ -26,28 +26,43 @@ namespace JobLinq
         {
             conn.Open();
 
-            SQLQuery = "INSERRT INTO tblSirketBilgileri ( UserId, Ad, Sektor, Adres, Sehir, CalisanSayisi, Aciklama From tblSirketBilgileri ) VALUES (@UserId, @Ad, @Sektor,@Adres, @Sehir, @CalisanSayisi, @Aciklama)";
+            SQLQuery = "INSERT INTO tblSirketBilgisi ( UserId, Ad, Sektor, Adres, Sehir, CalisanSayisi, Aciklama ) VALUES (@UserId, @Ad, @Sektor,@Adres, @Sehir, @CalisanSayisi, @Aciklama)";
 
             using (SqlCommand cmd =new SqlCommand (SQLQuery,conn))
             {
+
+                cmd.Parameters.AddWithValue("@UserId",tBoxSirketUserId.Text);
                 cmd.Parameters.AddWithValue("@Ad ", tBoxSirketAD.Text);
-                cmd.Parameters.AddWithValue("@Sektor ", cBoxSirketSektor);
+                cmd.Parameters.AddWithValue("@Sektor ", tBoxSirketSektor.Text);
                 cmd.Parameters.AddWithValue("@Adres ", tBoxSirketAdres.Text);
-                cmd.Parameters.AddWithValue("@Sehir ", cBoxSirketSehir);
+                cmd.Parameters.AddWithValue("@Sehir ", tBoxSirketSehir.Text);
                 cmd.Parameters.AddWithValue("@CalisanSayisi ", tBoxCalisanSayisi.Text);
-                cmd.Parameters.AddWithValue("@Aciklama ", liBoxProfilOnyazi.Text);
+                cmd.Parameters.AddWithValue("@Aciklama ", tBoxSirketAciklama.Text);
+
+                cmd.CommandType = CommandType.Text;
 
                 using (SqlDataAdapter sda =new SqlDataAdapter(cmd))
                 {
+                    DataTable dataTable = new DataTable();
+                    sda.Fill(dataTable);
 
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("İşleminiz başarılı");
 
+                      
+                   
                 }
 
             }
 
 
 
-                conn.Close();
+                
+        }
+
+        private void btnIsVerenProfilGuncelle_Click(object sender, EventArgs e)
+        {
+            AddData();
         }
     }
 }
