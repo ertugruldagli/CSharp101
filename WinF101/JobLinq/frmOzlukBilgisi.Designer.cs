@@ -65,9 +65,12 @@
             this.tboxOzlukEmail = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cBoxOzlukSehir = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.cBoxOzlukSehir = new System.Windows.Forms.ComboBox();
+            this.liBoxOzlukOnyazi = new System.Windows.Forms.ListBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtBoxID = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -419,6 +422,14 @@
             this.groupBox2.TabIndex = 39;
             this.groupBox2.TabStop = false;
             // 
+            // cBoxOzlukSehir
+            // 
+            this.cBoxOzlukSehir.FormattingEnabled = true;
+            this.cBoxOzlukSehir.Location = new System.Drawing.Point(409, 78);
+            this.cBoxOzlukSehir.Name = "cBoxOzlukSehir";
+            this.cBoxOzlukSehir.Size = new System.Drawing.Size(91, 21);
+            this.cBoxOzlukSehir.TabIndex = 42;
+            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -449,19 +460,38 @@
             this.groupBox4.TabIndex = 41;
             this.groupBox4.TabStop = false;
             // 
-            // cBoxOzlukSehir
+            // liBoxOzlukOnyazi
             // 
-            this.cBoxOzlukSehir.FormattingEnabled = true;
-            this.cBoxOzlukSehir.Location = new System.Drawing.Point(409, 78);
-            this.cBoxOzlukSehir.Name = "cBoxOzlukSehir";
-            this.cBoxOzlukSehir.Size = new System.Drawing.Size(91, 21);
-            this.cBoxOzlukSehir.TabIndex = 42;
+            this.liBoxOzlukOnyazi.FormattingEnabled = true;
+            this.liBoxOzlukOnyazi.Location = new System.Drawing.Point(296, 369);
+            this.liBoxOzlukOnyazi.Name = "liBoxOzlukOnyazi";
+            this.liBoxOzlukOnyazi.Size = new System.Drawing.Size(398, 95);
+            this.liBoxOzlukOnyazi.TabIndex = 42;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(212, 317);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(41, 13);
+            this.label18.TabIndex = 34;
+            this.label18.Text = "uSerId:";
+            // 
+            // txtBoxID
+            // 
+            this.txtBoxID.Location = new System.Drawing.Point(317, 314);
+            this.txtBoxID.Name = "txtBoxID";
+            this.txtBoxID.Size = new System.Drawing.Size(91, 20);
+            this.txtBoxID.TabIndex = 35;
             // 
             // frmOzlukBilgisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 537);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.liBoxOzlukOnyazi);
+            this.Controls.Add(this.txtBoxID);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -483,6 +513,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -528,5 +559,8 @@
         private System.Windows.Forms.ComboBox cBoxOzlukSehir;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ListBox liBoxOzlukOnyazi;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txtBoxID;
     }
 }

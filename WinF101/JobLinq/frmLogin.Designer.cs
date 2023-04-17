@@ -110,6 +110,7 @@
             this.Controls.Add(this.tBoxEmail);
             this.Controls.Add(this.btnGirisYap);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.ResumeLayout(false);
             this.PerformLayout();

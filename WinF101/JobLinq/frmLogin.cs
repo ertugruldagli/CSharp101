@@ -23,38 +23,23 @@ namespace JobLinq
         private void Login()
         {
             conn.Open();
-            int HesapTipi;
-            SQLQuery = "SELECT  Email, Parola, HesapTipi FROM tblDatUser WHERE  Email=@Email and Parola=@Parola";
+           
+            SQLQuery = "SELECT UserId FROM tblDatUser WHERE  Email=@Email and Parola=@Parola";
+
             using (SqlCommand cmd = new SqlCommand(SQLQuery, conn))
             {
                 cmd.Parameters.AddWithValue("@Email ", tBoxEmail.Text);
                 cmd.Parameters.AddWithValue("@Parola ", tBoxPassword.Text);
-                
 
-                using (SqlDataReader sdr = cmd.ExecuteReader())
+                using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                 {
-                    if (sdr.Read())
-                    {
-                        //if("HesapTipi".Equals(1))
-                        //{
-                        //    frmOzlukBilgisi ob = new frmOzlukBilgisi();
-                        //    ob.ShowDialog();
-                        //}
-                        //else
-                        //{
-                        //    frmIsverenProfil pp=new frmIsverenProfil();
-                        //    pp.ShowDialog();
-                        //}
-                        frmOzlukBilgisi ob = new frmOzlukBilgisi();
-                        ob.tboxOzlukEmail.Text = tBoxEmail.Text;
-                        ob.ShowDialog();
+                    
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    string id = dt.Rows[0][0].ToString();
 
-                        
-                    }
-                    else
-                    {
-                        MessageBox.Show("Hatalı kullanım..");
-                    }
+                
+                    
                 }
                 conn.Close();
             }

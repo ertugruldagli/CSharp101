@@ -22,16 +22,25 @@ namespace JobLinq
 
         private void label5_Click(object sender, EventArgs e)
         {
-            frmIsArayanProfil pp=new frmIsArayanProfil();   
-            pp.tBoxProfilEmail.Text=tboxOzlukEmail.Text;
+            frmIsArayanProfil pp = new frmIsArayanProfil();
+            pp.tBoxProfilEmail.Text = tboxOzlukEmail.Text;
             pp.ShowDialog();
-            
+
         }
 
 
         private void ListData()
         {
-
+            conn.Open();
+            int HesapTipi;
+            SQLQuery = "SELECT * FROM tblOzlukBilgisi";
+       
+            conn.Close();
         }
+
+
     }
+
+
+    
 }
