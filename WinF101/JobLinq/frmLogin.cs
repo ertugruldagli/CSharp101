@@ -19,12 +19,11 @@ namespace JobLinq
             InitializeComponent();
         }
 
-
         private void Login()
         {
             conn.Open();
            
-            SQLQuery = "SELECT UserId FROM tblDatUser WHERE  Email=@Email and Parola=@Parola";
+            SQLQuery = "SELECT UserId, HesapTipi FROM tblDatUser WHERE  Email=@Email and Parola=@Parola";
 
             using (SqlCommand cmd = new SqlCommand(SQLQuery, conn))
             {
@@ -33,15 +32,27 @@ namespace JobLinq
 
                 using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                 {
-                    
+                     
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     string id = dt.Rows[0][0].ToString();
 
-                
-                    
+
+                    if (dt.Rows[0][1].Equals(1))
+                    {
+                        frmOzlukBilgisi ob = new frmOzlukBilgisi();
+                        ob.ShowDialog();
+                    }
+                    else
+                    {
+                        frmIsverenProfil Ib= new frmIsverenProfil();    
+                        Ib.ShowDialog();
+                    }
+
                 }
+
                 conn.Close();
+
             }
         }
 
