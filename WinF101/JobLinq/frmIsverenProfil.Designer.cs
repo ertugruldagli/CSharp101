@@ -42,8 +42,6 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.tBoxSirketEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.tBoxSirketSehir = new System.Windows.Forms.TextBox();
-            this.tBoxSirketSektor = new System.Windows.Forms.TextBox();
             this.tBoxSirketAdres = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -55,6 +53,8 @@
             this.tBoxCalisanSayisi = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.btnIsVerenProfilGuncelle = new System.Windows.Forms.Button();
+            this.cBoxSirketSehir = new System.Windows.Forms.ComboBox();
+            this.cBoxSirketSektor = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -203,20 +203,6 @@
             this.label6.TabIndex = 57;
             this.label6.Text = "E-mail: ";
             // 
-            // tBoxSirketSehir
-            // 
-            this.tBoxSirketSehir.Location = new System.Drawing.Point(343, 111);
-            this.tBoxSirketSehir.Name = "tBoxSirketSehir";
-            this.tBoxSirketSehir.Size = new System.Drawing.Size(91, 20);
-            this.tBoxSirketSehir.TabIndex = 56;
-            // 
-            // tBoxSirketSektor
-            // 
-            this.tBoxSirketSektor.Location = new System.Drawing.Point(343, 85);
-            this.tBoxSirketSektor.Name = "tBoxSirketSektor";
-            this.tBoxSirketSektor.Size = new System.Drawing.Size(91, 20);
-            this.tBoxSirketSektor.TabIndex = 55;
-            // 
             // tBoxSirketAdres
             // 
             this.tBoxSirketAdres.Location = new System.Drawing.Point(343, 59);
@@ -296,9 +282,9 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(238, 176);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(78, 13);
+            this.label12.Size = new System.Drawing.Size(77, 13);
             this.label12.TabIndex = 61;
-            this.label12.Text = "Calisan SAyisi: ";
+            this.label12.Text = "Calisan Sayisi: ";
             // 
             // btnIsVerenProfilGuncelle
             // 
@@ -309,11 +295,29 @@
             this.btnIsVerenProfilGuncelle.Text = "Guncelle";
             this.btnIsVerenProfilGuncelle.UseVisualStyleBackColor = true;
             // 
+            // cBoxSirketSehir
+            // 
+            this.cBoxSirketSehir.FormattingEnabled = true;
+            this.cBoxSirketSehir.Location = new System.Drawing.Point(343, 111);
+            this.cBoxSirketSehir.Name = "cBoxSirketSehir";
+            this.cBoxSirketSehir.Size = new System.Drawing.Size(121, 21);
+            this.cBoxSirketSehir.TabIndex = 64;
+            // 
+            // cBoxSirketSektor
+            // 
+            this.cBoxSirketSektor.FormattingEnabled = true;
+            this.cBoxSirketSektor.Location = new System.Drawing.Point(343, 85);
+            this.cBoxSirketSektor.Name = "cBoxSirketSektor";
+            this.cBoxSirketSektor.Size = new System.Drawing.Size(121, 21);
+            this.cBoxSirketSektor.TabIndex = 65;
+            // 
             // frmIsverenProfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 526);
+            this.Controls.Add(this.cBoxSirketSektor);
+            this.Controls.Add(this.cBoxSirketSehir);
             this.Controls.Add(this.btnIsVerenProfilGuncelle);
             this.Controls.Add(this.tBoxCalisanSayisi);
             this.Controls.Add(this.label12);
@@ -321,8 +325,6 @@
             this.Controls.Add(this.label17);
             this.Controls.Add(this.tBoxSirketEmail);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.tBoxSirketSehir);
-            this.Controls.Add(this.tBoxSirketSektor);
             this.Controls.Add(this.tBoxSirketAdres);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -358,10 +360,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.TextBox tBoxSirketEmail;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox tBoxSirketSehir;
-        private System.Windows.Forms.TextBox tBoxSirketSektor;
         private System.Windows.Forms.TextBox tBoxSirketAdres;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -373,5 +372,8 @@
         private System.Windows.Forms.TextBox tBoxCalisanSayisi;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnIsVerenProfilGuncelle;
+        public System.Windows.Forms.TextBox tBoxSirketEmail;
+        private System.Windows.Forms.ComboBox cBoxSirketSehir;
+        private System.Windows.Forms.ComboBox cBoxSirketSektor;
     }
 }

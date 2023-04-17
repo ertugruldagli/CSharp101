@@ -36,6 +36,7 @@ namespace JobLinq
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     string id = dt.Rows[0][0].ToString();
+                  
 
 
                     if (dt.Rows[0][1].Equals(1))
