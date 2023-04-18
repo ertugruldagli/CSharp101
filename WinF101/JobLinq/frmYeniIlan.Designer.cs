@@ -42,7 +42,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tBoxYeniIlanSehir = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.liBoxAciklama = new System.Windows.Forms.ListBox();
             this.label17 = new System.Windows.Forms.Label();
             this.tboxYeniİlanSirket = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,6 +57,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
+            this.tBoxAciklama = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -178,14 +179,6 @@
             this.label3.TabIndex = 69;
             this.label3.Text = "Sehir: ";
             // 
-            // liBoxAciklama
-            // 
-            this.liBoxAciklama.FormattingEnabled = true;
-            this.liBoxAciklama.Location = new System.Drawing.Point(343, 214);
-            this.liBoxAciklama.Name = "liBoxAciklama";
-            this.liBoxAciklama.Size = new System.Drawing.Size(423, 95);
-            this.liBoxAciklama.TabIndex = 72;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -259,6 +252,7 @@
             this.label10.Size = new System.Drawing.Size(70, 14);
             this.label10.TabIndex = 8;
             this.label10.Text = "Yeni İlan";
+            this.label10.DoubleClick += new System.EventHandler(this.label10_DoubleClick);
             // 
             // label11
             // 
@@ -335,15 +329,34 @@
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
+            // tBoxAciklama
+            // 
+            this.tBoxAciklama.Location = new System.Drawing.Point(364, 216);
+            this.tBoxAciklama.Multiline = true;
+            this.tBoxAciklama.Name = "tBoxAciklama";
+            this.tBoxAciklama.Size = new System.Drawing.Size(414, 100);
+            this.tBoxAciklama.TabIndex = 76;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(680, 364);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 27);
+            this.button1.TabIndex = 77;
+            this.button1.Text = "Kaydet";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmYeniIlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 526);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tBoxAciklama);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tboxYeniİlanSirket);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.liBoxAciklama);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.tBoxYeniIlanSehir);
             this.Controls.Add(this.label3);
@@ -389,7 +402,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tBoxYeniIlanSehir;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ListBox liBoxAciklama;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox tboxYeniİlanSirket;
         private System.Windows.Forms.Label label4;
@@ -405,5 +417,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.TextBox tBoxAciklama;
+        private System.Windows.Forms.Button button1;
     }
 }

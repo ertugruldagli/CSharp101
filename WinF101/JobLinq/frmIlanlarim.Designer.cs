@@ -53,9 +53,9 @@
             // dgridIlanlarim
             // 
             this.dgridIlanlarim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgridIlanlarim.Location = new System.Drawing.Point(306, 12);
+            this.dgridIlanlarim.Location = new System.Drawing.Point(196, 12);
             this.dgridIlanlarim.Name = "dgridIlanlarim";
-            this.dgridIlanlarim.Size = new System.Drawing.Size(482, 426);
+            this.dgridIlanlarim.Size = new System.Drawing.Size(592, 426);
             this.dgridIlanlarim.TabIndex = 0;
             // 
             // groupBox1

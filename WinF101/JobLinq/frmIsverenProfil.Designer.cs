@@ -55,8 +55,8 @@
             this.tBoxSirketUserId = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.tBoxSirketAciklama = new System.Windows.Forms.TextBox();
-            this.tBoxSirketSektor = new System.Windows.Forms.TextBox();
-            this.tBoxSirketSehir = new System.Windows.Forms.TextBox();
+            this.cBoxSirketSektor = new System.Windows.Forms.ComboBox();
+            this.cBoxSirketSehir = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -314,27 +314,29 @@
             this.tBoxSirketAciklama.Size = new System.Drawing.Size(343, 50);
             this.tBoxSirketAciklama.TabIndex = 68;
             // 
-            // tBoxSirketSektor
+            // cBoxSirketSektor
             // 
-            this.tBoxSirketSektor.Location = new System.Drawing.Point(343, 89);
-            this.tBoxSirketSektor.Name = "tBoxSirketSektor";
-            this.tBoxSirketSektor.Size = new System.Drawing.Size(91, 20);
-            this.tBoxSirketSektor.TabIndex = 69;
+            this.cBoxSirketSektor.FormattingEnabled = true;
+            this.cBoxSirketSektor.Location = new System.Drawing.Point(343, 85);
+            this.cBoxSirketSektor.Name = "cBoxSirketSektor";
+            this.cBoxSirketSektor.Size = new System.Drawing.Size(95, 21);
+            this.cBoxSirketSektor.TabIndex = 69;
             // 
-            // tBoxSirketSehir
+            // cBoxSirketSehir
             // 
-            this.tBoxSirketSehir.Location = new System.Drawing.Point(343, 115);
-            this.tBoxSirketSehir.Name = "tBoxSirketSehir";
-            this.tBoxSirketSehir.Size = new System.Drawing.Size(91, 20);
-            this.tBoxSirketSehir.TabIndex = 70;
+            this.cBoxSirketSehir.FormattingEnabled = true;
+            this.cBoxSirketSehir.Location = new System.Drawing.Point(343, 110);
+            this.cBoxSirketSehir.Name = "cBoxSirketSehir";
+            this.cBoxSirketSehir.Size = new System.Drawing.Size(95, 21);
+            this.cBoxSirketSehir.TabIndex = 70;
             // 
             // frmIsverenProfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 526);
-            this.Controls.Add(this.tBoxSirketSehir);
-            this.Controls.Add(this.tBoxSirketSektor);
+            this.Controls.Add(this.cBoxSirketSehir);
+            this.Controls.Add(this.cBoxSirketSektor);
             this.Controls.Add(this.tBoxSirketAciklama);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.tBoxSirketUserId);
@@ -394,7 +396,7 @@
         private System.Windows.Forms.Label label11;
         public System.Windows.Forms.TextBox tBoxSirketUserId;
         private System.Windows.Forms.TextBox tBoxSirketAciklama;
-        private System.Windows.Forms.TextBox tBoxSirketSektor;
-        private System.Windows.Forms.TextBox tBoxSirketSehir;
+        private System.Windows.Forms.ComboBox cBoxSirketSektor;
+        private System.Windows.Forms.ComboBox cBoxSirketSehir;
     }
 }
