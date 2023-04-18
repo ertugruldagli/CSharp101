@@ -30,7 +30,7 @@ namespace JobLinq
 
             dgridIlanlarim.RowHeadersVisible=false;
 
-            dgridIlanlarim.Columns[0].Visible=false;
+            
         }
 
 
@@ -40,7 +40,7 @@ namespace JobLinq
             conn.Open();
             
             
-            SQLQuery = "SELECT* FROM tblilan";
+            SQLQuery = "SELECT I.ID, I.Sirket , I.Departman, I.Tecrube, I.EgitimSeviyesi, I.YabancilDil, I.CalismaSekli, I.Pozisyon, prmSehir.SehirAdi, I.IlanDetay FROM tblilan I INNER JOIN prmSehir ON prmSehir.SehirId = I.Sehir";
 
             using (SqlCommand cmd = new SqlCommand(SQLQuery,conn))
             {
@@ -53,7 +53,20 @@ namespace JobLinq
                 }
             }
 
-             conn.Close();
+            
+                SQLQuery = "SELECT* from prmSehir ";
+                SqlCommand cmd1 = new SqlCommand(SQLQuery, conn);
+                SqlDataAdapter da1 = new SqlDataAdapter(cmd1);
+                DataTable dt1 = new DataTable();
+                da1.Fill(dt1);
+
+           
+                cBoxIlanSehir.DisplayMember = "SehirAdi";
+                cBoxIlanSehir.ValueMember = "SehirID";
+                cBoxIlanSehir.DataSource = dt1;
+
+           
+            conn.Close();
 
         }
 
@@ -66,7 +79,7 @@ namespace JobLinq
             tBoxIlanYabanciDil.Text = dgridIlanlarim.Rows[e.RowIndex].Cells[5].Value.ToString();
             tBoxIlanCalisma.Text = dgridIlanlarim.Rows[e.RowIndex].Cells[6].Value.ToString();
             tBoxIlanPozisyon.Text = dgridIlanlarim.Rows[e.RowIndex].Cells[7].Value.ToString();
-            cBoxIlanSehir.SelectedValue = dgridIlanlarim.Rows[e.RowIndex].Cells[8].Value.ToString();
+            //cBoxIlanSehir.SelectedValue = dgridIlanlarim.Rows[e.RowIndex].Cells[7].Value.ToString();
             tBoxIlanDetay.Text = dgridIlanlarim.Rows[e.RowIndex].Cells[9].Value.ToString();
         }
 
@@ -82,11 +95,53 @@ namespace JobLinq
 
         private void btnSil_Click(object sender, EventArgs e)
         {
+            conn.Open();
+            SQLQuery = "DELETE FROM tblilan where ID=@ID";
+            SqlCommand cmd = new SqlCommand(SQLQuery, conn);
 
+            cmd.Parameters.AddWithValue("@ID", dgridIlanlarim.CurrentRow.Cells[0].Value);
+
+            cmd.ExecuteNonQuery();
+            
+            MessageBox.Show("Veri Silindi");
+            conn.Close();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            SQLQuery = "UPDATE tblilan SET Departman=@Departman, Tecrube=@Tecrube, EgitimSeviyesi=@EgitimSeviyesi, YabancilDil=@YabancilDil," +
+                " CalismaSekli=@CalismaSekli, Pozisyon=@Pozisyon,  IlanDetay=@Ilandetay  WHERE ID=@ID";
+
+            SqlCommand cmd = new SqlCommand(SQLQuery, conn);
+
+            cmd.Parameters.AddWithValue("@ID", dgridIlanlarim.CurrentRow.Cells[0].Value);
+            cmd.Parameters.AddWithValue("@Departman", tBoxIlanDepartman.Text);
+            cmd.Parameters.AddWithValue("@Tecrube", tBoxIlanTecrube.Text);
+            cmd.Parameters.AddWithValue("@EgitimSeviyesi", tBoxIlanEgitim.Text);
+            cmd.Parameters.AddWithValue("@YabancilDil", tBoxIlanYabanciDil.Text);
+            cmd.Parameters.AddWithValue("@CalismaSekli", tBoxIlanCalisma.Text);
+            cmd.Parameters.AddWithValue("@Pozisyon", tBoxIlanPozisyon.Text);
+            cmd.Parameters.AddWithValue("@IlanDetay", tBoxIlanDetay.Text);
+
+
+            cmd.CommandType = CommandType.Text;
+            try
+            {
+                conn.Open();
+                cmd.ExecuteNonQuery();
+
+
+                MessageBox.Show("İşleminiz başarılı");
+
+                conn.Close();
+                DataList();
+            }
+            catch (Exception hata)
+            {
+
+
+                MessageBox.Show(hata.ToString());
+            }
 
         }
     }
