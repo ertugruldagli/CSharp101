@@ -80,6 +80,14 @@ namespace JobLinq
             Property();
         }
 
-        
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

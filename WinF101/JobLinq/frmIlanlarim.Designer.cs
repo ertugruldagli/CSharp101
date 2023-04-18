@@ -403,6 +403,7 @@
             this.btnSil.TabIndex = 10;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // tBoxIlanDepartman
             // 
@@ -430,6 +431,7 @@
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // frmIlanlarim
             // 
