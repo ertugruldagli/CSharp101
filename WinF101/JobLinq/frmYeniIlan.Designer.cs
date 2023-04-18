@@ -245,6 +245,7 @@
             this.label10.Size = new System.Drawing.Size(70, 14);
             this.label10.TabIndex = 8;
             this.label10.Text = "Yeni İlan";
+            this.label10.DoubleClick += new System.EventHandler(this.label10_DoubleClick);
             // 
             // label11
             // 
@@ -266,6 +267,7 @@
             this.label12.Size = new System.Drawing.Size(84, 14);
             this.label12.TabIndex = 6;
             this.label12.Text = "Başvuranlar";
+            this.label12.DoubleClick += new System.EventHandler(this.label12_DoubleClick);
             // 
             // label13
             // 

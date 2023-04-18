@@ -150,5 +150,11 @@ namespace JobLinq
             frmBasvuranlar frmBasvuranlar= new frmBasvuranlar();
             frmBasvuranlar.ShowDialog();
         }
+
+        private void label4_DoubleClick(object sender, EventArgs e)
+        {
+            frmYeniIlan frmYeniIlan= new frmYeniIlan(); 
+            frmYeniIlan.ShowDialog();
+        }
     }
 }

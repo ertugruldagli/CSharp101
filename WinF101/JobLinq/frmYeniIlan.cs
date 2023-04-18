@@ -106,5 +106,17 @@ namespace JobLinq
         {
             ComboBox();
         }
+
+        private void label10_DoubleClick(object sender, EventArgs e)
+        {
+            frmYeniIlan frmYeniIlan = new frmYeniIlan();    
+            frmYeniIlan.ShowDialog();
+        }
+
+        private void label12_DoubleClick(object sender, EventArgs e)
+        {
+            frmBasvuranlar frmBasvuranlar   = new frmBasvuranlar();
+            frmBasvuranlar.ShowDialog();
+        }
     }
 }

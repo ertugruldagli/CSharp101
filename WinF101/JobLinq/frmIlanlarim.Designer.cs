@@ -130,6 +130,7 @@
             this.label4.Size = new System.Drawing.Size(70, 14);
             this.label4.TabIndex = 8;
             this.label4.Text = "Yeni İlan";
+            this.label4.DoubleClick += new System.EventHandler(this.label4_DoubleClick);
             // 
             // label3
             // 
