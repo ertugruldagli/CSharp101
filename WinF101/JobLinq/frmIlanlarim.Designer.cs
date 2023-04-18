@@ -42,6 +42,20 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tBoxIlanPozisyon = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tBoxIlanDetay = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tBoxIlanYabanciDil = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tBoxIlanCalisma = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tBoxIlanTecrube = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tBoxIlanEgitim = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cBoxIlanSehir = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.btnAra = new System.Windows.Forms.Button();
             this.tBoxIlanSirketId = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,20 +63,6 @@
             this.tBoxIlanDepartman = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.cBoxIlanSehir = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tBoxIlanTecrube = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tBoxIlanEgitim = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tBoxIlanYabanciDil = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tBoxIlanCalisma = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.tBoxIlanPozisyon = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.tBoxIlanDetay = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgridIlanlarim)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -80,6 +80,7 @@
             this.dgridIlanlarim.Name = "dgridIlanlarim";
             this.dgridIlanlarim.Size = new System.Drawing.Size(575, 491);
             this.dgridIlanlarim.TabIndex = 0;
+            this.dgridIlanlarim.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgridIlanlarim_CellClick);
             // 
             // groupBox1
             // 
@@ -235,6 +236,137 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             // 
+            // tBoxIlanPozisyon
+            // 
+            this.tBoxIlanPozisyon.Location = new System.Drawing.Point(113, 226);
+            this.tBoxIlanPozisyon.Name = "tBoxIlanPozisyon";
+            this.tBoxIlanPozisyon.Size = new System.Drawing.Size(113, 20);
+            this.tBoxIlanPozisyon.TabIndex = 33;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label13.Location = new System.Drawing.Point(5, 230);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(68, 16);
+            this.label13.TabIndex = 32;
+            this.label13.Text = "Pozisyon: ";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tBoxIlanDetay
+            // 
+            this.tBoxIlanDetay.Location = new System.Drawing.Point(113, 298);
+            this.tBoxIlanDetay.Multiline = true;
+            this.tBoxIlanDetay.Name = "tBoxIlanDetay";
+            this.tBoxIlanDetay.Size = new System.Drawing.Size(113, 87);
+            this.tBoxIlanDetay.TabIndex = 34;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label14.Location = new System.Drawing.Point(6, 299);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(73, 16);
+            this.label14.TabIndex = 35;
+            this.label14.Text = "Ilan Detay: ";
+            // 
+            // tBoxIlanYabanciDil
+            // 
+            this.tBoxIlanYabanciDil.Location = new System.Drawing.Point(113, 158);
+            this.tBoxIlanYabanciDil.Name = "tBoxIlanYabanciDil";
+            this.tBoxIlanYabanciDil.Size = new System.Drawing.Size(113, 20);
+            this.tBoxIlanYabanciDil.TabIndex = 29;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(4, 162);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(82, 16);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Yabanci Dil: ";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tBoxIlanCalisma
+            // 
+            this.tBoxIlanCalisma.Location = new System.Drawing.Point(113, 194);
+            this.tBoxIlanCalisma.Name = "tBoxIlanCalisma";
+            this.tBoxIlanCalisma.Size = new System.Drawing.Size(113, 20);
+            this.tBoxIlanCalisma.TabIndex = 30;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.Location = new System.Drawing.Point(7, 195);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 16);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "Ç. Şekli:";
+            // 
+            // tBoxIlanTecrube
+            // 
+            this.tBoxIlanTecrube.Location = new System.Drawing.Point(113, 91);
+            this.tBoxIlanTecrube.Name = "tBoxIlanTecrube";
+            this.tBoxIlanTecrube.Size = new System.Drawing.Size(113, 20);
+            this.tBoxIlanTecrube.TabIndex = 25;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(7, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 16);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Tecrube: ";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tBoxIlanEgitim
+            // 
+            this.tBoxIlanEgitim.Location = new System.Drawing.Point(113, 127);
+            this.tBoxIlanEgitim.Name = "tBoxIlanEgitim";
+            this.tBoxIlanEgitim.Size = new System.Drawing.Size(113, 20);
+            this.tBoxIlanEgitim.TabIndex = 26;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(5, 131);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(102, 16);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "EgitimSeviyesi: ";
+            // 
+            // cBoxIlanSehir
+            // 
+            this.cBoxIlanSehir.FormattingEnabled = true;
+            this.cBoxIlanSehir.Location = new System.Drawing.Point(113, 258);
+            this.cBoxIlanSehir.Name = "cBoxIlanSehir";
+            this.cBoxIlanSehir.Size = new System.Drawing.Size(115, 21);
+            this.cBoxIlanSehir.TabIndex = 23;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(11, 263);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(44, 16);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Sehir: ";
+            // 
             // btnAra
             // 
             this.btnAra.Location = new System.Drawing.Point(40, 405);
@@ -298,136 +430,6 @@
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // cBoxIlanSehir
-            // 
-            this.cBoxIlanSehir.FormattingEnabled = true;
-            this.cBoxIlanSehir.Location = new System.Drawing.Point(113, 258);
-            this.cBoxIlanSehir.Name = "cBoxIlanSehir";
-            this.cBoxIlanSehir.Size = new System.Drawing.Size(115, 21);
-            this.cBoxIlanSehir.TabIndex = 23;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(11, 263);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 16);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "Sehir: ";
-            // 
-            // tBoxIlanTecrube
-            // 
-            this.tBoxIlanTecrube.Location = new System.Drawing.Point(113, 91);
-            this.tBoxIlanTecrube.Name = "tBoxIlanTecrube";
-            this.tBoxIlanTecrube.Size = new System.Drawing.Size(113, 20);
-            this.tBoxIlanTecrube.TabIndex = 25;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(7, 95);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 16);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "Tecrube: ";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // tBoxIlanEgitim
-            // 
-            this.tBoxIlanEgitim.Location = new System.Drawing.Point(113, 127);
-            this.tBoxIlanEgitim.Name = "tBoxIlanEgitim";
-            this.tBoxIlanEgitim.Size = new System.Drawing.Size(113, 20);
-            this.tBoxIlanEgitim.TabIndex = 26;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(5, 131);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 16);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "EgitimSeviyesi: ";
-            // 
-            // tBoxIlanYabanciDil
-            // 
-            this.tBoxIlanYabanciDil.Location = new System.Drawing.Point(113, 158);
-            this.tBoxIlanYabanciDil.Name = "tBoxIlanYabanciDil";
-            this.tBoxIlanYabanciDil.Size = new System.Drawing.Size(113, 20);
-            this.tBoxIlanYabanciDil.TabIndex = 29;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(4, 162);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 16);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "Yabanci Dil: ";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // tBoxIlanCalisma
-            // 
-            this.tBoxIlanCalisma.Location = new System.Drawing.Point(113, 194);
-            this.tBoxIlanCalisma.Name = "tBoxIlanCalisma";
-            this.tBoxIlanCalisma.Size = new System.Drawing.Size(113, 20);
-            this.tBoxIlanCalisma.TabIndex = 30;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(7, 195);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(55, 16);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "Ç. Şekli:";
-            // 
-            // tBoxIlanPozisyon
-            // 
-            this.tBoxIlanPozisyon.Location = new System.Drawing.Point(113, 226);
-            this.tBoxIlanPozisyon.Name = "tBoxIlanPozisyon";
-            this.tBoxIlanPozisyon.Size = new System.Drawing.Size(113, 20);
-            this.tBoxIlanPozisyon.TabIndex = 33;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(5, 230);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 16);
-            this.label13.TabIndex = 32;
-            this.label13.Text = "Pozisyon: ";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // tBoxIlanDetay
-            // 
-            this.tBoxIlanDetay.Location = new System.Drawing.Point(113, 298);
-            this.tBoxIlanDetay.Name = "tBoxIlanDetay";
-            this.tBoxIlanDetay.Size = new System.Drawing.Size(113, 20);
-            this.tBoxIlanDetay.TabIndex = 34;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(6, 299);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(73, 16);
-            this.label14.TabIndex = 35;
-            this.label14.Text = "Ilan Detay: ";
             // 
             // frmIlanlarim
             // 

@@ -57,10 +57,29 @@ namespace JobLinq
 
         }
 
+        private void dgridIlanlarim_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tBoxIlanSirketId.Text = dgridIlanlarim.Rows[e.RowIndex].Cells[1].Value.ToString();
+            tBoxIlanDepartman.Text = dgridIlanlarim.Rows[e.RowIndex].Cells[2].Value.ToString();
+            tBoxIlanTecrube.Text = dgridIlanlarim.Rows[e.RowIndex].Cells[3].Value.ToString();
+            tBoxIlanEgitim.Text = dgridIlanlarim.Rows[e.RowIndex].Cells[4].Value.ToString();
+            tBoxIlanYabanciDil.Text = dgridIlanlarim.Rows[e.RowIndex].Cells[5].Value.ToString();
+            tBoxIlanCalisma.Text = dgridIlanlarim.Rows[e.RowIndex].Cells[6].Value.ToString();
+            tBoxIlanPozisyon.Text = dgridIlanlarim.Rows[e.RowIndex].Cells[7].Value.ToString();
+            cBoxIlanSehir.SelectedValue = dgridIlanlarim.Rows[e.RowIndex].Cells[8].Value.ToString();
+            tBoxIlanDetay.Text = dgridIlanlarim.Rows[e.RowIndex].Cells[9].Value.ToString();
+        }
+
+
+
+
+
         private void frmIlanlarim_Load(object sender, EventArgs e)
         {
             DataList();
             Property();
         }
+
+        
     }
 }
