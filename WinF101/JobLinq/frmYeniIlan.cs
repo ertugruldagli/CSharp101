@@ -61,6 +61,31 @@ namespace JobLinq
 
         }
 
+        private void ComboBox()
+        {
+
+            conn.Open();
+            try
+            {
+                string query = "SELECT SehirAdi, SehirID from prmSehir order by SehirAdi asc ";
+                SqlDataAdapter da = new SqlDataAdapter(query, conn);
+
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                cBoxSirketSehir.DisplayMember = "SehirAdi";
+                cBoxSirketSehir.ValueMember = "SehirID";
+                cBoxSirketSehir.DataSource = ds.Tables[0];
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error occured!");
+            }
+
+            conn.Close();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             AddData();
@@ -75,6 +100,11 @@ namespace JobLinq
         {
             frmIlanlarim ilan = new frmIlanlarim();
             ilan.ShowDialog();
+        }
+
+        private void frmYeniIlan_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -355,6 +355,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmIsverenProfil";
             this.Text = "frmIsverenProfil";
+            this.Load += new System.EventHandler(this.frmIsverenProfil_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

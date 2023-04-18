@@ -40,7 +40,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tBoxYeniIlanESeviyesi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tBoxYeniIlanSehir = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tboxYeniİlanSirket = new System.Windows.Forms.TextBox();
@@ -59,6 +58,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.tBoxAciklama = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.cBoxIlanSehir = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -162,13 +162,6 @@
             this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 67;
             this.label2.Text = "Egitim Seviyesi. ";
-            // 
-            // tBoxYeniIlanSehir
-            // 
-            this.tBoxYeniIlanSehir.Location = new System.Drawing.Point(697, 114);
-            this.tBoxYeniIlanSehir.Name = "tBoxYeniIlanSehir";
-            this.tBoxYeniIlanSehir.Size = new System.Drawing.Size(92, 20);
-            this.tBoxYeniIlanSehir.TabIndex = 70;
             // 
             // label3
             // 
@@ -347,18 +340,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // cBoxIlanSehir
+            // 
+            this.cBoxIlanSehir.FormattingEnabled = true;
+            this.cBoxIlanSehir.Location = new System.Drawing.Point(667, 118);
+            this.cBoxIlanSehir.Name = "cBoxIlanSehir";
+            this.cBoxIlanSehir.Size = new System.Drawing.Size(121, 21);
+            this.cBoxIlanSehir.TabIndex = 78;
+            // 
             // frmYeniIlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 526);
+            this.Controls.Add(this.cBoxIlanSehir);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tBoxAciklama);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tboxYeniİlanSirket);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.tBoxYeniIlanSehir);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tBoxYeniIlanESeviyesi);
             this.Controls.Add(this.label2);
@@ -374,6 +375,7 @@
             this.Controls.Add(this.tBoxYeniIlanTecrube);
             this.Name = "frmYeniIlan";
             this.Text = "frmYeniIlan";
+            this.Load += new System.EventHandler(this.frmYeniIlan_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -400,7 +402,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tBoxYeniIlanESeviyesi;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tBoxYeniIlanSehir;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox tboxYeniİlanSirket;
@@ -419,5 +420,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox tBoxAciklama;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cBoxIlanSehir;
     }
 }

@@ -8,12 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace JobLinq
 {
     public partial class frmIsverenProfil : Form
     {
-
+        
         SqlConnection conn = new SqlConnection(@"Data Source=ED-INTERN;Initial Catalog=DBJobLinq;Integrated Security=True");
         string SQLQuery = "";
 
@@ -24,6 +25,7 @@ namespace JobLinq
 
         private void AddData()
         {
+            
             conn.Open();
 
             SQLQuery = "INSERT INTO tblSirketBilgisi ( UserId, Ad, Sektor, Adres, Sehir, CalisanSayisi, Aciklama ) VALUES ( @UserId, @Ad, @Sektor,@Adres, @Sehir, @CalisanSayisi, @Aciklama)";
@@ -61,14 +63,63 @@ namespace JobLinq
                 }
 
             }
+         
+
 
             conn.Close();
        
         }
 
+      
+        private void ComboBox()
+        {
+           
+            conn.Open();
+            try
+            {
+                string query = "SELECT SehirAdi, SehirID from prmSehir order by SehirAdi asc ";
+                SqlDataAdapter da = new SqlDataAdapter(query, conn);
+               
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                cBoxSirketSehir.DisplayMember = "SehirAdi";
+                cBoxSirketSehir.ValueMember = "SehirID";
+                cBoxSirketSehir.DataSource = ds.Tables[0];
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error occured!");
+            }
+            
+            try
+            {
+                string query1 = "select SektorID, SektorName from prmSektorBilgisi ";
+                SqlDataAdapter da = new SqlDataAdapter(query1, conn);
+                
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                cBoxSirketSektor.DisplayMember = "SektorName";
+                cBoxSirketSektor.ValueMember = "SektorID";
+                cBoxSirketSektor.DataSource = ds.Tables[0];
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error occured!");
+            }
+            conn.Close();
+        }
+
         private void btnIsVerenProfilGuncelle_Click(object sender, EventArgs e)
         {
             AddData();
+
+        }
+        private void frmIsverenProfil_Load(object sender, EventArgs e)
+        {
+            ComboBox();
         }
     }
 }
