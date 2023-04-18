@@ -16,7 +16,7 @@ namespace JobLinq
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmIsverenProfil());
+            Application.Run(new frmYeniIlan());
         }
     }
 }

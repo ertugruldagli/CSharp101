@@ -36,7 +36,7 @@ namespace JobLinq
                 cmd.Parameters.AddWithValue("@YabancilDil ", tBoxYeniIlanDil.Text);
                 cmd.Parameters.AddWithValue("@CalismaSekli ", tBoxYeniIlanCSekli.Text);
                 cmd.Parameters.AddWithValue("@Pozisyon ", tBoxYeniIlanPozisyon.Text);
-                cmd.Parameters.AddWithValue("@Sehir ", tBoxYeniIlanSehir.Text);
+                cmd.Parameters.AddWithValue("@Sehir ", cBoxIlanSehir.SelectedValue);
                 cmd.Parameters.AddWithValue("@IlanDetay ", tBoxAciklama.Text);
 
                 cmd.CommandType = CommandType.Text;
@@ -72,9 +72,9 @@ namespace JobLinq
 
                 DataSet ds = new DataSet();
                 da.Fill(ds);
-                cBoxSirketSehir.DisplayMember = "SehirAdi";
-                cBoxSirketSehir.ValueMember = "SehirID";
-                cBoxSirketSehir.DataSource = ds.Tables[0];
+                cBoxIlanSehir.DisplayMember = "SehirAdi";
+                cBoxIlanSehir.ValueMember = "SehirID";
+                cBoxIlanSehir.DataSource = ds.Tables[0];
 
             }
             catch (Exception)
@@ -104,7 +104,7 @@ namespace JobLinq
 
         private void frmYeniIlan_Load(object sender, EventArgs e)
         {
-
+            ComboBox();
         }
     }
 }
