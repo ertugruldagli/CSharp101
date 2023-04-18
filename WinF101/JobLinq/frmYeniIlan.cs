@@ -64,6 +64,7 @@ namespace JobLinq
         private void button1_Click(object sender, EventArgs e)
         {
             AddData();
+
             frmIlanlarim ilanlar=new frmIlanlarim();    
             ilanlar.ShowDialog();
         }
