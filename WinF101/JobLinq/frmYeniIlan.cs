@@ -24,7 +24,7 @@ namespace JobLinq
         {
             conn.Open();
 
-            SQLQuery = "INSERT INTO tblilan ( Sirket, Departman, Tecrube, EgitimSeviyesi, YabanciDil, CalismaSekli, Pozisyon, Sehir, IlanDetay ) VALUES ( @Sirket, @Departman, @Tecrube ,@EgitimSeviyesi, @YabanciDil, @CalismaSekli, @Pozisyon, @Sehir, @IlanDetay)";
+            SQLQuery = "INSERT INTO tblilan ( Sirket, Departman, Tecrube, EgitimSeviyesi, YabancilDil, CalismaSekli, Pozisyon, Sehir, IlanDetay ) VALUES ( @Sirket, @Departman, @Tecrube ,@EgitimSeviyesi, @YabancilDil, @CalismaSekli, @Pozisyon, @Sehir, @IlanDetay)";
 
             using (SqlCommand cmd = new SqlCommand(SQLQuery, conn))
             {
@@ -33,7 +33,7 @@ namespace JobLinq
                 cmd.Parameters.AddWithValue("@Departman ", tBoxYeniIlanDEpartman.Text);
                 cmd.Parameters.AddWithValue("@Tecrube ", tBoxYeniIlanTecrube.Text);
                 cmd.Parameters.AddWithValue("@EgitimSeviyesi ", tBoxYeniIlanESeviyesi.Text);
-                cmd.Parameters.AddWithValue("@YabanciDil ", tBoxYeniIlanDil.Text);
+                cmd.Parameters.AddWithValue("@YabancilDil ", tBoxYeniIlanDil.Text);
                 cmd.Parameters.AddWithValue("@CalismaSekli ", tBoxYeniIlanCSekli.Text);
                 cmd.Parameters.AddWithValue("@Pozisyon ", tBoxYeniIlanPozisyon.Text);
                 cmd.Parameters.AddWithValue("@Sehir ", tBoxYeniIlanSehir.Text);
@@ -69,9 +69,11 @@ namespace JobLinq
             ilanlar.ShowDialog();
         }
 
-        private void label10_DoubleClick(object sender, EventArgs e)
+      
+
+        private void label11_DoubleClick_1(object sender, EventArgs e)
         {
-            frmIlanlarim ilan=new frmIlanlarim();
+            frmIlanlarim ilan = new frmIlanlarim();
             ilan.ShowDialog();
         }
     }

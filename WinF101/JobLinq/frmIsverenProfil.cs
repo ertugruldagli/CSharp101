@@ -28,6 +28,8 @@ namespace JobLinq
 
             SQLQuery = "INSERT INTO tblSirketBilgisi ( UserId, Ad, Sektor, Adres, Sehir, CalisanSayisi, Aciklama ) VALUES ( @UserId, @Ad, @Sektor,@Adres, @Sehir, @CalisanSayisi, @Aciklama)";
 
+            string id;
+
             using (SqlCommand cmd =new SqlCommand (SQLQuery,conn))
             {
 
@@ -40,16 +42,20 @@ namespace JobLinq
                 cmd.Parameters.AddWithValue("@Aciklama ", tBoxSirketAciklama.Text);
 
                 cmd.CommandType = CommandType.Text;
+
                 
+
                 using (SqlDataAdapter sda =new SqlDataAdapter(cmd))
                 {
                     DataTable dataTable = new DataTable();
                     sda.Fill(dataTable);
 
+                    id = dataTable.Rows[0][0].ToString();
+
                     //cBoxSirketSehir.DisplayMember = "Sehir";
                     //cBoxSirketSehir.ValueMember = "Sehir";
                     //cBoxSirketSehir.DataSource = dataTable;
-                    
+
                     MessageBox.Show("İşleminiz başarılı");
 
                 }
