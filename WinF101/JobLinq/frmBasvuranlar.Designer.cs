@@ -53,9 +53,9 @@
             // dgridIBasvurnlar
             // 
             this.dgridIBasvurnlar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgridIBasvurnlar.Location = new System.Drawing.Point(306, 12);
+            this.dgridIBasvurnlar.Location = new System.Drawing.Point(177, 12);
             this.dgridIBasvurnlar.Name = "dgridIBasvurnlar";
-            this.dgridIBasvurnlar.Size = new System.Drawing.Size(482, 426);
+            this.dgridIBasvurnlar.Size = new System.Drawing.Size(611, 426);
             this.dgridIBasvurnlar.TabIndex = 1;
             // 
             // groupBox1
@@ -191,6 +191,7 @@
             this.Controls.Add(this.dgridIBasvurnlar);
             this.Name = "frmBasvuranlar";
             this.Text = "frmBasvuranlar";
+            this.Load += new System.EventHandler(this.frmBasvuranlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgridIBasvurnlar)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

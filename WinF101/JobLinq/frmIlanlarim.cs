@@ -144,5 +144,11 @@ namespace JobLinq
             }
 
         }
+
+        private void label2_DoubleClick(object sender, EventArgs e)
+        {
+            frmBasvuranlar frmBasvuranlar= new frmBasvuranlar();
+            frmBasvuranlar.ShowDialog();
+        }
     }
 }
