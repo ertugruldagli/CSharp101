@@ -42,11 +42,26 @@ namespace UrunTakipEntity
 
         private void btnsil_Click(object sender, EventArgs e)
         {
+            
             int id= int.Parse(tBoxId.Text);
             var x = dbNortwind.tblMusteri.Find(id);
             dbNortwind.tblMusteri.Remove(x);
             dbNortwind.SaveChanges();
             MessageBox.Show("Seçilen Kayıt Silindi!");
+        }
+
+        private void dgridMusteri_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tBoxId.Text = dgridMusteri.Rows[e.RowIndex].Cells[0].Value.ToString();
+            tBoxAd.Text = dgridMusteri.Rows[e.RowIndex].Cells[1].Value.ToString();
+            tBoxSoyad.Text = dgridMusteri.Rows[e.RowIndex].Cells[2].Value.ToString();
+            tBoxSehir.Text = dgridMusteri.Rows[e.RowIndex].Cells[3].Value.ToString();
+            tBoxBakiye.Text = dgridMusteri.Rows[e.RowIndex].Cells[4].Value.ToString();
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

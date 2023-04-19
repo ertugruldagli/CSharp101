@@ -42,6 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.btnsil = new System.Windows.Forms.Button();
+            this.btnGuncelle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgridMusteri)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +53,7 @@
             this.dgridMusteri.Name = "dgridMusteri";
             this.dgridMusteri.Size = new System.Drawing.Size(541, 321);
             this.dgridMusteri.TabIndex = 0;
+            this.dgridMusteri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgridMusteri_CellClick);
             // 
             // label1
             // 
@@ -163,12 +165,23 @@
             this.btnsil.UseVisualStyleBackColor = true;
             this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
+            // btnGuncelle
+            // 
+            this.btnGuncelle.Location = new System.Drawing.Point(578, 276);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(150, 23);
+            this.btnGuncelle.TabIndex = 14;
+            this.btnGuncelle.Text = "Guncelle";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
+            // 
             // frmMusteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(740, 369);
+            this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnsil);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.tBoxBakiye);
@@ -207,6 +220,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.Button btnsil;
+        private System.Windows.Forms.Button btnGuncelle;
     }
 }
 
