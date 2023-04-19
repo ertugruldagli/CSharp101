@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetEx", "AdoNetEx\AdoNet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobLinq", "JobLinq\JobLinq.csproj", "{D10BB781-C1DD-46EA-8557-F35E06FB5B1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrunTakipEntity", "UrunTakipEntity\UrunTakipEntity.csproj", "{89D94A3A-6E7B-4E08-9319-FC027D7707CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D10BB781-C1DD-46EA-8557-F35E06FB5B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D10BB781-C1DD-46EA-8557-F35E06FB5B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D10BB781-C1DD-46EA-8557-F35E06FB5B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89D94A3A-6E7B-4E08-9319-FC027D7707CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D94A3A-6E7B-4E08-9319-FC027D7707CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D94A3A-6E7B-4E08-9319-FC027D7707CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D94A3A-6E7B-4E08-9319-FC027D7707CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
