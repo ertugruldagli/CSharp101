@@ -15,6 +15,8 @@ namespace JobLinq
     {
 
         SqlConnection conn = new SqlConnection(@"Data Source=ED-INTERN;Initial Catalog=DBJobLinq;Integrated Security=True");
+
+
         string SQLQuery = "";
         public frmIsArama()
         {
@@ -61,13 +63,7 @@ namespace JobLinq
 
         private void btnAra_Click(object sender, EventArgs e)
         {
-            conn.Open();
-
-            
-
-
-
-            conn.Close();  
+           
         }
     }
 }
