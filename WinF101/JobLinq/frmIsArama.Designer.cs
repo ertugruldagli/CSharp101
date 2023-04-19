@@ -28,11 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tBoxIsAramaDil = new System.Windows.Forms.TextBox();
-            this.tBoxIsAramaPozisyon = new System.Windows.Forms.TextBox();
-            this.tBoxIsAramaCSekli = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tBoxIsAramaTecrübe = new System.Windows.Forms.TextBox();
@@ -51,6 +46,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
+            this.rbtnPart = new System.Windows.Forms.RadioButton();
+            this.rbtnFull = new System.Windows.Forms.RadioButton();
+            this.rbtnStajyer = new System.Windows.Forms.RadioButton();
+            this.cBoxSehir = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cBoxPosizyon = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgridIsArama)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -58,68 +61,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tBoxIsAramaDil
-            // 
-            this.tBoxIsAramaDil.Location = new System.Drawing.Point(322, 118);
-            this.tBoxIsAramaDil.Name = "tBoxIsAramaDil";
-            this.tBoxIsAramaDil.Size = new System.Drawing.Size(91, 20);
-            this.tBoxIsAramaDil.TabIndex = 56;
-            // 
-            // tBoxIsAramaPozisyon
-            // 
-            this.tBoxIsAramaPozisyon.Location = new System.Drawing.Point(322, 92);
-            this.tBoxIsAramaPozisyon.Name = "tBoxIsAramaPozisyon";
-            this.tBoxIsAramaPozisyon.Size = new System.Drawing.Size(91, 20);
-            this.tBoxIsAramaPozisyon.TabIndex = 55;
-            // 
-            // tBoxIsAramaCSekli
-            // 
-            this.tBoxIsAramaCSekli.Location = new System.Drawing.Point(322, 66);
-            this.tBoxIsAramaCSekli.Name = "tBoxIsAramaCSekli";
-            this.tBoxIsAramaCSekli.Size = new System.Drawing.Size(91, 20);
-            this.tBoxIsAramaCSekli.TabIndex = 54;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(217, 125);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 13);
-            this.label9.TabIndex = 53;
-            this.label9.Text = "Yabanci Dİl:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(217, 99);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 13);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "Porzisyon: ";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(217, 73);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(64, 78);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 13);
+            this.label7.Size = new System.Drawing.Size(89, 16);
             this.label7.TabIndex = 51;
-            this.label7.Text = "Çalışma Şekli: ";
+            this.label7.Text = "Çalışma Şekli";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(217, 47);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(21, 23);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 13);
+            this.label6.Size = new System.Drawing.Size(64, 16);
             this.label6.TabIndex = 50;
             this.label6.Text = "Tecrübe: ";
             // 
             // tBoxIsAramaTecrübe
             // 
-            this.tBoxIsAramaTecrübe.Location = new System.Drawing.Point(322, 40);
+            this.tBoxIsAramaTecrübe.Location = new System.Drawing.Point(91, 19);
             this.tBoxIsAramaTecrübe.Name = "tBoxIsAramaTecrübe";
             this.tBoxIsAramaTecrübe.Size = new System.Drawing.Size(91, 20);
             this.tBoxIsAramaTecrübe.TabIndex = 49;
@@ -274,26 +241,108 @@
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
+            // rbtnPart
+            // 
+            this.rbtnPart.AutoSize = true;
+            this.rbtnPart.Location = new System.Drawing.Point(15, 102);
+            this.rbtnPart.Name = "rbtnPart";
+            this.rbtnPart.Size = new System.Drawing.Size(70, 17);
+            this.rbtnPart.TabIndex = 63;
+            this.rbtnPart.TabStop = true;
+            this.rbtnPart.Text = "Part Time";
+            this.rbtnPart.UseVisualStyleBackColor = true;
+            // 
+            // rbtnFull
+            // 
+            this.rbtnFull.AutoSize = true;
+            this.rbtnFull.Location = new System.Drawing.Point(91, 103);
+            this.rbtnFull.Name = "rbtnFull";
+            this.rbtnFull.Size = new System.Drawing.Size(67, 17);
+            this.rbtnFull.TabIndex = 64;
+            this.rbtnFull.TabStop = true;
+            this.rbtnFull.Text = "Full Time";
+            this.rbtnFull.UseVisualStyleBackColor = true;
+            // 
+            // rbtnStajyer
+            // 
+            this.rbtnStajyer.AutoSize = true;
+            this.rbtnStajyer.Location = new System.Drawing.Point(164, 103);
+            this.rbtnStajyer.Name = "rbtnStajyer";
+            this.rbtnStajyer.Size = new System.Drawing.Size(57, 17);
+            this.rbtnStajyer.TabIndex = 65;
+            this.rbtnStajyer.TabStop = true;
+            this.rbtnStajyer.Text = "Stajyer";
+            this.rbtnStajyer.UseVisualStyleBackColor = true;
+            // 
+            // cBoxSehir
+            // 
+            this.cBoxSehir.FormattingEnabled = true;
+            this.cBoxSehir.Location = new System.Drawing.Point(91, 156);
+            this.cBoxSehir.Name = "cBoxSehir";
+            this.cBoxSehir.Size = new System.Drawing.Size(91, 21);
+            this.cBoxSehir.TabIndex = 66;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(41, 161);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 16);
+            this.label8.TabIndex = 67;
+            this.label8.Text = "Şehir: ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(21, 210);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(68, 16);
+            this.label9.TabIndex = 69;
+            this.label9.Text = "Pozisyon: ";
+            // 
+            // cBoxPosizyon
+            // 
+            this.cBoxPosizyon.FormattingEnabled = true;
+            this.cBoxPosizyon.Location = new System.Drawing.Point(91, 208);
+            this.cBoxPosizyon.Name = "cBoxPosizyon";
+            this.cBoxPosizyon.Size = new System.Drawing.Size(91, 21);
+            this.cBoxPosizyon.TabIndex = 68;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox2.Controls.Add(this.tBoxIsAramaTecrübe);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.cBoxPosizyon);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.rbtnPart);
+            this.groupBox2.Controls.Add(this.cBoxSehir);
+            this.groupBox2.Controls.Add(this.rbtnFull);
+            this.groupBox2.Controls.Add(this.rbtnStajyer);
+            this.groupBox2.Location = new System.Drawing.Point(169, 117);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(253, 251);
+            this.groupBox2.TabIndex = 70;
+            this.groupBox2.TabStop = false;
+            // 
             // frmIsArama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 526);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnIsAramaListele);
             this.Controls.Add(this.btnBasvur);
             this.Controls.Add(this.dgridIsArama);
-            this.Controls.Add(this.tBoxIsAramaDil);
-            this.Controls.Add(this.tBoxIsAramaPozisyon);
-            this.Controls.Add(this.tBoxIsAramaCSekli);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.tBoxIsAramaTecrübe);
             this.Name = "frmIsArama";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmIsArama";
+            this.Load += new System.EventHandler(this.frmIsArama_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgridIsArama)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -302,17 +351,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox tBoxIsAramaDil;
-        private System.Windows.Forms.TextBox tBoxIsAramaPozisyon;
-        private System.Windows.Forms.TextBox tBoxIsAramaCSekli;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tBoxIsAramaTecrübe;
@@ -331,5 +376,13 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.RadioButton rbtnPart;
+        private System.Windows.Forms.RadioButton rbtnFull;
+        private System.Windows.Forms.RadioButton rbtnStajyer;
+        private System.Windows.Forms.ComboBox cBoxSehir;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cBoxPosizyon;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
