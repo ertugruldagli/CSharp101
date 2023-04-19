@@ -102,8 +102,9 @@ namespace JobLinq
             cmd.Parameters.AddWithValue("@ID", dgridIlanlarim.CurrentRow.Cells[0].Value);
 
             cmd.ExecuteNonQuery();
-            
+            DataList();
             MessageBox.Show("Veri Silindi");
+           
             conn.Close();
         }
 

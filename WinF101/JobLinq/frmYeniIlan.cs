@@ -90,12 +90,10 @@ namespace JobLinq
         {
             AddData();
 
-            frmIlanlarim ilanlar=new frmIlanlarim();    
-            ilanlar.ShowDialog();
+           
         }
 
       
-
         private void label11_DoubleClick_1(object sender, EventArgs e)
         {
             frmIlanlarim ilan = new frmIlanlarim();
