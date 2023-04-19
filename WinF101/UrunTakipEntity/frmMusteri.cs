@@ -19,9 +19,21 @@ namespace UrunTakipEntity
             InitializeComponent();
         }
 
+        private void Property()
+        {
+            dgridMusteri.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.Fill;
+            dgridMusteri.RowHeadersVisible = false;
+        }
+
         private void btnListele_Click(object sender, EventArgs e)
         {
-            dgridMusteri.DataSource=dbNortwind.tblMusteri.ToList();
+            Property();
+
+            //dgridMusteri.DataSource=dbNortwind.tblMusteri.ToList();
+             
+            var degerler = from x in dbNortwind.tblMusteri select new {x.MusteriID, x.Ad, x.Soyad, x.Sehir, x.Bakiye };
+            dgridMusteri.DataSource= degerler.ToList();
+            
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
