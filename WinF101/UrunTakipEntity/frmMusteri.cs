@@ -45,8 +45,10 @@ namespace UrunTakipEntity
             
             int id= int.Parse(tBoxId.Text);
             var x = dbNortwind.tblMusteri.Find(id);
+
             dbNortwind.tblMusteri.Remove(x);
             dbNortwind.SaveChanges();
+
             MessageBox.Show("Seçilen Kayıt Silindi!");
         }
 
@@ -61,6 +63,17 @@ namespace UrunTakipEntity
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
+            int id= int.Parse(tBoxId.Text);
+            var x = dbNortwind.tblMusteri.Find(id);
+
+            x.Ad = tBoxAd.Text;
+            x.Soyad = tBoxSoyad.Text;
+            x.Sehir = tBoxSehir.Text;
+            x.Bakiye = decimal.Parse(tBoxBakiye.Text);
+
+            dbNortwind.SaveChanges();
+
+            MessageBox.Show("Değişiklikler kaydedildi!");
 
         }
     }
