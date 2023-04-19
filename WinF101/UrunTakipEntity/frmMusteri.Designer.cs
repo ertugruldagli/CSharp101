@@ -40,6 +40,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tBoxBakiye = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnKaydet = new System.Windows.Forms.Button();
+            this.btnsil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgridMusteri)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,12 +143,34 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Bakiye: ";
             // 
+            // btnKaydet
+            // 
+            this.btnKaydet.Location = new System.Drawing.Point(578, 218);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(150, 23);
+            this.btnKaydet.TabIndex = 12;
+            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
+            // 
+            // btnsil
+            // 
+            this.btnsil.Location = new System.Drawing.Point(578, 247);
+            this.btnsil.Name = "btnsil";
+            this.btnsil.Size = new System.Drawing.Size(150, 23);
+            this.btnsil.TabIndex = 13;
+            this.btnsil.Text = "Sil";
+            this.btnsil.UseVisualStyleBackColor = true;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
+            // 
             // frmMusteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(740, 369);
+            this.Controls.Add(this.btnsil);
+            this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.tBoxBakiye);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tBoxSehir);
@@ -181,6 +205,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tBoxBakiye;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.Button btnsil;
     }
 }
 
