@@ -12,9 +12,16 @@ namespace UrunTakipEntity
 {
     public partial class frmMusteri : Form
     {
+        NorthwindEntities dbNortwind = new NorthwindEntities();
+
         public frmMusteri()
         {
             InitializeComponent();
+        }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            dgridMusteri.DataSource=dbNortwind.tblMusteri.ToList();
         }
     }
 }

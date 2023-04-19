@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NorthwindModelStoreContainer" CdmEntityContainer="NorthwindEntities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="NorthwindModel.Categories">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="NorthwindModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="QuantityPerUnit" ColumnName="QuantityPerUnit" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="UnitsInStock" ColumnName="UnitsInStock" />
+          <ScalarProperty Name="UnitsOnOrder" ColumnName="UnitsOnOrder" />
+          <ScalarProperty Name="ReorderLevel" ColumnName="ReorderLevel" />
+          <ScalarProperty Name="Discontinued" ColumnName="Discontinued" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblAdmin">
+      <EntityTypeMapping TypeName="NorthwindModel.TblAdmin">
+        <MappingFragment StoreEntitySet="TblAdmin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMusteri">
+      <EntityTypeMapping TypeName="NorthwindModel.tblMusteri">
+        <MappingFragment StoreEntitySet="tblMusteri">
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Sehir" ColumnName="Sehir" />
+          <ScalarProperty Name="Bakiye" ColumnName="Bakiye" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSatis">
+      <EntityTypeMapping TypeName="NorthwindModel.tblSatis">
+        <MappingFragment StoreEntitySet="tblSatis">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Urun" ColumnName="Urun" />
+          <ScalarProperty Name="Musteri" ColumnName="Musteri" />
+          <ScalarProperty Name="Adet" ColumnName="Adet" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Toplam" ColumnName="Toplam" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

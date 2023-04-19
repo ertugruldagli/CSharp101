@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgridMusteri = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.tBoxId = new System.Windows.Forms.TextBox();
             this.btnListele = new System.Windows.Forms.Button();
@@ -40,16 +40,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tBoxBakiye = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgridMusteri)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgridMusteri
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 27);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(541, 321);
-            this.dataGridView1.TabIndex = 0;
+            this.dgridMusteri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgridMusteri.Location = new System.Drawing.Point(12, 27);
+            this.dgridMusteri.Name = "dgridMusteri";
+            this.dgridMusteri.Size = new System.Drawing.Size(541, 321);
+            this.dgridMusteri.TabIndex = 0;
             // 
             // label1
             // 
@@ -75,6 +75,7 @@
             this.btnListele.TabIndex = 3;
             this.btnListele.Text = "Listele";
             this.btnListele.UseVisualStyleBackColor = true;
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // tBoxAd
             // 
@@ -157,10 +158,10 @@
             this.Controls.Add(this.btnListele);
             this.Controls.Add(this.tBoxId);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgridMusteri);
             this.Name = "frmMusteri";
             this.Text = "frmMusteri";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgridMusteri)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,7 +169,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgridMusteri;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tBoxId;
         private System.Windows.Forms.Button btnListele;

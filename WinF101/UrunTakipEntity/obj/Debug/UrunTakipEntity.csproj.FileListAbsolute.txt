@@ -1,0 +1,16 @@
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\bin\Debug\UrunTakipEntity.exe.config
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\bin\Debug\UrunTakipEntity.exe
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\bin\Debug\UrunTakipEntity.pdb
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\bin\Debug\EntityFramework.dll
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\bin\Debug\EntityFramework.SqlServer.dll
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\bin\Debug\EntityFramework.xml
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\bin\Debug\EntityFramework.SqlServer.xml
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.csproj.SuggestedBindingRedirects.cache
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.frmMusteri.resources
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.Properties.Resources.resources
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.csproj.GenerateResource.cache
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.csproj.CopyComplete
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.exe
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.pdb

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NorthwindModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Products_Categories" FromRole="Categories" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SupplierID" Type="Int32" />
+    <Property Name="CategoryID" Type="Int32" />
+    <Property Name="QuantityPerUnit" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UnitPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="UnitsInStock" Type="Int16" />
+    <Property Name="UnitsOnOrder" Type="Int16" />
+    <Property Name="ReorderLevel" Type="Int16" />
+    <Property Name="Discontinued" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Categories" Relationship="Self.FK_Products_Categories" FromRole="Products" ToRole="Categories" />
+  </EntityType>
+  <EntityType Name="TblAdmin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Kullanici" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Sifre" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblMusteri">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="MusteriID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Soyad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Sehir" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Bakiye" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="tblSatis" Relationship="Self.FK_tblSatis_tblMusteri" FromRole="tblMusteri" ToRole="tblSatis" />
+  </EntityType>
+  <EntityType Name="tblSatis">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Urun" Type="Int32" />
+    <Property Name="Musteri" Type="Int32" />
+    <Property Name="Adet" Type="Byte" />
+    <Property Name="Fiyat" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Toplam" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tblMusteri" Relationship="Self.FK_tblSatis_tblMusteri" FromRole="tblSatis" ToRole="tblMusteri" />
+  </EntityType>
+  <Association Name="FK_Products_Categories">
+    <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblSatis_tblMusteri">
+    <End Role="tblMusteri" Type="Self.tblMusteri" Multiplicity="0..1" />
+    <End Role="tblSatis" Type="Self.tblSatis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMusteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="tblSatis">
+        <PropertyRef Name="Musteri" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NorthwindEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categories" EntityType="Self.Categories" />
+    <EntitySet Name="Products" EntityType="Self.Products" />
+    <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" />
+    <EntitySet Name="tblMusteri" EntityType="Self.tblMusteri" />
+    <EntitySet Name="tblSatis" EntityType="Self.tblSatis" />
+    <AssociationSet Name="FK_Products_Categories" Association="Self.FK_Products_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblSatis_tblMusteri" Association="Self.FK_tblSatis_tblMusteri">
+      <End Role="tblMusteri" EntitySet="tblMusteri" />
+      <End Role="tblSatis" EntitySet="tblSatis" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
