@@ -49,10 +49,25 @@ namespace JobLinq
 
                 conn.Close();
         }
+
+        
+
+
         private void frmIsArama_Load(object sender, EventArgs e)
         {
             DataList();
             Property();
+        }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+
+            
+
+
+
+            conn.Close();  
         }
     }
 }
