@@ -81,6 +81,7 @@
             this.btnKaydet.TabIndex = 26;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // label5
             // 
@@ -197,6 +198,7 @@
             this.Controls.Add(this.dgridUrunler);
             this.Name = "frmUrunler";
             this.Text = "frmUrunler";
+            this.Load += new System.EventHandler(this.frmUrunler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgridUrunler)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
