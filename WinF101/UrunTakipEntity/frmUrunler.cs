@@ -44,6 +44,9 @@ namespace UrunTakipEntity
         private void dgridUrunler_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             tBoxId.Text = dgridUrunler.Rows[e.RowIndex].Cells[0].Value.ToString();
+            tBoxAd.Text = dgridUrunler.Rows[e.RowIndex].Cells[1].Value.ToString();
+            tBoxStok.Text = dgridUrunler.Rows[e.RowIndex].Cells[2].Value.ToString();
+            tBoxFiyat.Text = dgridUrunler.Rows[e.RowIndex].Cells[3].Value.ToString();
             cBoxCategory.SelectedValue = dgridUrunler.Rows[e.RowIndex].Cells[4].ToString();
         }
 
