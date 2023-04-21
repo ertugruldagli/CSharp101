@@ -58,6 +58,12 @@
     <Compile Include="Categories.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="frmIstatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIstatistik.Designer.cs">
+      <DependentUpon>frmIstatistik.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUrunler.cs">
       <SubType>Form</SubType>
     </Compile>
