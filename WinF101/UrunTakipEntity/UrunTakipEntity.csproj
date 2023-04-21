@@ -105,6 +105,9 @@
     <Compile Include="tblSatis.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmIstatistik.resx">
+      <DependentUpon>frmIstatistik.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMusteri.resx">
       <DependentUpon>frmMusteri.cs</DependentUpon>
     </EmbeddedResource>
