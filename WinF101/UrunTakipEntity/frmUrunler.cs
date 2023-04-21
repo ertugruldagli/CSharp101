@@ -72,5 +72,26 @@ namespace UrunTakipEntity
 
             MessageBox.Show("Yeni Ürün Kaydı yapıldı!");
         }
+
+        private void btnsil_Click(object sender, EventArgs e)
+        {
+            if (tBoxId.Text=="")
+            {
+                MessageBox.Show("Tıklama İşlemi Yapmadınız!");
+            }
+            else
+            {
+                int id = int.Parse(tBoxId.Text);
+                var k = db.Products.Find(id);
+
+                db.Products.Remove(k);
+                db.SaveChanges();
+
+                MessageBox.Show("Seçilen Kayıt Silindi!");
+            }
+
+           
+
+        }
     }
 }
