@@ -15,3 +15,4 @@ C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.cs
 C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.exe
 C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.pdb
 C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.frmUrunler.resources
+C:\UCC08\Projects\CSharp101\WinF101\UrunTakipEntity\obj\Debug\UrunTakipEntity.frmIstatistik.resources

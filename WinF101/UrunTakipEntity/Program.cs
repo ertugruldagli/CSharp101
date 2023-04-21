@@ -16,7 +16,7 @@ namespace UrunTakipEntity
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmUrunler());
+            Application.Run(new frmIstatistik());
         }
     }
 }
