@@ -198,6 +198,7 @@
             this.Controls.Add(this.dgridMusteri);
             this.Name = "frmMusteri";
             this.Text = "frmMusteri";
+            this.Load += new System.EventHandler(this.frmMusteri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgridMusteri)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

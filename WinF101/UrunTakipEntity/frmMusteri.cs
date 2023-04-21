@@ -88,5 +88,10 @@ namespace UrunTakipEntity
             MessageBox.Show("Değişiklikler kaydedildi!");
 
         }
+
+        private void frmMusteri_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
