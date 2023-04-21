@@ -53,10 +53,10 @@
             this.lblToplamStok = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblEnAzStok = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lblEnfazlaStok = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.lblEnDusukUrun = new System.Windows.Forms.Label();
@@ -321,22 +321,22 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
-            this.panel9.Controls.Add(this.label17);
+            this.panel9.Controls.Add(this.lblEnAzStok);
             this.panel9.Controls.Add(this.label18);
             this.panel9.Location = new System.Drawing.Point(576, 288);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(182, 132);
             this.panel9.TabIndex = 4;
             // 
-            // label17
+            // lblEnAzStok
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label17.Location = new System.Drawing.Point(79, 78);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(15, 16);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "0";
+            this.lblEnAzStok.AutoSize = true;
+            this.lblEnAzStok.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblEnAzStok.Location = new System.Drawing.Point(27, 78);
+            this.lblEnAzStok.Name = "lblEnAzStok";
+            this.lblEnAzStok.Size = new System.Drawing.Size(15, 16);
+            this.lblEnAzStok.TabIndex = 1;
+            this.lblEnAzStok.Text = "0";
             // 
             // label18
             // 
@@ -351,22 +351,22 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(84)))), ((int)(((byte)(0)))));
-            this.panel10.Controls.Add(this.label19);
+            this.panel10.Controls.Add(this.lblEnfazlaStok);
             this.panel10.Controls.Add(this.label20);
             this.panel10.Location = new System.Drawing.Point(388, 288);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(182, 132);
             this.panel10.TabIndex = 5;
             // 
-            // label19
+            // lblEnfazlaStok
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label19.Location = new System.Drawing.Point(79, 78);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(15, 16);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "0";
+            this.lblEnfazlaStok.AutoSize = true;
+            this.lblEnfazlaStok.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblEnfazlaStok.Location = new System.Drawing.Point(28, 78);
+            this.lblEnfazlaStok.Name = "lblEnfazlaStok";
+            this.lblEnfazlaStok.Size = new System.Drawing.Size(15, 16);
+            this.lblEnfazlaStok.TabIndex = 1;
+            this.lblEnfazlaStok.Text = "0";
             // 
             // label20
             // 
@@ -514,10 +514,10 @@
         private System.Windows.Forms.Label lblToplamStok;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblEnAzStok;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblEnfazlaStok;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label lblEnDusukUrun;

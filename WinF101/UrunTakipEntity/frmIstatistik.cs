@@ -40,6 +40,11 @@ namespace UrunTakipEntity
 
             lblEnDusukUrun.Text= (from x in db.Products orderby x.UnitPrice ascending select x.ProductName).FirstOrDefault();
 
+            lblEnfazlaStok.Text = (from x in db.Products orderby x.UnitsInStock descending select x.ProductName).FirstOrDefault();
+
+            lblEnAzStok.Text = (from x in db.Products orderby x.UnitsInStock ascending select x.ProductName).FirstOrDefault();
+
+
         }
     }
 }
