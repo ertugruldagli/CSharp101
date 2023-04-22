@@ -28,6 +28,29 @@ namespace JobLinq
 
         }
 
+        private void Combo()
+        {
+            conn.Open();
+            SQLQuery = "Select SehirId, SehirAdi From prmSehir order by SehirAdi asc";
+           
+                using (SqlDataAdapter sda=new SqlDataAdapter(SQLQuery,conn))
+                {
+                    using (DataSet ds=new DataSet())
+                    {
+                        sda.Fill(ds);
+                        cBoxOzlukSehir.ValueMember = "SehirId";
+                        cBoxOzlukSehir.DisplayMember = "SehirAdi";
+                        cBoxOzlukSehir.DataSource = ds.Tables[0];
+                    }
+                   
+                    
+                }
+            
+
+
+                conn.Close();
+        }
+
 
         private void ListData()
         {
@@ -38,7 +61,10 @@ namespace JobLinq
             conn.Close();
         }
 
-
+        private void frmOzlukBilgisi_Load(object sender, EventArgs e)
+        {
+            Combo();
+        }
     }
 
 
