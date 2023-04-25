@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobLinq", "JobLinq\JobLinq.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrunTakipEntity", "UrunTakipEntity\UrunTakipEntity.csproj", "{89D94A3A-6E7B-4E08-9319-FC027D7707CB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatmanliMimariProjects", "KatmanliMimariProjects\KatmanliMimariProjects.csproj", "{F6B82E80-15AF-4288-83CE-36027829AA8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{89D94A3A-6E7B-4E08-9319-FC027D7707CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89D94A3A-6E7B-4E08-9319-FC027D7707CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89D94A3A-6E7B-4E08-9319-FC027D7707CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6B82E80-15AF-4288-83CE-36027829AA8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B82E80-15AF-4288-83CE-36027829AA8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B82E80-15AF-4288-83CE-36027829AA8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B82E80-15AF-4288-83CE-36027829AA8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
