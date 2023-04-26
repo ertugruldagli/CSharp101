@@ -10,8 +10,8 @@ namespace EntityLayer
     {
         public int NotID { get; set; }
         public int Ogrenci { get; set; }
-        public byte Ders { get; set; }
+        public byte Ders { get; set; }//veritabanında tinyt int olarak tanımlandığı içinn burada byte olarak tanımlanmalırıdr.
 
-        public byte DersNotu { get; set; }
+        public byte DersNotu { get; set; }//veritabanında tinyt int olarak tanımlandığı içinn burada byte olarak tanımlanmalırıdr.
     }
 }
