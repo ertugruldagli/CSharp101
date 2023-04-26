@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace EntityLayer
 {
-    internal class clsDers
+    public class clsDers
     {
-        public int DersID { get; set; }
+        public byte DersID { get; set; } //veritabanında tinyt int olarak tanımlandığı içinn burada byte olarak tanımlanmalırıdr.
+
         public string DersAd { get; set; }
     }
 }
