@@ -35,5 +35,15 @@ namespace KatmanliMimariProjects
             List<EntityDers> ders = BLDers.DersListesiBL();
             dgridDers.DataSource = ders;
         }
+
+        private void btnsil_Click(object sender, EventArgs e)
+        {
+            byte deger, deger2;
+           //deger2= dgridDers.Row
+            deger=byte.Parse(tBoxDersId.Text);
+            EntityDers ed=new EntityDers();
+            ed.DersID = byte.Parse(deger.ToString());
+            BLDers.DersSilBL(ed.DersID);
+        }
     }
 }

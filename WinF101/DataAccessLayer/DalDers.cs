@@ -30,7 +30,7 @@ namespace DataAccessLayer
             return command.ExecuteNonQuery();
         }
 
-      public static List<EntityDers> DersListesi()
+       public static List<EntityDers> DersListesi()
       {
             List<EntityDers> Dersler =new List<EntityDers>();
             SqlCommand cmd = new SqlCommand("SELECT * FROM TBLDERSLER",DalBaglanti.connection);
@@ -53,6 +53,19 @@ namespace DataAccessLayer
             return Dersler;
       }
 
+       public static int DersSil(byte prm)
+        {
+            SqlCommand query = new SqlCommand("DELETE FROM TBLDERSLER WHERE DersID=@DersID ",DalBaglanti.connection);
+
+            if (query.Connection.State != ConnectionState.Open)
+            {
+                query.Connection.Open();    
+            }
+            query.Parameters.AddWithValue("@DersID", prm);
+
+            return query.ExecuteNonQuery();
+
+        }
     }
 
    

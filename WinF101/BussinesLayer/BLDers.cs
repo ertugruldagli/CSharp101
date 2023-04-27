@@ -23,8 +23,19 @@ namespace BussinesLayer
 
         public static List<EntityDers> DersListesiBL()
         {
-
             return DalDers.DersListesi();
+        }
+
+        public static int DersSilBL(byte prm)
+        {
+            if (prm >=1)
+            {
+                return DalDers.DersSil(prm);
+            }
+            else
+            {
+                return -1;
+            }
         }
     }
 }

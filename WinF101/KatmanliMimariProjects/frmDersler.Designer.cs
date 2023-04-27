@@ -57,6 +57,7 @@
             this.btnsil.TabIndex = 40;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = true;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // btnKaydet
             // 
@@ -86,7 +87,7 @@
             // 
             // tBoxDersId
             // 
-            this.tBoxDersId.Location = new System.Drawing.Point(661, 12);
+            this.tBoxDersId.Location = new System.Drawing.Point(660, 12);
             this.tBoxDersId.Name = "tBoxDersId";
             this.tBoxDersId.Size = new System.Drawing.Size(100, 20);
             this.tBoxDersId.TabIndex = 33;
