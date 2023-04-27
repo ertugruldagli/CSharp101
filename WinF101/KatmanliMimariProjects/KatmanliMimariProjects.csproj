@@ -80,6 +80,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BussinesLayer\BussinesLayer.csproj">
+      <Project>{224dbcf2-09e3-4bce-bcd8-66de3adff594}</Project>
+      <Name>BussinesLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{289e55f6-32ed-419f-a5d9-9f19672acd2e}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
       <Project>{58dbf200-80d1-40aa-bd8a-e78519281bcf}</Project>
       <Name>EntityLayer</Name>

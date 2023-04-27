@@ -1,0 +1,9 @@
+C:\UCC08\Projects\CSharp101\WinF101\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\UCC08\Projects\CSharp101\WinF101\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\UCC08\Projects\CSharp101\WinF101\DataAccessLayer\bin\Debug\EntityLayer.dll
+C:\UCC08\Projects\CSharp101\WinF101\DataAccessLayer\bin\Debug\EntityLayer.pdb
+C:\UCC08\Projects\CSharp101\WinF101\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\WinF101\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\WinF101\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\UCC08\Projects\CSharp101\WinF101\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\UCC08\Projects\CSharp101\WinF101\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EntityLayer;
+using DataAccessLayer;
+using BussinesLayer;
 
 namespace KatmanliMimariProjects
 {
@@ -15,6 +18,16 @@ namespace KatmanliMimariProjects
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            EntityDers dersler=new EntityDers();
+
+            dersler.DersAd=tBoxDersAd.Text;
+
+            BLDers.DersEkleBL(dersler);
+
         }
     }
 }

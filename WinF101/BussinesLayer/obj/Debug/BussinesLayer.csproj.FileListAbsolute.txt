@@ -1,0 +1,11 @@
+C:\UCC08\Projects\CSharp101\WinF101\BussinesLayer\bin\Debug\BussinesLayer.dll
+C:\UCC08\Projects\CSharp101\WinF101\BussinesLayer\bin\Debug\BussinesLayer.pdb
+C:\UCC08\Projects\CSharp101\WinF101\BussinesLayer\bin\Debug\DataAccessLayer.dll
+C:\UCC08\Projects\CSharp101\WinF101\BussinesLayer\bin\Debug\EntityLayer.dll
+C:\UCC08\Projects\CSharp101\WinF101\BussinesLayer\bin\Debug\DataAccessLayer.pdb
+C:\UCC08\Projects\CSharp101\WinF101\BussinesLayer\bin\Debug\EntityLayer.pdb
+C:\UCC08\Projects\CSharp101\WinF101\BussinesLayer\obj\Debug\BussinesLayer.csproj.AssemblyReference.cache
+C:\UCC08\Projects\CSharp101\WinF101\BussinesLayer\obj\Debug\BussinesLayer.csproj.CoreCompileInputs.cache
+C:\UCC08\Projects\CSharp101\WinF101\BussinesLayer\obj\Debug\BussinesLayer.csproj.CopyComplete
+C:\UCC08\Projects\CSharp101\WinF101\BussinesLayer\obj\Debug\BussinesLayer.dll
+C:\UCC08\Projects\CSharp101\WinF101\BussinesLayer\obj\Debug\BussinesLayer.pdb
