@@ -29,6 +29,30 @@ namespace DataAccessLayer
 
             return command.ExecuteNonQuery();
         }
+
+      public static List<EntityDers> DersListesi()
+      {
+            List<EntityDers> Dersler =new List<EntityDers>();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM TBLDERSLER",DalBaglanti.connection);
+
+            if (cmd.Connection.State != ConnectionState.Open)
+            {
+                cmd.Connection.Open();
+            }
+
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            while (sdr.Read())
+            {
+                EntityDers ent = new EntityDers();  
+                ent.DersID= byte.Parse( sdr["DersID"].ToString());
+                ent.DersAd = sdr["DersAd"].ToString();
+                Dersler.Add(ent);   
+            }
+            sdr.Close();
+            return Dersler;
+      }
+
     }
 
    

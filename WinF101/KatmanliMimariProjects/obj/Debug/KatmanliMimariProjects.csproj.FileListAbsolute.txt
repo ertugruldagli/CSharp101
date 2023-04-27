@@ -9,10 +9,11 @@ C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\bin\Debug\DataAccessL
 C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\bin\Debug\EntityLayer.pdb
 C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\obj\Debug\KatmanliMimariProjects.csproj.AssemblyReference.cache
 C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\obj\Debug\KatmanliMimariProjects.csproj.SuggestedBindingRedirects.cache
-C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\obj\Debug\KatmanliMimariProjects.Form1.resources
 C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\obj\Debug\KatmanliMimariProjects.Properties.Resources.resources
 C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\obj\Debug\KatmanliMimariProjects.csproj.GenerateResource.cache
 C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\obj\Debug\KatmanliMimariProjects.csproj.CoreCompileInputs.cache
 C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\obj\Debug\KatmanliMimariProjects.csproj.CopyComplete
 C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\obj\Debug\KatmanliMimariProjects.exe
 C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\obj\Debug\KatmanliMimariProjects.pdb
+C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\obj\Debug\KatmanliMimariProjects.frmDersler.resources
+C:\UCC08\Projects\CSharp101\WinF101\KatmanliMimariProjects\obj\Debug\KatmanliMimariProjects.frmOgrenciler.resources

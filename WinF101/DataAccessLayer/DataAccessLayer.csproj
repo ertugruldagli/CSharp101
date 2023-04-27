@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DalBaglanti.cs" />
     <Compile Include="DalDers.cs" />
+    <Compile Include="DalOgrenci.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

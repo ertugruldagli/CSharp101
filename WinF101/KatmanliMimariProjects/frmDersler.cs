@@ -13,9 +13,9 @@ using BussinesLayer;
 
 namespace KatmanliMimariProjects
 {
-    public partial class Form1 : Form
+    public partial class frmDersler : Form
     {
-        public Form1()
+        public frmDersler()
         {
             InitializeComponent();
         }
@@ -28,6 +28,12 @@ namespace KatmanliMimariProjects
 
             BLDers.DersEkleBL(dersler);
 
+        }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            List<EntityDers> ders = BLDers.DersListesiBL();
+            dgridDers.DataSource = ders;
         }
     }
 }

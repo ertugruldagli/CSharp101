@@ -1,6 +1,6 @@
 ﻿namespace KatmanliMimariProjects
 {
-    partial class Form1
+    partial class frmDersler
     {
         /// <summary>
         /// Required designer variable.
@@ -36,8 +36,8 @@
             this.tBoxDersId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnListele = new System.Windows.Forms.Button();
-            this.dgridUrunler = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgridUrunler)).BeginInit();
+            this.dgridDers = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgridDers)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuncelle
@@ -108,16 +108,18 @@
             this.btnListele.TabIndex = 31;
             this.btnListele.Text = "Listele";
             this.btnListele.UseVisualStyleBackColor = true;
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
-            // dgridUrunler
+            // dgridDers
             // 
-            this.dgridUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgridUrunler.Location = new System.Drawing.Point(12, 12);
-            this.dgridUrunler.Name = "dgridUrunler";
-            this.dgridUrunler.Size = new System.Drawing.Size(591, 187);
-            this.dgridUrunler.TabIndex = 30;
+            this.dgridDers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgridDers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgridDers.Location = new System.Drawing.Point(12, 12);
+            this.dgridDers.Name = "dgridDers";
+            this.dgridDers.Size = new System.Drawing.Size(591, 187);
+            this.dgridDers.TabIndex = 30;
             // 
-            // Form1
+            // frmDersler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,10 +133,10 @@
             this.Controls.Add(this.tBoxDersId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnListele);
-            this.Controls.Add(this.dgridUrunler);
-            this.Name = "Form1";
+            this.Controls.Add(this.dgridDers);
+            this.Name = "frmDersler";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dgridUrunler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgridDers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,7 +152,7 @@
         private System.Windows.Forms.TextBox tBoxDersId;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnListele;
-        private System.Windows.Forms.DataGridView dgridUrunler;
+        private System.Windows.Forms.DataGridView dgridDers;
     }
 }
 
