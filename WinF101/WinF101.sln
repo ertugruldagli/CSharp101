@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityLayer\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{289E55F6-32ED-419F-A5D9-9F19672ACD2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinesLayer", "BussinesLayer\BussinesLayer.csproj", "{224DBCF2-09E3-4BCE-BCD8-66DE3ADFF594}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{289E55F6-32ED-419F-A5D9-9F19672ACD2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{289E55F6-32ED-419F-A5D9-9F19672ACD2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{289E55F6-32ED-419F-A5D9-9F19672ACD2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{224DBCF2-09E3-4BCE-BCD8-66DE3ADFF594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224DBCF2-09E3-4BCE-BCD8-66DE3ADFF594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224DBCF2-09E3-4BCE-BCD8-66DE3ADFF594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224DBCF2-09E3-4BCE-BCD8-66DE3ADFF594}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
