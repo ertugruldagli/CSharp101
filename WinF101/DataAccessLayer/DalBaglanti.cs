@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    public class Baglanti
+    public class DalBaglanti
     {
         public static SqlConnection connection =new SqlConnection(@"Data Source=ED-INTERN;Initial Catalog=DBKatmanliMimari;Integrated Security=True");
     }

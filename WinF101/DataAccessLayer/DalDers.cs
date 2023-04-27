@@ -18,7 +18,7 @@ namespace DataAccessLayer
         {
             string query = "INSERT INTO TBLDERSLER (DersAd) VALUES (@DersAd)";
 
-            SqlCommand command = new SqlCommand(query, Baglanti.connection);
+            SqlCommand command = new SqlCommand(query, DalBaglanti.connection);
 
             if (command.Connection.State!=ConnectionState.Open)
             {
