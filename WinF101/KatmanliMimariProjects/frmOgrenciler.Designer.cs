@@ -66,6 +66,7 @@
             this.btnsil.TabIndex = 49;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = true;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // btnKaydet
             // 
@@ -123,6 +124,7 @@
             // 
             // dgridOgrenci
             // 
+            this.dgridOgrenci.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgridOgrenci.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgridOgrenci.Location = new System.Drawing.Point(12, 12);
             this.dgridOgrenci.Name = "dgridOgrenci";

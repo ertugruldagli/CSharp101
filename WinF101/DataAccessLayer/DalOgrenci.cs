@@ -58,5 +58,18 @@ namespace DataAccessLayer
             return Ogrenciler;
             
         }
+        public static int OgrenciSil(int prm)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM TBLOGRENCILER WHERE OgrID=@OgrID", DalBaglanti.connection);
+
+            if (cmd.Connection.State != ConnectionState.Open)
+            {
+                cmd.Connection.Open();
+            }
+
+            cmd.Parameters.AddWithValue("@OgrID",prm);
+
+            return cmd.ExecuteNonQuery();
+        }
     }
 }

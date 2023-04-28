@@ -48,6 +48,7 @@
             this.btnGuncelle.TabIndex = 41;
             this.btnGuncelle.Text = "Guncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnsil
             // 

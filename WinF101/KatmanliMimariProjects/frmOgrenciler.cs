@@ -40,5 +40,15 @@ namespace KatmanliMimariProjects
             //dgridOgrenci.DataSource = Ogrenciler;
             dgridOgrenci.DataSource = BLOgrenci.OgrenciListesiBL();
         }
+
+        private void btnsil_Click(object sender, EventArgs e)
+        {
+            
+            //deger2= dgridDers.Row
+            //int deger = int.Parse(tBoxOgrID.Text);
+            EntityOgrenci od = new EntityOgrenci();
+            od.OgrID = int.Parse(tBoxOgrID.Text.ToString());
+            BLOgrenci.OgrenciSilBL(od.OgrID);
+        }
     }
 }
